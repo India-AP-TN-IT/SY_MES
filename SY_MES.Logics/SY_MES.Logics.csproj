@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SY_MES.Logics</RootNamespace>
+    <AssemblyName>SY_MES.Logics</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\Common.cs" />
+    <Compile Include="MES\FinalInspectionFT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MES\FinalInspectionFT.Designer.cs">
+      <DependentUpon>FinalInspectionFT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MES\Sub\FTHistBC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MES\Sub\FTHistBC.Designer.cs">
+      <DependentUpon>FTHistBC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MES\Sub\FT_BC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MES\Sub\FT_BC.Designer.cs">
+      <DependentUpon>FT_BC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\LocalizedContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\LocalizedContainer.Designer.cs">
+      <DependentUpon>LocalizedContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\CodeSelectBC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\CodeSelectBC.Designer.cs">
+      <DependentUpon>CodeSelectBC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\LocalUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\LocalUC.Designer.cs">
+      <DependentUpon>LocalUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MES\FinalInspection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MES\FinalInspection.Designer.cs">
+      <DependentUpon>FinalInspection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MES\PLCTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MES\PLCTest.Designer.cs">
+      <DependentUpon>PLCTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MES\Rework.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MES\Rework.Designer.cs">
+      <DependentUpon>Rework.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MES\SpecCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MES\SpecCheck.Designer.cs">
+      <DependentUpon>SpecCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MES\Sub\InspectionBC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MES\Sub\InspectionBC.Designer.cs">
+      <DependentUpon>InspectionBC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MES\Sub\PlanRsltBC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MES\Sub\PlanRsltBC.Designer.cs">
+      <DependentUpon>PlanRsltBC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MES\Sub\ProductInforBC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MES\Sub\ProductInforBC.Designer.cs">
+      <DependentUpon>ProductInforBC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MES\Sub\ReworkBomUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MES\Sub\ReworkBomUC.Designer.cs">
+      <DependentUpon>ReworkBomUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MES\Sub\SpecCheckBC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MES\Sub\SpecCheckBC.Designer.cs">
+      <DependentUpon>SpecCheckBC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MES\Sub\LegendUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MES\Sub\LegendUC.Designer.cs">
+      <DependentUpon>LegendUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MES\Sub\SpecCheckHistBC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MES\Sub\SpecCheckHistBC.Designer.cs">
+      <DependentUpon>SpecCheckHistBC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MES\Sub\SpecSheetCtl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MES\Sub\SpecSheetCtl.Designer.cs">
+      <DependentUpon>SpecSheetCtl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MES\Sub\VisionInspectionBC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MES\Sub\VisionInspectionBC.Designer.cs">
+      <DependentUpon>VisionInspectionBC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MES\Sub\WOPrintBC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MES\Sub\WOPrintBC.Designer.cs">
+      <DependentUpon>WOPrintBC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MES\TagPrintSpecCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MES\TagPrintSpecCheck.Designer.cs">
+      <DependentUpon>TagPrintSpecCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SY_MES.FX.Common\SY_MES.FX.Common.csproj">
+      <Project>{ac727e9a-119f-4952-a617-fa9df2714c2a}</Project>
+      <Name>SY_MES.FX.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SY_MES.FX.Controls\SY_MES.FX.Controls.csproj">
+      <Project>{EEB8537A-5930-4F60-8984-34E2F08A5BCC}</Project>
+      <Name>SY_MES.FX.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SY_MES.FX.Devices\SY_MES.FX.Devices.csproj">
+      <Project>{C3E02D0B-9CAA-4015-B258-A99F2FE7F81A}</Project>
+      <Name>SY_MES.FX.Devices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SY_MES.FX.Forms\SY_MES.FX.MainForm.csproj">
+      <Project>{b9ad1929-d4cf-4253-8dad-1b8df38a36fd}</Project>
+      <Name>SY_MES.FX.MainForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SY_MES.FX.PLC\SY_MES.FX.PLC.csproj">
+      <Project>{265167c8-f09e-434b-9061-08b729f613e5}</Project>
+      <Name>SY_MES.FX.PLC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MES\FinalInspectionFT.resx">
+      <DependentUpon>FinalInspectionFT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MES\Sub\FTHistBC.resx">
+      <DependentUpon>FTHistBC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MES\Sub\FT_BC.resx">
+      <DependentUpon>FT_BC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\LocalizedContainer.resx">
+      <DependentUpon>LocalizedContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\CodeSelectBC.resx">
+      <DependentUpon>CodeSelectBC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MES\FinalInspection.resx">
+      <DependentUpon>FinalInspection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MES\PLCTest.resx">
+      <DependentUpon>PLCTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MES\Rework.resx">
+      <DependentUpon>Rework.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MES\SpecCheck.resx">
+      <DependentUpon>SpecCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MES\Sub\InspectionBC.resx">
+      <DependentUpon>InspectionBC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MES\Sub\PlanRsltBC.resx">
+      <DependentUpon>PlanRsltBC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MES\Sub\ProductInforBC.resx">
+      <DependentUpon>ProductInforBC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MES\Sub\ReworkBomUC.resx">
+      <DependentUpon>ReworkBomUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MES\Sub\SpecCheckBC.resx">
+      <DependentUpon>SpecCheckBC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MES\Sub\LegendUC.resx">
+      <DependentUpon>LegendUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MES\Sub\SpecCheckHistBC.resx">
+      <DependentUpon>SpecCheckHistBC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MES\Sub\SpecSheetCtl.resx">
+      <DependentUpon>SpecSheetCtl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MES\Sub\VisionInspectionBC.resx">
+      <DependentUpon>VisionInspectionBC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MES\Sub\WOPrintBC.resx">
+      <DependentUpon>WOPrintBC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MES\TagPrintSpecCheck.resx">
+      <DependentUpon>TagPrintSpecCheck.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Don't copy this file to local. it's just embedded Resource because of security for Database connection-->
+<SY_MES_CONFIG>		
+	
+	<DB_CONNECTION>ORACLE</DB_CONNECTION><!--DB Type : ORACLE, MSSQL, WCF, ACCESS-->
+	<DBSVR>db.seo-yon.in</DBSVR>    <!--DB Server IP : http://wcf.yscom.co.kr:1818/Service.svc-->
+	<DBUID>mes</DBUID><!--DB User ID-->
+	<DBPWD>mes</DBPWD><!--DB User Password-->
+	<DBSERVICE>SYORA</DBSERVICE><!--DB Service(Oracle)-->		
+  
+</SY_MES_CONFIG>
+
+
+
+
