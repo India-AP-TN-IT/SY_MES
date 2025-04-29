@@ -116,29 +116,35 @@ namespace SY_MES.FX.PLC
         {
             if (ParentForm != null && m_PLC!=null && m_PLC.IsConnected)
             {
-                string baseVar = GetVars("@PLCBASEADDR");
-                if (m_MCViewer != null && m_MCViewer.Visible)
-                {
-                    return;
-                }
-                if (m_MCViewer == null || m_MCViewer.IsDisposed)
-                {
-                    m_MCViewer = new PLC_MonitorFrm();
-                }
-                m_MCViewer.SetPLCParam(m_PlcParam, ref m_PLC);
-                m_MCViewer.Show();
-                
+                DispPLCTraceDlg();
+            }
+        }
+        public void DispPLCTraceDlg()
+        {
+            string baseVar = GetVars("@PLCBASEADDR");
+            if (m_MCViewer != null && m_MCViewer.Visible)
+            {
+                return;
+            }
+            if (m_MCViewer == null || m_MCViewer.IsDisposed)
+            {
+                m_MCViewer = new PLC_MonitorFrm();
+            }
+            m_MCViewer.SetPLCParam(m_PlcParam, ref m_PLC);
+            m_MCViewer.Show();
+            if (ParentForm != null)
+            {
                 m_MCViewer.Icon = ParentForm.Icon;
-                m_MCViewer.TopMost = true;
-                m_MCViewer.BringToFront();
-                int blSize = Convert.ToInt16(GetVars("@BLOCK_SIZE"));
-                
-                for(int row=0;row<blSize;row++)
+            }
+            m_MCViewer.TopMost = true;
+            m_MCViewer.BringToFront();
+            int blSize = Convert.ToInt16(GetVars("@BLOCK_SIZE"));
+
+            for (int row = 0; row < blSize; row++)
+            {
+                for (int i = 0; i < 16; i++)
                 {
-                    for(int i=0;i<16;i++)
-                    {
-                        m_MCViewer.MonitorPLC(16*row + i, m_PLC.CurrentBuffer[row].iBitValue[i] == 0 ? false : true);                        
-                    }
+                    m_MCViewer.MonitorPLC(16 * row + i, m_PLC.CurrentBuffer[row].iBitValue[i] == 0 ? false : true);
                 }
             }
         }

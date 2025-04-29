@@ -155,3 +155,4 @@ D:\Srcs\PUNE\SY_MES\SY_MES.Logics\obj\Debug\SY_MES.Logics.MES.Sub.FTHistBC.resou
 D:\SRCS\GIT\SY_MES\SY_MES.Logics\obj\Debug\SY_MES.Logics.MES.Sub.VisionInspectionBC.resources
 D:\Srcs\PUNE\SY_MES\SY_MES.Logics\obj\Debug\SY_MES.Logics.MES.Sub.VisionInspectionBC.resources
 D:\Srcs\PUNE\SY_MES\SY_MES.Logics\obj\Debug\SY_MES.Logics.Base.PCVisionCtl.resources
+D:\SRCS\GIT\SY_MES\SY_MES.Logics\obj\Debug\SY_MES.Logics.Base.PCVisionCtl.resources

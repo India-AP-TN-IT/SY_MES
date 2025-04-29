@@ -88,6 +88,7 @@
             this.pcVisionCtl1.Name = "pcVisionCtl1";
             this.pcVisionCtl1.Size = new System.Drawing.Size(298, 127);
             this.pcVisionCtl1.TabIndex = 5;
+            this.pcVisionCtl1.OnVisionPLCSignal += new SY_MES.Logics.Base.PCVisionCtl.VisionPLCSignal(this.pcVisionCtl1_OnVisionPLCSignal);
             // 
             // yWorkerLabel1
             // 

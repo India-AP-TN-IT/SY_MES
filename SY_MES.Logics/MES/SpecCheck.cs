@@ -71,5 +71,10 @@ namespace SY_MES.Logics.MES
             }
 
         }
+
+        private void pcVisionCtl1_OnVisionPLCSignal(object sender, int pos, bool bVal, FX.PLC.Base.Common.PLC_DeviceArray[] currentBuffer)
+        {   //If We use VisonPLC, We can get siginal from here
+
+        }
     }
 }

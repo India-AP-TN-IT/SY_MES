@@ -37,8 +37,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblDate = new System.Windows.Forms.Label();
             this.yBitLabel1 = new SY_MES.FX.Controls.YBitLabel();
+            this.lblDate = new System.Windows.Forms.Label();
             this.yTableLayout1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -172,16 +172,6 @@
             this.panel1.Size = new System.Drawing.Size(213, 28);
             this.panel1.TabIndex = 12;
             // 
-            // lblDate
-            // 
-            this.lblDate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDate.Location = new System.Drawing.Point(0, 0);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(213, 28);
-            this.lblDate.TabIndex = 14;
-            this.lblDate.Text = "TIME";
-            this.lblDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // yBitLabel1
             // 
             this.yBitLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -198,6 +188,17 @@
             this.yBitLabel1.Size = new System.Drawing.Size(15, 17);
             this.yBitLabel1.TabIndex = 15;
             this.yBitLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblDate
+            // 
+            this.lblDate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDate.Location = new System.Drawing.Point(0, 0);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(213, 28);
+            this.lblDate.TabIndex = 14;
+            this.lblDate.Text = "TIME";
+            this.lblDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDate.DoubleClick += new System.EventHandler(this.lblDate_DoubleClick);
             // 
             // PCVisionCtl
             // 
