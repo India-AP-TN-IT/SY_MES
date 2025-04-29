@@ -29,3 +29,4 @@ D:\SRCS\GIT\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.csproj.GenerateResource
 D:\SRCS\GIT\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.csproj.CoreCompileInputs.cache
 D:\SRCS\GIT\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.dll
 D:\SRCS\GIT\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.pdb
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.csprojResolveAssemblyReference.cache

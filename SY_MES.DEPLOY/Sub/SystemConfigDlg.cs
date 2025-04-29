@@ -15,7 +15,7 @@ namespace SY_MES.DEPLOY.Sub
     [ToolboxItem(false)]
     public partial class SystemConfigDlg : FX.MainForm.BaseContainer
     {
-        
+        private const string CN_ASYNC_LOAD_QUERY = "PKG_COM.GET_SETTING_INI";
         private const string CN_DEPLOY_FILE =@".\SY_MES.DEPLOY.EXE";
         private const string CN_LOGIC_FILE = @".\SY_MES.Logics.DLL";
 
@@ -68,8 +68,25 @@ namespace SY_MES.DEPLOY.Sub
             param.Add("IN_BIZCD", PBaseFrm.GetXMLConfig("BIZCD"));
             param.Add("IN_IPADDR", PBaseFrm.GetCurrentIP());
             param.Add("IN_SCREEN", PBaseFrm.RunBC);
-            DataTable dt = ExecuteQuery("PKG_COM.GET_SETTING_INI", param);
-            yDataGridView1.SetValue(dt);
+            AsyncExecueteQuery(this, CN_ASYNC_LOAD_QUERY, param);
+            
+            
+        }
+
+        public override void ReadAsyncDBData(object sender, string query, Dictionary<string, string> param, DataTable dt)
+        {
+            if (PBaseFrm != null)
+            {
+                PBaseFrm.Invoke(new MethodInvoker(
+                delegate()
+                {
+                    if (query.Contains(CN_ASYNC_LOAD_QUERY))
+                    {
+                        yDataGridView1.SetValue(dt);
+                    }
+
+                }));
+            }
         }
         private void LoadBaseInfor()
         {
