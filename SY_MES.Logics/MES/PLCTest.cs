@@ -131,7 +131,7 @@ namespace SY_MES.Logics.MES
             }
             catch(Exception eLog)
             {
-
+                System.Diagnostics.Debug.WriteLine("[" + System.Reflection.MethodBase.GetCurrentMethod().Name + "]" + eLog.Message);
             }
             finally
             {
