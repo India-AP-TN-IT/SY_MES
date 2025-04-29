@@ -50,6 +50,12 @@
     <Compile Include="Base\LocalizedPrintHelper.Designer.cs">
       <DependentUpon>LocalizedPrintHelper.cs</DependentUpon>
     </Compile>
+    <Compile Include="Base\PCVisionCtl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\PCVisionCtl.Designer.cs">
+      <DependentUpon>PCVisionCtl.cs</DependentUpon>
+    </Compile>
     <Compile Include="MES\FinalInspectionFT.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -201,6 +207,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Base\PCVisionCtl.resx">
+      <DependentUpon>PCVisionCtl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MES\FinalInspectionFT.resx">
       <DependentUpon>FinalInspectionFT.cs</DependentUpon>
     </EmbeddedResource>

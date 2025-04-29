@@ -3,7 +3,7 @@
 <SY_MES_CONFIG>	
 	<CORCD>5300</CORCD><!--Corporation Code-->
 	<BIZCD>5310</BIZCD><!--Business Code-->
-	<DEBUG_CLIENT>10.10.10.5</DEBUG_CLIENT><!--Client IP or @namespace.Container : @MES.TagPrintSpecCheck-->
+	<DEBUG_CLIENT>10.10.10.2</DEBUG_CLIENT><!--Client IP or @namespace.Container : @MES.TagPrintSpecCheck-->
 	<DEBUG_MODE>Y</DEBUG_MODE><!--Debug Mode-->
 </SY_MES_CONFIG>
 

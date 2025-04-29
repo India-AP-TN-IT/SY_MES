@@ -17,7 +17,11 @@ namespace SY_MES.Logics.MES
         {
             InitializeComponent();
         }
-
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+            pcVisionCtl1.Start();
+        }
         public override void ReadDataFromScanner(object sender, string data)
         {
             base.ReadDataFromScanner(sender, data);

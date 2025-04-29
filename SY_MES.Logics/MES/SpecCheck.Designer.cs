@@ -31,6 +31,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.specCheckBC1 = new SY_MES.Logics.MES.Sub.SpecCheckBC();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pcVisionCtl1 = new SY_MES.Logics.Base.PCVisionCtl();
             this.yWorkerLabel1 = new SY_MES.FX.Controls.YWorkerLabel();
             this.specDetUC1 = new SY_MES.Logics.MES.Sub.LegendUC();
             this.productInforBC1 = new SY_MES.Logics.MES.Sub.ProductInforBC();
@@ -62,12 +63,14 @@
             this.specCheckBC1.Location = new System.Drawing.Point(484, 6);
             this.specCheckBC1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.specCheckBC1.Name = "specCheckBC1";
+            this.specCheckBC1.PrvStationRslt = false;
             this.specCheckBC1.Size = new System.Drawing.Size(712, 809);
             this.specCheckBC1.TabIndex = 0;
             this.specCheckBC1.WorkerLabel = null;
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.pcVisionCtl1);
             this.panel1.Controls.Add(this.yWorkerLabel1);
             this.panel1.Controls.Add(this.specDetUC1);
             this.panel1.Controls.Add(this.productInforBC1);
@@ -77,6 +80,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(480, 821);
             this.panel1.TabIndex = 1;
+            // 
+            // pcVisionCtl1
+            // 
+            this.pcVisionCtl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pcVisionCtl1.Location = new System.Drawing.Point(4, 688);
+            this.pcVisionCtl1.Name = "pcVisionCtl1";
+            this.pcVisionCtl1.Size = new System.Drawing.Size(298, 127);
+            this.pcVisionCtl1.TabIndex = 5;
             // 
             // yWorkerLabel1
             // 
@@ -104,7 +115,7 @@
             this.specDetUC1.CountOfIdx = 5;
             this.specDetUC1.Location = new System.Drawing.Point(3, 238);
             this.specDetUC1.Name = "specDetUC1";
-            this.specDetUC1.Size = new System.Drawing.Size(473, 577);
+            this.specDetUC1.Size = new System.Drawing.Size(473, 444);
             this.specDetUC1.TabIndex = 1;
             // 
             // productInforBC1
@@ -120,6 +131,7 @@
             this.productInforBC1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.productInforBC1.Name = "productInforBC1";
             this.productInforBC1.PartNo = "";
+            this.productInforBC1.PrvStationRslt = false;
             this.productInforBC1.Size = new System.Drawing.Size(473, 191);
             this.productInforBC1.SPEC1_DESC_COLNM = "";
             this.productInforBC1.SPEC1_TITLE = "SPEC1";
@@ -151,5 +163,6 @@
         private Sub.ProductInforBC productInforBC1;
         private Sub.LegendUC specDetUC1;
         private FX.Controls.YWorkerLabel yWorkerLabel1;
+        private Base.PCVisionCtl pcVisionCtl1;
     }
 }
