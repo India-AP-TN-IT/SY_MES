@@ -38,7 +38,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.PrtHelper = new SY_MES.FX.Devices.Printer.PrtHelper();
+            this.PrtHelper = new Base.LocalizedPrintHelper();
             this.Chk_All = new SY_MES.FX.Controls.YCheckBox();
             this.yButton4 = new SY_MES.FX.Controls.YButton();
             this.yWorkerLabel1 = new SY_MES.FX.Controls.YWorkerLabel();
@@ -685,7 +685,7 @@
         private FX.Controls.YLabel yLabel3;
         private FX.Controls.YButton yButton3;
         private FX.Controls.YButton BtnPrint;
-        private FX.Devices.Printer.PrtHelper PrtHelper;
+        private Base.LocalizedPrintHelper PrtHelper;
         private FX.Controls.YLabel lblPrintedBarcode;
         private FX.Controls.YLabel yLabel2;
         private FX.Controls.YTextBox txtPlan;

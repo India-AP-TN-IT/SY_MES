@@ -31,10 +31,7 @@ namespace SY_MES.Logics.MES.Sub
             return yDateTime1.GetValue().ToString();
         }
 
-        private string GetZPLAsciiCVT(string data)
-        {
-            return data.Replace(FX.Common.ConstVars.EOT, "_04").Replace(FX.Common.ConstVars.GS, "_1D").Replace(FX.Common.ConstVars.RS, "_1E");
-        }
+        
         private DataTable GetPrt_PlanQTY()
         {
             Dictionary<string, string> param = new Dictionary<string, string>();
@@ -49,30 +46,13 @@ namespace SY_MES.Logics.MES.Sub
         }
         public void PrintLabel(Dictionary<string, string> param, out string errMsg)
         {
+
+            
+
             errMsg = "";
             try
             {
-                int xPos = 0;   //Start X Position
-                int yPos = 0;   //Start Y Position
-                PrtHelper.Header(xPos, yPos);   //Header
-                //<Body
-                string labelType = PrtHelper.GetParam(param, "LABEL_TYPE");
-                switch(labelType)
-                {
-                    default:
-                        PrtHelper.Body("^BXN,3,200");
-                        PrtHelper.Body("^FO30,30^FH^FD" + GetZPLAsciiCVT(PrtHelper.GetParam(param, "MATRIX_CODE")) + "^FS");
-                        PrtHelper.Body("^FO130,50^A0NB,22,15^FB250,0,0,L^FD" + DateTime.Parse(PrtHelper.GetParam(param, "WORK_DATE")).ToString("dd-MM-yyyy") + " " + DateTime.Now.ToString("HH:mm") + "  S:" + PrtHelper.GetParam(param, "SHIFT") + "^FS");
-                        
-                        PrtHelper.Body("^FO130,80^A0NB,35,30^FB220,0,0,L^FD" + PrtHelper.GetParam(param, "LOTNO") + "^FS");
-                        PrtHelper.Body("^FO30,120^A0NB,45,35^FB300,0,0,L^FD" + PrtHelper.GetParam(param, "PARTNO") + "^FS");
-
-                        PrtHelper.Body("^FO290,80^A0NB,70,30^FB320,0,0,L^FD" + PrtHelper.GetParam(param, "INSTALL_POS") + "^FS");
-                        break;
-                }
-                //>>
-                
-                PrtHelper.Footer(); //Footer
+                PrtHelper.PrintLabel(param, out errMsg);
                 
             }
             catch(Exception eLog)

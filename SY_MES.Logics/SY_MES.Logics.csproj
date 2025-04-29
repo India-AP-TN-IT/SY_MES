@@ -44,6 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\Common.cs" />
+    <Compile Include="Base\LocalizedPrintHelper.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Base\LocalizedPrintHelper.Designer.cs">
+      <DependentUpon>LocalizedPrintHelper.cs</DependentUpon>
+    </Compile>
     <Compile Include="MES\FinalInspectionFT.cs">
       <SubType>UserControl</SubType>
     </Compile>
