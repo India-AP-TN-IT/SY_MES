@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\SRCS\\GIT\\SY_MES\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\srcs\\git\\sy_mes\\sy_mes.logics\\base\\pcvisionctl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\base\\pcvisionctl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{265167C8-F09E-434B-9061-08B729F613E5}|SY_MES.FX.PLC\\SY_MES.FX.PLC.csproj|d:\\srcs\\git\\sy_mes\\sy_mes.fx.plc\\simpleplcui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{265167C8-F09E-434B-9061-08B729F613E5}|SY_MES.FX.PLC\\SY_MES.FX.PLC.csproj|solutionrelative:sy_mes.fx.plc\\simpleplcui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\srcs\\git\\sy_mes\\sy_mes.logics\\mes\\speccheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\mes\\speccheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\srcs\\git\\sy_mes\\sy_mes.logics\\mes\\speccheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\mes\\speccheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\srcs\\git\\sy_mes\\sy_mes.logics\\mes\\speccheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\mes\\speccheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\srcs\\git\\sy_mes\\sy_mes.logics\\base\\pcvisionctl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\base\\pcvisionctl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265167C8-F09E-434B-9061-08B729F613E5}|SY_MES.FX.PLC\\SY_MES.FX.PLC.csproj|d:\\srcs\\git\\sy_mes\\sy_mes.fx.plc\\simpleplcui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265167C8-F09E-434B-9061-08B729F613E5}|SY_MES.FX.PLC\\SY_MES.FX.PLC.csproj|solutionrelative:sy_mes.fx.plc\\simpleplcui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\srcs\\git\\sy_mes\\sy_mes.logics\\base\\pcvisionctl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -62,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,20 +74,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "SpecCheck.cs",
               "DocumentMoniker": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\SpecCheck.cs",
               "RelativeDocumentMoniker": "SY_MES.Logics\\MES\\SpecCheck.cs",
               "ToolTip": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\SpecCheck.cs",
               "RelativeToolTip": "SY_MES.Logics\\MES\\SpecCheck.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAADsAAAAAAAAAAAAqwEwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-29T13:29:38.829Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "SpecCheck.cs [Design]",
               "DocumentMoniker": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\SpecCheck.cs",
               "RelativeDocumentMoniker": "SY_MES.Logics\\MES\\SpecCheck.cs",
@@ -99,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "SimplePlcUI.cs",
               "DocumentMoniker": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.FX.PLC\\SimplePlcUI.cs",
               "RelativeDocumentMoniker": "SY_MES.FX.PLC\\SimplePlcUI.cs",
@@ -112,13 +112,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "PCVisionCtl.cs",
               "DocumentMoniker": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\Base\\PCVisionCtl.cs",
               "RelativeDocumentMoniker": "SY_MES.Logics\\Base\\PCVisionCtl.cs",
-              "ToolTip": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\Base\\PCVisionCtl.cs*",
-              "RelativeToolTip": "SY_MES.Logics\\Base\\PCVisionCtl.cs*",
-              "ViewState": "AQIAACMAAAAAAAAAAAAwwEEAAAAhAAAA",
+              "ToolTip": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\Base\\PCVisionCtl.cs",
+              "RelativeToolTip": "SY_MES.Logics\\Base\\PCVisionCtl.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAwwDUAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-29T13:12:48.632Z",
               "EditorCaption": ""
@@ -165,8 +165,8 @@
               "Title": "PCVisionCtl.cs [Design]",
               "DocumentMoniker": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\Base\\PCVisionCtl.cs",
               "RelativeDocumentMoniker": "SY_MES.Logics\\Base\\PCVisionCtl.cs",
-              "ToolTip": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\Base\\PCVisionCtl.cs [Design]*",
-              "RelativeToolTip": "SY_MES.Logics\\Base\\PCVisionCtl.cs [Design]*",
+              "ToolTip": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\Base\\PCVisionCtl.cs [Design]",
+              "RelativeToolTip": "SY_MES.Logics\\Base\\PCVisionCtl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-29T13:12:38.267Z",
               "EditorCaption": " [Design]"
