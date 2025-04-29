@@ -21,7 +21,7 @@ namespace SY_MES.Logics.MES.Sub
         public event ProcResult OnProcResult;
 
 
-        private System.Timers.Timer m_ETTimer;
+        private System.Windows.Forms.Timer m_ETTimer;
       
         public struct FTHeaderST
         {
@@ -97,11 +97,12 @@ namespace SY_MES.Logics.MES.Sub
             }
             if(m_ETTimer==null)
             {
-                m_ETTimer = new System.Timers.Timer();
+                m_ETTimer = new System.Windows.Forms.Timer();
                 m_ETTimer.Interval = 300;
-                m_ETTimer.Elapsed += ETTimer_Elapsed;
+                m_ETTimer.Tick += ETTimer_Elapsed;
             }
         }
+
         private void DispETGrid()
         {
             DispStatus(m_FTHeader);
@@ -111,25 +112,21 @@ namespace SY_MES.Logics.MES.Sub
             
             
         }
-        private void ETTimer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        private void ETTimer_Elapsed(object sender, EventArgs e)
         {
             try
             {
-                this.Invoke(new MethodInvoker(
-                delegate ()
+                m_ETTimer.Stop();
+                lblLoad.SetValue(true);
+                m_FTHeader = GetETStatus(m_FTHeader.lotno, m_FTHeader.status, m_FTHeader.lseq, false);
+                DispETGrid();
+                if (m_FTHeader.status == "C")
                 {
-                    m_ETTimer.Stop();
-                    lblLoad.SetValue(true);
-                    m_FTHeader = GetETStatus(m_FTHeader.lotno, m_FTHeader.status,m_FTHeader.lseq, false);
-                    DispETGrid();
-                    if(m_FTHeader.status == "C")
+                    if (OnProcResult != null)
                     {
-                        if(OnProcResult!=null)
-                        {
-                            OnProcResult(this, m_FTHeader.allRSLT);
-                        }
+                        OnProcResult(this, m_FTHeader.allRSLT);
                     }
-                }));
+                }
             }
             catch(Exception eLog)
             {

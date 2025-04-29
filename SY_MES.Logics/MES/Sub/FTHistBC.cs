@@ -58,36 +58,29 @@ namespace SY_MES.Logics.MES.Sub
         }
         private void ETGrid_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
-            if (PBaseFrm != null)
+            for (int row = 0; row < ETGrid.Rows.Count; row++)
             {
-                PBaseFrm.Invoke(new MethodInvoker(
-                delegate()
+                if (ETGrid.GetValue(row, "RSLT") == "OK")
                 {
-                    for (int row = 0; row < ETGrid.Rows.Count; row++)
-                    {
-                        if (ETGrid.GetValue(row, "RSLT") == "OK")
-                        {
-                            ETGrid.Rows[row].Cells["RSLT"].Style.BackColor = Color.Lime;
-                            ETGrid.Rows[row].Cells["RSLT"].Style.ForeColor = Color.Black;
-                        }
-                        else if (ETGrid.GetValue(row, "RSLT") == "NG")
-                        {
-                            ETGrid.Rows[row].Cells["RSLT"].Style.BackColor = Color.Red;
-                            ETGrid.Rows[row].Cells["RSLT"].Style.ForeColor = Color.White;
-                        }
-                        else
-                        {
-                            ETGrid.Rows[row].Cells["RSLT"].Style.BackColor = Color.Yellow;
-                            ETGrid.Rows[row].Cells["RSLT"].Style.ForeColor = Color.Black;
-                        }
+                    ETGrid.Rows[row].Cells["RSLT"].Style.BackColor = Color.Lime;
+                    ETGrid.Rows[row].Cells["RSLT"].Style.ForeColor = Color.Black;
+                }
+                else if (ETGrid.GetValue(row, "RSLT") == "NG")
+                {
+                    ETGrid.Rows[row].Cells["RSLT"].Style.BackColor = Color.Red;
+                    ETGrid.Rows[row].Cells["RSLT"].Style.ForeColor = Color.White;
+                }
+                else
+                {
+                    ETGrid.Rows[row].Cells["RSLT"].Style.BackColor = Color.Yellow;
+                    ETGrid.Rows[row].Cells["RSLT"].Style.ForeColor = Color.Black;
+                }
 
-                        ETGrid.Rows[row].Cells["MEA_VAL"].Style.ForeColor = Color.Blue;
-                        ETGrid.Rows[row].Cells["ITEM_DESC"].Style.BackColor = Color.Ivory;
+                ETGrid.Rows[row].Cells["MEA_VAL"].Style.ForeColor = Color.Blue;
+                ETGrid.Rows[row].Cells["ITEM_DESC"].Style.BackColor = Color.Ivory;
 
-                    }
-                    ETGrid.ShowLastRow();
-                }));
             }
+            ETGrid.ShowLastRow();
         }
     }
 }
