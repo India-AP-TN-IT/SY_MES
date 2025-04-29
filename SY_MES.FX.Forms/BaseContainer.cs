@@ -95,7 +95,7 @@ namespace SY_MES.FX.MainForm
         /// <param name="iniKey">INI KEY(ex] XXX/YYY</param>
         /// <param name="defVal">Default Value</param>
         /// <returns>INI VALUE</returns>
-        protected string GetINI(string iniKey, string defVal = "")
+        public string GetINI(string iniKey, string defVal = "")
         {
             return PBaseFrm.GetINI(iniKey, defVal);
         }

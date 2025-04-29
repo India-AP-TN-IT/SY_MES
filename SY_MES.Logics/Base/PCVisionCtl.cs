@@ -28,6 +28,17 @@ namespace SY_MES.Logics.Base
                 m_TmrVision.Stop();
                 m_TmrVision.Tick += TmrVision_Tick;
                
+                switch(ParentBC.GetINI("VISION_INFOR/MC_TYPE").ToString().ToUpper())
+                {
+                    case "PC":
+                    case "PLC":
+                    case "PC+PLC":
+                        this.Visible =true;
+                        break;
+                    default:
+                        this.Visible = false;
+                        break;
+                }
             }
             
         }
@@ -100,6 +111,11 @@ namespace SY_MES.Logics.Base
         }
         public void Start()
         {
+            m_TmrVision.Stop();
+            if(this.Visible == false)
+            {
+                return;
+            }
             LoadData();
             m_TmrVision.Start();
         }
@@ -108,5 +124,6 @@ namespace SY_MES.Logics.Base
         {
             m_TmrVision.Stop();
         }
+
     }
 }
