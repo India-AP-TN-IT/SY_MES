@@ -28,28 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.planRsltBC1 = new SY_MES.Logics.MES.Sub.PlanRsltBC();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.productInforBC1 = new SY_MES.Logics.MES.Sub.ProductInforBC();
             this.inspectionBC1 = new SY_MES.Logics.MES.Sub.InspectionBC();
+            this.planRsltBC1 = new SY_MES.Logics.MES.Sub.PlanRsltBC();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // planRsltBC1
-            // 
-            this.planRsltBC1.AutoLoadData = false;
-            this.planRsltBC1.AutoWorkerSetting = false;
-            this.planRsltBC1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.planRsltBC1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.planRsltBC1.Location = new System.Drawing.Point(4, 6);
-            this.planRsltBC1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.planRsltBC1.Name = "planRsltBC1";
-            this.planRsltBC1.PrvStationRslt = false;
-            this.planRsltBC1.Size = new System.Drawing.Size(815, 828);
-            this.planRsltBC1.TabIndex = 0;
-            this.planRsltBC1.WorkerLabel = null;
             // 
             // tableLayoutPanel1
             // 
@@ -121,6 +107,20 @@
             this.inspectionBC1.TabIndex = 1;
             this.inspectionBC1.WorkerLabel = null;
             // 
+            // planRsltBC1
+            // 
+            this.planRsltBC1.AutoLoadData = false;
+            this.planRsltBC1.AutoWorkerSetting = false;
+            this.planRsltBC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.planRsltBC1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.planRsltBC1.Location = new System.Drawing.Point(4, 6);
+            this.planRsltBC1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.planRsltBC1.Name = "planRsltBC1";
+            this.planRsltBC1.PrvStationRslt = false;
+            this.planRsltBC1.Size = new System.Drawing.Size(815, 828);
+            this.planRsltBC1.TabIndex = 0;
+            this.planRsltBC1.WorkerLabel = null;
+            // 
             // FinalInspection
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -134,11 +134,10 @@
         }
 
         #endregion
-
-        private Sub.PlanRsltBC planRsltBC1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Sub.ProductInforBC productInforBC1;
         private Sub.InspectionBC inspectionBC1;
+        private Sub.PlanRsltBC planRsltBC1;
     }
 }
