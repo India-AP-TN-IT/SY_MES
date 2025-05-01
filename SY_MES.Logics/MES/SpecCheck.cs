@@ -22,6 +22,48 @@ namespace SY_MES.Logics.MES
             base.OnLoad(e);
             pcVisionCtl1.Start();
         }
+
+        private void SetLotInforToMCData(DataRow drProd)
+        {
+            try
+            {
+                if (drProd != null)
+                {
+                    if (pcVisionCtl1.ConnectionType == PCVisionCtl.ConnTypeEnum.PC)
+                    {
+                        Dictionary<string, string> param = new Dictionary<string, string>();
+                        param.Add("IN_CORCD", BaseINF.CORCD);
+                        param.Add("IN_BIZCD", BaseINF.BIZCD);
+                        param.Add("IN_LOTNO", drProd["LOTNO"].ToString());
+                        param.Add("IN_LINECD", BaseINF.LINECD);
+                        param.Add("IN_PROCCD", BaseINF.STATIONCD);
+                        param.Add("IN_INSTALL_POS", BaseINF.INSTALL_POS);
+                        param.Add("IN_SPEC01", drProd["INSTALL_POS"].ToString());
+                        param.Add("IN_SPEC02", "");
+                        param.Add("IN_SPEC03", "");
+                        param.Add("IN_SPEC04", "");
+                        param.Add("IN_SPEC05", "");
+                        param.Add("IN_SPEC06", "");
+                        param.Add("IN_SPEC07", "");
+                        param.Add("IN_SPEC08", "");
+                        param.Add("IN_SPEC09", "");
+                        param.Add("IN_SPEC10", "");
+
+                        ExecuteNonQuery("PKG_ME_MC_API.SET_LOT", param);
+                    }
+                    else if(pcVisionCtl1.ConnectionType == PCVisionCtl.ConnTypeEnum.PLC)
+                    {   //PLC Signal
+                            
+                    }
+
+                }
+            }
+            catch (Exception eLog)
+            {
+                System.Diagnostics.Debug.WriteLine("[" + System.Reflection.MethodBase.GetCurrentMethod().Name + "]" + eLog.Message);
+            }
+        }
+
         public override void ReadDataFromScanner(object sender, string data)
         {
             base.ReadDataFromScanner(sender, data);
@@ -35,6 +77,10 @@ namespace SY_MES.Logics.MES
                 productInforBC1.ReLoadData();
                 specCheckBC1.LoadStationBOM(BaseINF.LINECD, partno);
                 specDetUC1.LoadData();
+                if(pcVisionCtl1.ConnectionType == PCVisionCtl.ConnTypeEnum.None)
+                {   //Send Specification to Vision Machine
+                    SetLotInforToMCData(Common.ProductInfor);
+                }
                 if (specCheckBC1.RowCnt <= 0)
                 {
                     StatusBarMsg(FX.MainForm.Base.Common.MsgTypeEnum.Warnning, "There is no Station BOM Data for " + partno, System.Reflection.MethodBase.GetCurrentMethod().Name, false);
