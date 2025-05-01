@@ -16,12 +16,22 @@ namespace SY_MES.Logics.MES.Sub
     [ToolboxItem(true)]
     public partial class InjectionPrintBC : Base.LocalizedContainer
     {
+        private bool m_MoldPairSelection = true;
         public delegate void SelectedWO(object sender, int row);
         public event SelectedWO OnSelectedWO = null;
         private bool m_bINIT = true;
         private const string CN_ASYNC_LOAD_QUERY = "MES.PKG_ME_TAG_PRINT.GET_TAG_PRINT_WO";
         private const string CN_ASYNC_LOAD_QUERY_ALL = "MES.PKG_ME_TAG_PRINT.GET_TAG_PRINT_ALL";
 
+        public bool MoldPairSelection
+        {
+            get { return m_MoldPairSelection; }
+            set 
+            { 
+                m_MoldPairSelection = value;
+                ChkMoldPair.Checked = true;
+            }
+        } 
         public string GetLinecd()
         {
             return lbl_LINECD.Key;
@@ -117,7 +127,8 @@ namespace SY_MES.Logics.MES.Sub
                 DispCodeListCtl(CodeSelectBC.CodeListEnum.INSTALL_POS, BaseINF.INSTALL_POS, lblPOS);
                 DispCodeListCtl(CodeSelectBC.CodeListEnum.ASSY_SHIFT, GetCurrentShift(), lblShift);
                 DispQueryScope();
-                LoadData();            
+                LoadData();
+                MoldPairSelection = true;
             }
 
         }
@@ -433,23 +444,6 @@ namespace SY_MES.Logics.MES.Sub
             }
         }
 
-        private void yWorkerLabel1_OnEmpnoChanged(object sender, string code, string desc)
-        {
-            Dictionary<string, string> param = new Dictionary<string, string>();
-            param.Add("IN_CORCD", BaseINF.CORCD);
-            param.Add("IN_BIZCD", BaseINF.BIZCD);
-            param.Add("IN_EMPNO", code);
-            DataTable dt = ExecuteQuery("PKG_COM.GET_WORKER", param);
-            yWorkerLabel1.Key = code;
-            if(dt.Rows.Count>0)
-            {
-                yWorkerLabel1.Desc = dt.Rows[0]["EMPNM"].ToString();
-            }
-            else
-            {
-                yWorkerLabel1.Desc = "";
-            }
-        }
         private void DispQueryScope()
         {
             if (Chk_All.Checked)
@@ -471,5 +465,16 @@ namespace SY_MES.Logics.MES.Sub
             LoadData();
         }
 
+        private void ChkMoldPair_CheckedChanged(object sender, EventArgs e)
+        {
+            if(ChkMoldPair.Checked)
+            {
+                ChkMoldPair.BackColor = Color.Lime;
+            }
+            else
+            {
+                ChkMoldPair.BackColor = Color.Silver;
+            }
+        }
     }
 }

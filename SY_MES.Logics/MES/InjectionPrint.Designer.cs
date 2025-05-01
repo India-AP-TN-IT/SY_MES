@@ -63,7 +63,7 @@
             // injectionPrintBC1
             // 
             this.injectionPrintBC1.AutoLoadData = false;
-            this.injectionPrintBC1.AutoWorkerSetting = false;
+            this.injectionPrintBC1.AutoWorkerSetting = true;
             this.injectionPrintBC1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.injectionPrintBC1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.injectionPrintBC1.Location = new System.Drawing.Point(4, 6);
@@ -72,7 +72,6 @@
             this.injectionPrintBC1.PrvStationRslt = false;
             this.injectionPrintBC1.Size = new System.Drawing.Size(700, 713);
             this.injectionPrintBC1.TabIndex = 2;
-            this.injectionPrintBC1.WorkerLabel = null;
             // 
             // InjectionPrint
             // 

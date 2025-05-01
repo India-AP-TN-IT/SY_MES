@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.woPrintBC1 = new SY_MES.Logics.MES.Sub.WOPrintBC();
             this.panel1 = new System.Windows.Forms.Panel();
             this.yWorkerLabel1 = new SY_MES.FX.Controls.YWorkerLabel();
-            this.woPrintBC1 = new SY_MES.Logics.MES.Sub.WOPrintBC();
             this.productInforBC1 = new SY_MES.Logics.MES.Sub.ProductInforBC();
             this.specCheckBC1 = new SY_MES.Logics.MES.Sub.SpecCheckBC();
             this.tableLayoutPanel1.SuspendLayout();
@@ -53,6 +53,21 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1200, 821);
             this.tableLayoutPanel1.TabIndex = 2;
+            // 
+            // woPrintBC1
+            // 
+            this.woPrintBC1.AutoLoadData = false;
+            this.woPrintBC1.AutoWorkerSetting = true;
+            this.woPrintBC1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.woPrintBC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.woPrintBC1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.woPrintBC1.Location = new System.Drawing.Point(4, 6);
+            this.woPrintBC1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.woPrintBC1.Name = "woPrintBC1";
+            this.woPrintBC1.PrvStationRslt = false;
+            this.woPrintBC1.Size = new System.Drawing.Size(592, 809);
+            this.woPrintBC1.TabIndex = 0;
+            this.woPrintBC1.WorkerLabel = null;
             // 
             // panel1
             // 
@@ -81,21 +96,6 @@
             this.yWorkerLabel1.Title = "Worker";
             this.yWorkerLabel1.TitleSizePercent = 30F;
             this.yWorkerLabel1.TouchKeyPos = SY_MES.FX.Controls.YTextBox.TouchKeyPosEnum.Down;
-            // 
-            // woPrintBC1
-            // 
-            this.woPrintBC1.AutoLoadData = false;
-            this.woPrintBC1.AutoWorkerSetting = false;
-            this.woPrintBC1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.woPrintBC1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.woPrintBC1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.woPrintBC1.Location = new System.Drawing.Point(4, 6);
-            this.woPrintBC1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.woPrintBC1.Name = "woPrintBC1";
-            this.woPrintBC1.PrvStationRslt = false;
-            this.woPrintBC1.Size = new System.Drawing.Size(592, 809);
-            this.woPrintBC1.TabIndex = 0;
-            this.woPrintBC1.WorkerLabel = null;
             // 
             // productInforBC1
             // 
