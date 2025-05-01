@@ -62,6 +62,12 @@
     <Compile Include="MES\FinalInspectionFT.Designer.cs">
       <DependentUpon>FinalInspectionFT.cs</DependentUpon>
     </Compile>
+    <Compile Include="MES\InjectionPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MES\InjectionPrint.Designer.cs">
+      <DependentUpon>InjectionPrint.cs</DependentUpon>
+    </Compile>
     <Compile Include="MES\Sub\FTHistBC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -170,6 +176,12 @@
     <Compile Include="MES\Sub\VisionInspectionBC.Designer.cs">
       <DependentUpon>VisionInspectionBC.cs</DependentUpon>
     </Compile>
+    <Compile Include="MES\Sub\InjectionPrintBC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MES\Sub\InjectionPrintBC.Designer.cs">
+      <DependentUpon>InjectionPrintBC.cs</DependentUpon>
+    </Compile>
     <Compile Include="MES\Sub\WOPrintBC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -212,6 +224,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MES\FinalInspectionFT.resx">
       <DependentUpon>FinalInspectionFT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MES\InjectionPrint.resx">
+      <DependentUpon>InjectionPrint.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MES\Sub\FTHistBC.resx">
       <DependentUpon>FTHistBC.cs</DependentUpon>
@@ -263,6 +278,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MES\Sub\VisionInspectionBC.resx">
       <DependentUpon>VisionInspectionBC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MES\Sub\InjectionPrintBC.resx">
+      <DependentUpon>InjectionPrintBC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MES\Sub\WOPrintBC.resx">
       <DependentUpon>WOPrintBC.cs</DependentUpon>
