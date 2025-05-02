@@ -15,6 +15,7 @@ namespace SY_MES.Logics.MES.Sub
     [ToolboxItem(true)]
     public partial class InspectionBC :  Base.LocalizedContainer
     {
+        
         private bool m_RsltBtnVisible = true;
         [Category(Base.Common.CN_CATEGORY_APP)]
         public bool RsltBtnVisible
@@ -36,6 +37,28 @@ namespace SY_MES.Logics.MES.Sub
                     Lbl_RSLT.Anchor = AnchorStyles.Top
                         | AnchorStyles.Left | AnchorStyles.Right;
                 }
+            }
+        }
+        private bool m_InspectFactorsVisible = true;
+        [Category(Base.Common.CN_CATEGORY_APP)]
+        public bool FactorsVisible
+        {
+            get { return m_InspectFactorsVisible; }
+            set
+            {
+                m_InspectFactorsVisible = value;
+
+
+                if (m_InspectFactorsVisible == false)
+                {
+                    panel2.Visible = false;
+                }
+                else
+                {
+                    panel2.Visible = true;
+                }
+
+                
             }
         }
         private List<string> m_Factors;

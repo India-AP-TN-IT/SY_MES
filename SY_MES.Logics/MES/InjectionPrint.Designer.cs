@@ -31,7 +31,11 @@
             this.yTableLayout1 = new SY_MES.FX.Controls.YTableLayout();
             this.panel2 = new System.Windows.Forms.Panel();
             this.injectionPrintBC1 = new SY_MES.Logics.MES.Sub.SFGPrintBC();
+            this.yTableLayout2 = new SY_MES.FX.Controls.YTableLayout();
+            this.inspectionBC1 = new SY_MES.Logics.MES.Sub.InspectionBC();
             this.yTableLayout1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.yTableLayout2.SuspendLayout();
             this.SuspendLayout();
             // 
             // yTableLayout1
@@ -53,6 +57,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.yTableLayout2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(607, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
@@ -75,6 +80,42 @@
             this.injectionPrintBC1.Size = new System.Drawing.Size(599, 713);
             this.injectionPrintBC1.TabIndex = 2;
             // 
+            // yTableLayout2
+            // 
+            this.yTableLayout2.ColumnCount = 1;
+            this.yTableLayout2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.yTableLayout2.Controls.Add(this.inspectionBC1, 0, 1);
+            this.yTableLayout2.Desc = "";
+            this.yTableLayout2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.yTableLayout2.Key = "";
+            this.yTableLayout2.Location = new System.Drawing.Point(0, 0);
+            this.yTableLayout2.Margin = new System.Windows.Forms.Padding(0);
+            this.yTableLayout2.Name = "yTableLayout2";
+            this.yTableLayout2.RowCount = 2;
+            this.yTableLayout2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.44828F));
+            this.yTableLayout2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.55172F));
+            this.yTableLayout2.Size = new System.Drawing.Size(405, 725);
+            this.yTableLayout2.TabIndex = 0;
+            // 
+            // inspectionBC1
+            // 
+            this.inspectionBC1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.inspectionBC1.AutoLoadData = false;
+            this.inspectionBC1.AutoWorkerSetting = false;
+            this.inspectionBC1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inspectionBC1.FactorsVisible = false;
+            this.inspectionBC1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inspectionBC1.Location = new System.Drawing.Point(4, 408);
+            this.inspectionBC1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.inspectionBC1.Name = "inspectionBC1";
+            this.inspectionBC1.PrvStationRslt = false;
+            this.inspectionBC1.RsltBtnVisible = true;
+            this.inspectionBC1.Size = new System.Drawing.Size(397, 311);
+            this.inspectionBC1.TabIndex = 0;
+            this.inspectionBC1.WorkerLabel = null;
+            // 
             // InjectionPrint
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -82,6 +123,8 @@
             this.Name = "InjectionPrint";
             this.Size = new System.Drawing.Size(1012, 725);
             this.yTableLayout1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.yTableLayout2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -91,5 +134,7 @@
         private FX.Controls.YTableLayout yTableLayout1;
         private System.Windows.Forms.Panel panel2;
         private Sub.SFGPrintBC injectionPrintBC1;
+        private FX.Controls.YTableLayout yTableLayout2;
+        private Sub.InspectionBC inspectionBC1;
     }
 }

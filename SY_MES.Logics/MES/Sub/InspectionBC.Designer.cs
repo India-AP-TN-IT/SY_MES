@@ -28,47 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Lbl_RSLT = new SY_MES.FX.Controls.YBitLabel();
+            this.yTableLayout1 = new SY_MES.FX.Controls.YTableLayout();
             this.panel1 = new System.Windows.Forms.Panel();
             this.yButton1 = new SY_MES.FX.Controls.YButton();
             this.yButton2 = new SY_MES.FX.Controls.YButton();
-            this.Pan_InspectionFact = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.yLabel2 = new SY_MES.FX.Controls.YLabel();
+            this.Lbl_RSLT = new SY_MES.FX.Controls.YBitLabel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.yLabel1 = new SY_MES.FX.Controls.YLabel();
+            this.Pan_InspectionFact = new System.Windows.Forms.FlowLayoutPanel();
+            this.yTableLayout1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Lbl_RSLT
+            // yTableLayout1
             // 
-            this.Lbl_RSLT.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.yTableLayout1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Lbl_RSLT.BackColor = System.Drawing.Color.Red;
-            this.Lbl_RSLT.Desc = "Lbl_RSLT";
-            this.Lbl_RSLT.Font = new System.Drawing.Font("Calibri", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_RSLT.ForeColor = System.Drawing.Color.White;
-            this.Lbl_RSLT.Key = "";
-            this.Lbl_RSLT.Location = new System.Drawing.Point(6, 241);
-            this.Lbl_RSLT.Name = "Lbl_RSLT";
-            this.Lbl_RSLT.OffBGColor = System.Drawing.Color.Red;
-            this.Lbl_RSLT.OffForeColor = System.Drawing.Color.White;
-            this.Lbl_RSLT.OnBGColor = System.Drawing.Color.Lime;
-            this.Lbl_RSLT.OnForeColor = System.Drawing.Color.Black;
-            this.Lbl_RSLT.Size = new System.Drawing.Size(490, 115);
-            this.Lbl_RSLT.TabIndex = 6;
-            this.Lbl_RSLT.Text = "Lbl_RSLT";
-            this.Lbl_RSLT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.yTableLayout1.ColumnCount = 1;
+            this.yTableLayout1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.yTableLayout1.Controls.Add(this.panel1, 0, 1);
+            this.yTableLayout1.Controls.Add(this.panel3, 0, 0);
+            this.yTableLayout1.Desc = "";
+            this.yTableLayout1.Key = "";
+            this.yTableLayout1.Location = new System.Drawing.Point(3, 235);
+            this.yTableLayout1.Name = "yTableLayout1";
+            this.yTableLayout1.RowCount = 2;
+            this.yTableLayout1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55F));
+            this.yTableLayout1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45F));
+            this.yTableLayout1.Size = new System.Drawing.Size(492, 235);
+            this.yTableLayout1.TabIndex = 0;
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.yButton1);
             this.panel1.Controls.Add(this.yButton2);
-            this.panel1.Location = new System.Drawing.Point(6, 359);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 132);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(490, 109);
-            this.panel1.TabIndex = 5;
+            this.panel1.Size = new System.Drawing.Size(486, 100);
+            this.panel1.TabIndex = 9;
             // 
             // yButton1
             // 
@@ -81,7 +86,7 @@
             this.yButton1.Key = "OK";
             this.yButton1.Location = new System.Drawing.Point(3, 11);
             this.yButton1.Name = "yButton1";
-            this.yButton1.Size = new System.Drawing.Size(186, 82);
+            this.yButton1.Size = new System.Drawing.Size(186, 71);
             this.yButton1.TabIndex = 3;
             this.yButton1.Text = "OK";
             this.yButton1.UseVisualStyleBackColor = false;
@@ -97,7 +102,7 @@
             this.yButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.yButton2.ForeColor = System.Drawing.Color.White;
             this.yButton2.Key = "NG";
-            this.yButton2.Location = new System.Drawing.Point(391, 54);
+            this.yButton2.Location = new System.Drawing.Point(383, 140);
             this.yButton2.Name = "yButton2";
             this.yButton2.Size = new System.Drawing.Size(92, 48);
             this.yButton2.TabIndex = 4;
@@ -105,15 +110,15 @@
             this.yButton2.UseVisualStyleBackColor = false;
             this.yButton2.Click += new System.EventHandler(this.CmdRun);
             // 
-            // Pan_InspectionFact
+            // panel3
             // 
-            this.Pan_InspectionFact.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Pan_InspectionFact.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Pan_InspectionFact.Location = new System.Drawing.Point(4, 41);
-            this.Pan_InspectionFact.Name = "Pan_InspectionFact";
-            this.Pan_InspectionFact.Size = new System.Drawing.Size(496, 157);
-            this.Pan_InspectionFact.TabIndex = 1;
+            this.panel3.Controls.Add(this.yLabel2);
+            this.panel3.Controls.Add(this.Lbl_RSLT);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(486, 123);
+            this.panel3.TabIndex = 11;
             // 
             // yLabel2
             // 
@@ -124,12 +129,55 @@
             this.yLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.yLabel2.Key = "";
             this.yLabel2.LabelDisStyle = SY_MES.FX.Controls.YLabel.LableStyleEnum.NomalLabel;
-            this.yLabel2.Location = new System.Drawing.Point(4, 201);
+            this.yLabel2.Location = new System.Drawing.Point(3, 4);
             this.yLabel2.Name = "yLabel2";
             this.yLabel2.Size = new System.Drawing.Size(191, 35);
             this.yLabel2.TabIndex = 2;
             this.yLabel2.Text = "Inspection Result";
             this.yLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Lbl_RSLT
+            // 
+            this.Lbl_RSLT.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Lbl_RSLT.BackColor = System.Drawing.Color.Red;
+            this.Lbl_RSLT.Desc = "Lbl_RSLT";
+            this.Lbl_RSLT.Font = new System.Drawing.Font("Calibri", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_RSLT.ForeColor = System.Drawing.Color.White;
+            this.Lbl_RSLT.Key = "";
+            this.Lbl_RSLT.Location = new System.Drawing.Point(3, 43);
+            this.Lbl_RSLT.Name = "Lbl_RSLT";
+            this.Lbl_RSLT.OffBGColor = System.Drawing.Color.Red;
+            this.Lbl_RSLT.OffForeColor = System.Drawing.Color.White;
+            this.Lbl_RSLT.OnBGColor = System.Drawing.Color.Lime;
+            this.Lbl_RSLT.OnForeColor = System.Drawing.Color.Black;
+            this.Lbl_RSLT.Size = new System.Drawing.Size(480, 202);
+            this.Lbl_RSLT.TabIndex = 6;
+            this.Lbl_RSLT.Text = "Lbl_RSLT";
+            this.Lbl_RSLT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.panel2);
+            this.flowLayoutPanel1.Controls.Add(this.yTableLayout1);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(503, 472);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.yLabel1);
+            this.panel2.Controls.Add(this.Pan_InspectionFact);
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(492, 226);
+            this.panel2.TabIndex = 11;
             // 
             // yLabel1
             // 
@@ -140,38 +188,54 @@
             this.yLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.yLabel1.Key = "";
             this.yLabel1.LabelDisStyle = SY_MES.FX.Controls.YLabel.LableStyleEnum.NomalLabel;
-            this.yLabel1.Location = new System.Drawing.Point(4, 3);
+            this.yLabel1.Location = new System.Drawing.Point(2, 4);
             this.yLabel1.Name = "yLabel1";
             this.yLabel1.Size = new System.Drawing.Size(191, 35);
             this.yLabel1.TabIndex = 0;
             this.yLabel1.Text = "Inspection Factors";
             this.yLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // Pan_InspectionFact
+            // 
+            this.Pan_InspectionFact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Pan_InspectionFact.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Pan_InspectionFact.Location = new System.Drawing.Point(2, 42);
+            this.Pan_InspectionFact.Name = "Pan_InspectionFact";
+            this.Pan_InspectionFact.Size = new System.Drawing.Size(486, 181);
+            this.Pan_InspectionFact.TabIndex = 1;
+            // 
             // InspectionBC
             // 
             this.AutoLoadData = false;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.Lbl_RSLT);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.yLabel2);
-            this.Controls.Add(this.Pan_InspectionFact);
-            this.Controls.Add(this.yLabel1);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "InspectionBC";
             this.Size = new System.Drawing.Size(503, 472);
+            this.yTableLayout1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private FX.Controls.YLabel yLabel1;
-        private System.Windows.Forms.FlowLayoutPanel Pan_InspectionFact;
-        private FX.Controls.YLabel yLabel2;
+        private FX.Controls.YTableLayout yTableLayout1;
+        private System.Windows.Forms.Panel panel1;
         private FX.Controls.YButton yButton1;
         private FX.Controls.YButton yButton2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
+        private FX.Controls.YLabel yLabel2;
         private FX.Controls.YBitLabel Lbl_RSLT;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel2;
+        private FX.Controls.YLabel yLabel1;
+        private System.Windows.Forms.FlowLayoutPanel Pan_InspectionFact;
+
     }
 }

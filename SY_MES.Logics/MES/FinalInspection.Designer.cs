@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.planRsltBC1 = new SY_MES.Logics.MES.Sub.PlanRsltBC();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.productInforBC1 = new SY_MES.Logics.MES.Sub.ProductInforBC();
             this.inspectionBC1 = new SY_MES.Logics.MES.Sub.InspectionBC();
-            this.planRsltBC1 = new SY_MES.Logics.MES.Sub.PlanRsltBC();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +52,20 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1373, 840);
             this.tableLayoutPanel1.TabIndex = 1;
+            // 
+            // planRsltBC1
+            // 
+            this.planRsltBC1.AutoLoadData = false;
+            this.planRsltBC1.AutoWorkerSetting = false;
+            this.planRsltBC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.planRsltBC1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.planRsltBC1.Location = new System.Drawing.Point(4, 6);
+            this.planRsltBC1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.planRsltBC1.Name = "planRsltBC1";
+            this.planRsltBC1.PrvStationRslt = false;
+            this.planRsltBC1.Size = new System.Drawing.Size(815, 828);
+            this.planRsltBC1.TabIndex = 0;
+            this.planRsltBC1.WorkerLabel = null;
             // 
             // tableLayoutPanel2
             // 
@@ -97,6 +111,7 @@
             this.inspectionBC1.AutoWorkerSetting = false;
             this.inspectionBC1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.inspectionBC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.inspectionBC1.FactorsVisible = true;
             this.inspectionBC1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inspectionBC1.Location = new System.Drawing.Point(4, 214);
             this.inspectionBC1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
@@ -106,20 +121,6 @@
             this.inspectionBC1.Size = new System.Drawing.Size(536, 614);
             this.inspectionBC1.TabIndex = 1;
             this.inspectionBC1.WorkerLabel = null;
-            // 
-            // planRsltBC1
-            // 
-            this.planRsltBC1.AutoLoadData = false;
-            this.planRsltBC1.AutoWorkerSetting = false;
-            this.planRsltBC1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.planRsltBC1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.planRsltBC1.Location = new System.Drawing.Point(4, 6);
-            this.planRsltBC1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.planRsltBC1.Name = "planRsltBC1";
-            this.planRsltBC1.PrvStationRslt = false;
-            this.planRsltBC1.Size = new System.Drawing.Size(815, 828);
-            this.planRsltBC1.TabIndex = 0;
-            this.planRsltBC1.WorkerLabel = null;
             // 
             // FinalInspection
             // 
