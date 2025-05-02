@@ -52,10 +52,14 @@ namespace SY_MES.Logics.MES.Sub
                 if (m_InspectFactorsVisible == false)
                 {
                     panel2.Visible = false;
+                    yTableLayout1.Location = panel2.Location;
+                    
                 }
                 else
                 {
                     panel2.Visible = true;
+                    yTableLayout1.Location = new Point(yTableLayout1.Location.X, panel2.Location.Y + panel2.Size.Height+2);
+
                 }
 
                 

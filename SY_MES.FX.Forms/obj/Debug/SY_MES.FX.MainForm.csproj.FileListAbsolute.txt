@@ -46,7 +46,6 @@ D:\SRCS\GIT\SY_MES\SY_MES.FX.Forms\obj\Debug\SY_MES.FX.MainForm.csproj.CoreCompi
 D:\SRCS\GIT\SY_MES\SY_MES.FX.Forms\obj\Debug\SY_MES.F.D0B5997E.Up2Date
 D:\SRCS\GIT\SY_MES\SY_MES.FX.Forms\obj\Debug\SY_MES.FX.MainForm.dll
 D:\SRCS\GIT\SY_MES\SY_MES.FX.Forms\obj\Debug\SY_MES.FX.MainForm.pdb
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.Forms\obj\Debug\SY_MES.FX.MainForm.Properties.Resources.resources
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Forms\bin\Debug\SY_MES.FX.MainForm.dll
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Forms\bin\Debug\SY_MES.FX.MainForm.pdb
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Forms\bin\Debug\Oracle.ManagedDataAccess.dll
@@ -57,6 +56,7 @@ D:\Srcs\PUNE\SY_MES\SY_MES.FX.Forms\obj\Debug\SY_MES.FX.MainForm.BaseContainer.r
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Forms\obj\Debug\SY_MES.FX.MainForm.BaseDialog.resources
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Forms\obj\Debug\SY_MES.FX.MainForm.BaseMainForm.resources
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Forms\obj\Debug\SY_MES.FX.MainForm.Base.MsgBox.resources
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Forms\obj\Debug\SY_MES.FX.MainForm.Properties.Resources.resources
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Forms\obj\Debug\SY_MES.FX.MainForm.csproj.GenerateResource.Cache
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Forms\obj\Debug\SY_MES.FX.MainForm.dll
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Forms\obj\Debug\SY_MES.FX.MainForm.pdb
