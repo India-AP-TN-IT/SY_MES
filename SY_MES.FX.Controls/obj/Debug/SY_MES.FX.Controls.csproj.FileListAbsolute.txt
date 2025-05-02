@@ -41,7 +41,6 @@ D:\SRCS\GIT\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.pdb
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\bin\Debug\SY_MES.FX.Controls.dll
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\bin\Debug\SY_MES.FX.Controls.pdb
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\bin\Debug\YPdfViewer.dll
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.csprojResolveAssemblyReference.cache
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.TouchKeyboard.resources
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.YDateTime.resources
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.YPdfView.resources

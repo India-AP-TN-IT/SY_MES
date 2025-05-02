@@ -223,11 +223,19 @@ namespace SY_MES.FX.Controls
             {
                 if (m_bInitForSize)
                 {
-                    if (this.Columns.Contains(JustifiedWidthColNM) && this.Columns[JustifiedWidthColNM].Visible)
+                    if (this.Width > 0)
                     {
-                        int diffSize = (Width - m_prvGridWidthForSize);
-                        this.Columns[JustifiedWidthColNM].Width = this.Columns[JustifiedWidthColNM].Width + diffSize;
+                        string[] jcolNMs = JustifiedWidthColNM.Replace(" ", "").Split(',');
+                        foreach (string jcolNM in jcolNMs)
+                        {
+                            if (this.Columns.Contains(jcolNM) && this.Columns[jcolNM].Visible)
+                            {
+                                int diffSize = (Width - m_prvGridWidthForSize) / jcolNMs.Length;
+                                this.Columns[jcolNM].Width = this.Columns[jcolNM].Width + diffSize;
+                            }
+                        }
                     }
+                    
                 }
                 if (m_bInitForSize == false)
                 {
@@ -235,7 +243,10 @@ namespace SY_MES.FX.Controls
 
                 }
             }
-            m_prvGridWidthForSize = Width;
+            if (this.Width > 0)
+            {
+                m_prvGridWidthForSize = Width;
+            }
 
         }
         private string GetSelectedKeyVal(int selectedRow)

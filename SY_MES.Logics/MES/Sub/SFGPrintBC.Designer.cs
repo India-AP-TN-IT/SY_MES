@@ -52,6 +52,15 @@
             this.lbl_LINECD = new SY_MES.FX.Controls.YLabel();
             this.yLabel1 = new SY_MES.FX.Controls.YLabel();
             this.yDataGridView1 = new SY_MES.FX.Controls.YDataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.BtnPrint = new SY_MES.FX.Controls.YButton();
+            this.txtPlan = new SY_MES.FX.Controls.YTextBox();
+            this.yLabel4 = new SY_MES.FX.Controls.YLabel();
+            this.lblPrintedBarcode = new SY_MES.FX.Controls.YLabel();
+            this.yLabel2 = new SY_MES.FX.Controls.YLabel();
+            this.yDateTime1 = new SY_MES.FX.Controls.YDateTime();
+            this.ChkMoldPair = new SY_MES.FX.Controls.YCheckBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.SHIFT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SHIFT_DESC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TIMECD = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,15 +77,6 @@
             this.LINECD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.WORK_ORDNO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.BtnPrint = new SY_MES.FX.Controls.YButton();
-            this.txtPlan = new SY_MES.FX.Controls.YTextBox();
-            this.yLabel4 = new SY_MES.FX.Controls.YLabel();
-            this.lblPrintedBarcode = new SY_MES.FX.Controls.YLabel();
-            this.yLabel2 = new SY_MES.FX.Controls.YLabel();
-            this.yDateTime1 = new SY_MES.FX.Controls.YDateTime();
-            this.ChkMoldPair = new SY_MES.FX.Controls.YCheckBox();
-            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.yDataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -122,6 +122,8 @@
             // 
             // yWorkerLabel1
             // 
+            this.yWorkerLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.yWorkerLabel1.Desc = "";
             this.yWorkerLabel1.EmpnmSizePercent = 60F;
             this.yWorkerLabel1.EmpnoSizePercent = 20F;
@@ -225,7 +227,7 @@
             this.yButton1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.yButton1.ForeColor = System.Drawing.Color.White;
             this.yButton1.Key = "";
-            this.yButton1.Location = new System.Drawing.Point(517, 68);
+            this.yButton1.Location = new System.Drawing.Point(521, 68);
             this.yButton1.Name = "yButton1";
             this.yButton1.Size = new System.Drawing.Size(119, 27);
             this.yButton1.TabIndex = 3;
@@ -290,7 +292,6 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.yDataGridView1.AutoBindName = true;
-            this.yDataGridView1.AutoGenerateColumns = false;
             this.yDataGridView1.BindMove = true;
             this.yDataGridView1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -324,7 +325,7 @@
             this.yDataGridView1.FixedSort = true;
             this.yDataGridView1.HeaderAlignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.yDataGridView1.HeaderHeight = 40;
-            this.yDataGridView1.JustifiedWidthColNM = "MOLDCD";
+            this.yDataGridView1.JustifiedWidthColNM = "PARTNO,MOLDCD";
             this.yDataGridView1.Key = "";
             this.yDataGridView1.Location = new System.Drawing.Point(3, 203);
             this.yDataGridView1.MovePKColName = "PLAN_DATE,SHIFT,TIMECD,PARTNO";
@@ -340,198 +341,6 @@
             this.yDataGridView1.Size = new System.Drawing.Size(644, 444);
             this.yDataGridView1.TabIndex = 1;
             this.yDataGridView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.yDataGridView1_MouseClick);
-            // 
-            // SHIFT
-            // 
-            this.SHIFT.DataPropertyName = "SHIFT";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.SHIFT.DefaultCellStyle = dataGridViewCellStyle2;
-            this.SHIFT.HeaderText = "S";
-            this.SHIFT.MinimumWidth = 10;
-            this.SHIFT.Name = "SHIFT";
-            this.SHIFT.ReadOnly = true;
-            this.SHIFT.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.SHIFT.Visible = false;
-            this.SHIFT.Width = 32;
-            // 
-            // SHIFT_DESC
-            // 
-            this.SHIFT_DESC.DataPropertyName = "SHIFT_DESC";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.SHIFT_DESC.DefaultCellStyle = dataGridViewCellStyle3;
-            this.SHIFT_DESC.HeaderText = "S";
-            this.SHIFT_DESC.MinimumWidth = 10;
-            this.SHIFT_DESC.Name = "SHIFT_DESC";
-            this.SHIFT_DESC.ReadOnly = true;
-            this.SHIFT_DESC.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.SHIFT_DESC.Width = 32;
-            // 
-            // TIMECD
-            // 
-            this.TIMECD.DataPropertyName = "TIMECD";
-            this.TIMECD.HeaderText = "T";
-            this.TIMECD.MinimumWidth = 10;
-            this.TIMECD.Name = "TIMECD";
-            this.TIMECD.ReadOnly = true;
-            this.TIMECD.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.TIMECD.Visible = false;
-            this.TIMECD.Width = 32;
-            // 
-            // JOB_TYPE
-            // 
-            this.JOB_TYPE.DataPropertyName = "JOB_TYPE";
-            this.JOB_TYPE.HeaderText = "J";
-            this.JOB_TYPE.MinimumWidth = 10;
-            this.JOB_TYPE.Name = "JOB_TYPE";
-            this.JOB_TYPE.ReadOnly = true;
-            this.JOB_TYPE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.JOB_TYPE.Visible = false;
-            this.JOB_TYPE.Width = 32;
-            // 
-            // INSTALL_POS
-            // 
-            this.INSTALL_POS.DataPropertyName = "INSTALL_POS";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.INSTALL_POS.DefaultCellStyle = dataGridViewCellStyle4;
-            this.INSTALL_POS.HeaderText = "POS";
-            this.INSTALL_POS.MinimumWidth = 10;
-            this.INSTALL_POS.Name = "INSTALL_POS";
-            this.INSTALL_POS.ReadOnly = true;
-            this.INSTALL_POS.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.INSTALL_POS.Width = 38;
-            // 
-            // PARTNO
-            // 
-            this.PARTNO.DataPropertyName = "PARTNO";
-            this.PARTNO.HeaderText = "PART NO.";
-            this.PARTNO.MinimumWidth = 10;
-            this.PARTNO.Name = "PARTNO";
-            this.PARTNO.ReadOnly = true;
-            this.PARTNO.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.PARTNO.Width = 270;
-            // 
-            // MOLDCD
-            // 
-            this.MOLDCD.DataPropertyName = "MOLDCD";
-            this.MOLDCD.HeaderText = "MOLD";
-            this.MOLDCD.Name = "MOLDCD";
-            this.MOLDCD.ReadOnly = true;
-            this.MOLDCD.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.MOLDCD.Width = 10;
-            // 
-            // PLAN_QTY
-            // 
-            this.PLAN_QTY.DataPropertyName = "PLAN_QTY";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PLAN_QTY.DefaultCellStyle = dataGridViewCellStyle5;
-            this.PLAN_QTY.HeaderText = "PLAN";
-            this.PLAN_QTY.MinimumWidth = 10;
-            this.PLAN_QTY.Name = "PLAN_QTY";
-            this.PLAN_QTY.ReadOnly = true;
-            this.PLAN_QTY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.PLAN_QTY.Width = 65;
-            // 
-            // RESULT_QTY
-            // 
-            this.RESULT_QTY.DataPropertyName = "RESULT_QTY";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Blue;
-            this.RESULT_QTY.DefaultCellStyle = dataGridViewCellStyle6;
-            this.RESULT_QTY.HeaderText = "OK";
-            this.RESULT_QTY.MinimumWidth = 10;
-            this.RESULT_QTY.Name = "RESULT_QTY";
-            this.RESULT_QTY.ReadOnly = true;
-            this.RESULT_QTY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.RESULT_QTY.Width = 65;
-            // 
-            // REMAIN_QTY
-            // 
-            this.REMAIN_QTY.DataPropertyName = "REMAIN_QTY";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Red;
-            this.REMAIN_QTY.DefaultCellStyle = dataGridViewCellStyle7;
-            this.REMAIN_QTY.HeaderText = "DIFF";
-            this.REMAIN_QTY.MinimumWidth = 10;
-            this.REMAIN_QTY.Name = "REMAIN_QTY";
-            this.REMAIN_QTY.ReadOnly = true;
-            this.REMAIN_QTY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.REMAIN_QTY.Width = 65;
-            // 
-            // REWORK_QTY
-            // 
-            this.REWORK_QTY.DataPropertyName = "REWORK_QTY";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Red;
-            this.REWORK_QTY.DefaultCellStyle = dataGridViewCellStyle8;
-            this.REWORK_QTY.HeaderText = "NG";
-            this.REWORK_QTY.MinimumWidth = 10;
-            this.REWORK_QTY.Name = "REWORK_QTY";
-            this.REWORK_QTY.ReadOnly = true;
-            this.REWORK_QTY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.REWORK_QTY.Width = 65;
-            // 
-            // PRINT_QTY
-            // 
-            this.PRINT_QTY.DataPropertyName = "PRINT_QTY";
-            this.PRINT_QTY.HeaderText = "Printed";
-            this.PRINT_QTY.MinimumWidth = 10;
-            this.PRINT_QTY.Name = "PRINT_QTY";
-            this.PRINT_QTY.ReadOnly = true;
-            this.PRINT_QTY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.PRINT_QTY.Visible = false;
-            this.PRINT_QTY.Width = 200;
-            // 
-            // PLAN_DATE
-            // 
-            this.PLAN_DATE.DataPropertyName = "PLAN_DATE";
-            this.PLAN_DATE.HeaderText = "PLAN_DATE";
-            this.PLAN_DATE.MinimumWidth = 10;
-            this.PLAN_DATE.Name = "PLAN_DATE";
-            this.PLAN_DATE.ReadOnly = true;
-            this.PLAN_DATE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.PLAN_DATE.Visible = false;
-            this.PLAN_DATE.Width = 200;
-            // 
-            // LINECD
-            // 
-            this.LINECD.DataPropertyName = "LINECD";
-            this.LINECD.HeaderText = "LINECD";
-            this.LINECD.MinimumWidth = 10;
-            this.LINECD.Name = "LINECD";
-            this.LINECD.ReadOnly = true;
-            this.LINECD.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.LINECD.Visible = false;
-            this.LINECD.Width = 200;
-            // 
-            // WORK_ORDNO
-            // 
-            this.WORK_ORDNO.DataPropertyName = "WORK_ORDNO";
-            this.WORK_ORDNO.HeaderText = "WORK_ORDNO";
-            this.WORK_ORDNO.MinimumWidth = 10;
-            this.WORK_ORDNO.Name = "WORK_ORDNO";
-            this.WORK_ORDNO.ReadOnly = true;
-            this.WORK_ORDNO.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.WORK_ORDNO.Visible = false;
-            this.WORK_ORDNO.Width = 200;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "Column1";
-            this.Column1.HeaderText = "STR_LOC";
-            this.Column1.MinimumWidth = 10;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column1.Visible = false;
-            this.Column1.Width = 200;
             // 
             // panel1
             // 
@@ -679,8 +488,200 @@
             this.panel2.Controls.Add(this.yButton3);
             this.panel2.Location = new System.Drawing.Point(4, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(639, 197);
+            this.panel2.Size = new System.Drawing.Size(643, 197);
             this.panel2.TabIndex = 17;
+            // 
+            // SHIFT
+            // 
+            this.SHIFT.DataPropertyName = "SHIFT";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.SHIFT.DefaultCellStyle = dataGridViewCellStyle2;
+            this.SHIFT.HeaderText = "S";
+            this.SHIFT.MinimumWidth = 10;
+            this.SHIFT.Name = "SHIFT";
+            this.SHIFT.ReadOnly = true;
+            this.SHIFT.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.SHIFT.Visible = false;
+            this.SHIFT.Width = 32;
+            // 
+            // SHIFT_DESC
+            // 
+            this.SHIFT_DESC.DataPropertyName = "SHIFT_DESC";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.SHIFT_DESC.DefaultCellStyle = dataGridViewCellStyle3;
+            this.SHIFT_DESC.HeaderText = "S";
+            this.SHIFT_DESC.MinimumWidth = 10;
+            this.SHIFT_DESC.Name = "SHIFT_DESC";
+            this.SHIFT_DESC.ReadOnly = true;
+            this.SHIFT_DESC.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.SHIFT_DESC.Width = 32;
+            // 
+            // TIMECD
+            // 
+            this.TIMECD.DataPropertyName = "TIMECD";
+            this.TIMECD.HeaderText = "T";
+            this.TIMECD.MinimumWidth = 10;
+            this.TIMECD.Name = "TIMECD";
+            this.TIMECD.ReadOnly = true;
+            this.TIMECD.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.TIMECD.Visible = false;
+            this.TIMECD.Width = 32;
+            // 
+            // JOB_TYPE
+            // 
+            this.JOB_TYPE.DataPropertyName = "JOB_TYPE";
+            this.JOB_TYPE.HeaderText = "J";
+            this.JOB_TYPE.MinimumWidth = 10;
+            this.JOB_TYPE.Name = "JOB_TYPE";
+            this.JOB_TYPE.ReadOnly = true;
+            this.JOB_TYPE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.JOB_TYPE.Visible = false;
+            this.JOB_TYPE.Width = 32;
+            // 
+            // INSTALL_POS
+            // 
+            this.INSTALL_POS.DataPropertyName = "INSTALL_POS";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.INSTALL_POS.DefaultCellStyle = dataGridViewCellStyle4;
+            this.INSTALL_POS.HeaderText = "POS";
+            this.INSTALL_POS.MinimumWidth = 10;
+            this.INSTALL_POS.Name = "INSTALL_POS";
+            this.INSTALL_POS.ReadOnly = true;
+            this.INSTALL_POS.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.INSTALL_POS.Width = 38;
+            // 
+            // PARTNO
+            // 
+            this.PARTNO.DataPropertyName = "PARTNO";
+            this.PARTNO.HeaderText = "PART NO.";
+            this.PARTNO.MinimumWidth = 10;
+            this.PARTNO.Name = "PARTNO";
+            this.PARTNO.ReadOnly = true;
+            this.PARTNO.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.PARTNO.Width = 140;
+            // 
+            // MOLDCD
+            // 
+            this.MOLDCD.DataPropertyName = "MOLDCD";
+            this.MOLDCD.HeaderText = "MOLD";
+            this.MOLDCD.Name = "MOLDCD";
+            this.MOLDCD.ReadOnly = true;
+            this.MOLDCD.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.MOLDCD.Width = 140;
+            // 
+            // PLAN_QTY
+            // 
+            this.PLAN_QTY.DataPropertyName = "PLAN_QTY";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PLAN_QTY.DefaultCellStyle = dataGridViewCellStyle5;
+            this.PLAN_QTY.HeaderText = "PLAN";
+            this.PLAN_QTY.MinimumWidth = 10;
+            this.PLAN_QTY.Name = "PLAN_QTY";
+            this.PLAN_QTY.ReadOnly = true;
+            this.PLAN_QTY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.PLAN_QTY.Width = 65;
+            // 
+            // RESULT_QTY
+            // 
+            this.RESULT_QTY.DataPropertyName = "RESULT_QTY";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Blue;
+            this.RESULT_QTY.DefaultCellStyle = dataGridViewCellStyle6;
+            this.RESULT_QTY.HeaderText = "OK";
+            this.RESULT_QTY.MinimumWidth = 10;
+            this.RESULT_QTY.Name = "RESULT_QTY";
+            this.RESULT_QTY.ReadOnly = true;
+            this.RESULT_QTY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.RESULT_QTY.Width = 65;
+            // 
+            // REMAIN_QTY
+            // 
+            this.REMAIN_QTY.DataPropertyName = "REMAIN_QTY";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Red;
+            this.REMAIN_QTY.DefaultCellStyle = dataGridViewCellStyle7;
+            this.REMAIN_QTY.HeaderText = "DIFF";
+            this.REMAIN_QTY.MinimumWidth = 10;
+            this.REMAIN_QTY.Name = "REMAIN_QTY";
+            this.REMAIN_QTY.ReadOnly = true;
+            this.REMAIN_QTY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.REMAIN_QTY.Width = 65;
+            // 
+            // REWORK_QTY
+            // 
+            this.REWORK_QTY.DataPropertyName = "REWORK_QTY";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Red;
+            this.REWORK_QTY.DefaultCellStyle = dataGridViewCellStyle8;
+            this.REWORK_QTY.HeaderText = "NG";
+            this.REWORK_QTY.MinimumWidth = 10;
+            this.REWORK_QTY.Name = "REWORK_QTY";
+            this.REWORK_QTY.ReadOnly = true;
+            this.REWORK_QTY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.REWORK_QTY.Width = 65;
+            // 
+            // PRINT_QTY
+            // 
+            this.PRINT_QTY.DataPropertyName = "PRINT_QTY";
+            this.PRINT_QTY.HeaderText = "Printed";
+            this.PRINT_QTY.MinimumWidth = 10;
+            this.PRINT_QTY.Name = "PRINT_QTY";
+            this.PRINT_QTY.ReadOnly = true;
+            this.PRINT_QTY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.PRINT_QTY.Visible = false;
+            this.PRINT_QTY.Width = 200;
+            // 
+            // PLAN_DATE
+            // 
+            this.PLAN_DATE.DataPropertyName = "PLAN_DATE";
+            this.PLAN_DATE.HeaderText = "PLAN_DATE";
+            this.PLAN_DATE.MinimumWidth = 10;
+            this.PLAN_DATE.Name = "PLAN_DATE";
+            this.PLAN_DATE.ReadOnly = true;
+            this.PLAN_DATE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.PLAN_DATE.Visible = false;
+            this.PLAN_DATE.Width = 200;
+            // 
+            // LINECD
+            // 
+            this.LINECD.DataPropertyName = "LINECD";
+            this.LINECD.HeaderText = "LINECD";
+            this.LINECD.MinimumWidth = 10;
+            this.LINECD.Name = "LINECD";
+            this.LINECD.ReadOnly = true;
+            this.LINECD.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.LINECD.Visible = false;
+            this.LINECD.Width = 200;
+            // 
+            // WORK_ORDNO
+            // 
+            this.WORK_ORDNO.DataPropertyName = "WORK_ORDNO";
+            this.WORK_ORDNO.HeaderText = "WORK_ORDNO";
+            this.WORK_ORDNO.MinimumWidth = 10;
+            this.WORK_ORDNO.Name = "WORK_ORDNO";
+            this.WORK_ORDNO.ReadOnly = true;
+            this.WORK_ORDNO.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.WORK_ORDNO.Visible = false;
+            this.WORK_ORDNO.Width = 200;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "Column1";
+            this.Column1.HeaderText = "STR_LOC";
+            this.Column1.MinimumWidth = 10;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column1.Visible = false;
+            this.Column1.Width = 200;
             // 
             // SFGPrintBC
             // 
@@ -725,6 +726,7 @@
         private FX.Controls.YLabel yLabel6;
         private FX.Controls.YCheckBox Chk_All;
         private FX.Controls.YCheckBox ChkMoldPair;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridViewTextBoxColumn SHIFT;
         private System.Windows.Forms.DataGridViewTextBoxColumn SHIFT_DESC;
         private System.Windows.Forms.DataGridViewTextBoxColumn TIMECD;
@@ -741,6 +743,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn LINECD;
         private System.Windows.Forms.DataGridViewTextBoxColumn WORK_ORDNO;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.Panel panel2;
     }
 }

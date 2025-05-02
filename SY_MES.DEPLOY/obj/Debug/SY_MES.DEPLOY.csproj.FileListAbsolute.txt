@@ -95,6 +95,13 @@ D:\SRCS\GIT\SY_MES\SY_MES.DEPLOY\obj\Debug\SY_MES.DEPLOY.csproj.CoreCompileInput
 D:\SRCS\GIT\SY_MES\SY_MES.DEPLOY\obj\Debug\SY_MES.D.5A56614F.Up2Date
 D:\SRCS\GIT\SY_MES\SY_MES.DEPLOY\obj\Debug\SY_MES.DEPLOY.exe
 D:\SRCS\GIT\SY_MES\SY_MES.DEPLOY\obj\Debug\SY_MES.DEPLOY.pdb
+D:\Srcs\PUNE\SY_MES\SY_MES.DEPLOY\obj\Debug\SY_MES.DEPLOY.csprojResolveAssemblyReference.cache
+D:\Srcs\PUNE\SY_MES\SY_MES.DEPLOY\obj\Debug\SY_MES.DEPLOY.CustomizedMainFrm.resources
+D:\Srcs\PUNE\SY_MES\SY_MES.DEPLOY\obj\Debug\SY_MES.DEPLOY.Properties.Resources.resources
+D:\Srcs\PUNE\SY_MES\SY_MES.DEPLOY\obj\Debug\SY_MES.DEPLOY.Sub.StationRsltDlg.resources
+D:\Srcs\PUNE\SY_MES\SY_MES.DEPLOY\obj\Debug\SY_MES.DEPLOY.Sub.SystemConfigDlg.resources
+D:\Srcs\PUNE\SY_MES\SY_MES.DEPLOY\obj\Debug\SY_MES.DEPLOY.Sub.WorkStandardDlg.resources
+D:\Srcs\PUNE\SY_MES\SY_MES.DEPLOY\obj\Debug\SY_MES.DEPLOY.csproj.GenerateResource.Cache
 D:\Srcs\PUNE\SY_MES\SY_MES.DEPLOY\bin\Debug\Config.xml
 D:\Srcs\PUNE\SY_MES\SY_MES.DEPLOY\bin\Debug\CLIB\pdfium.dll
 D:\Srcs\PUNE\SY_MES\SY_MES.DEPLOY\bin\Debug\SY_MES.DEPLOY.exe.config
@@ -116,12 +123,5 @@ D:\Srcs\PUNE\SY_MES\SY_MES.DEPLOY\bin\Debug\SY_MES.FX.Devices.pdb
 D:\Srcs\PUNE\SY_MES\SY_MES.DEPLOY\bin\Debug\SY_MES.FX.MainForm.pdb
 D:\Srcs\PUNE\SY_MES\SY_MES.DEPLOY\bin\Debug\SY_MES.FX.PLC.pdb
 D:\Srcs\PUNE\SY_MES\SY_MES.DEPLOY\bin\Debug\SY_MES.Logics.pdb
-D:\Srcs\PUNE\SY_MES\SY_MES.DEPLOY\obj\Debug\SY_MES.DEPLOY.csprojResolveAssemblyReference.cache
-D:\Srcs\PUNE\SY_MES\SY_MES.DEPLOY\obj\Debug\SY_MES.DEPLOY.CustomizedMainFrm.resources
-D:\Srcs\PUNE\SY_MES\SY_MES.DEPLOY\obj\Debug\SY_MES.DEPLOY.Properties.Resources.resources
-D:\Srcs\PUNE\SY_MES\SY_MES.DEPLOY\obj\Debug\SY_MES.DEPLOY.Sub.StationRsltDlg.resources
-D:\Srcs\PUNE\SY_MES\SY_MES.DEPLOY\obj\Debug\SY_MES.DEPLOY.Sub.SystemConfigDlg.resources
-D:\Srcs\PUNE\SY_MES\SY_MES.DEPLOY\obj\Debug\SY_MES.DEPLOY.Sub.WorkStandardDlg.resources
-D:\Srcs\PUNE\SY_MES\SY_MES.DEPLOY\obj\Debug\SY_MES.DEPLOY.csproj.GenerateResource.Cache
 D:\Srcs\PUNE\SY_MES\SY_MES.DEPLOY\obj\Debug\SY_MES.DEPLOY.exe
 D:\Srcs\PUNE\SY_MES\SY_MES.DEPLOY\obj\Debug\SY_MES.DEPLOY.pdb

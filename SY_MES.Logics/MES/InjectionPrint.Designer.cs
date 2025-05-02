@@ -37,8 +37,8 @@
             // yTableLayout1
             // 
             this.yTableLayout1.ColumnCount = 2;
-            this.yTableLayout1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.yTableLayout1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.yTableLayout1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.yTableLayout1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.yTableLayout1.Controls.Add(this.panel2, 1, 0);
             this.yTableLayout1.Controls.Add(this.injectionPrintBC1, 0, 0);
             this.yTableLayout1.Desc = "";
@@ -54,10 +54,10 @@
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(708, 0);
+            this.panel2.Location = new System.Drawing.Point(607, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(304, 725);
+            this.panel2.Size = new System.Drawing.Size(405, 725);
             this.panel2.TabIndex = 1;
             // 
             // injectionPrintBC1
@@ -68,9 +68,11 @@
             this.injectionPrintBC1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.injectionPrintBC1.Location = new System.Drawing.Point(4, 6);
             this.injectionPrintBC1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.injectionPrintBC1.MoldPairSelection = true;
             this.injectionPrintBC1.Name = "injectionPrintBC1";
             this.injectionPrintBC1.PrvStationRslt = false;
-            this.injectionPrintBC1.Size = new System.Drawing.Size(700, 713);
+            this.injectionPrintBC1.SFGMode = SY_MES.Logics.MES.Sub.SFGPrintBC.SFGModeEnum.Injecion;
+            this.injectionPrintBC1.Size = new System.Drawing.Size(599, 713);
             this.injectionPrintBC1.TabIndex = 2;
             // 
             // InjectionPrint
