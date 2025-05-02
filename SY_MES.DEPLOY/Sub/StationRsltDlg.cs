@@ -42,7 +42,7 @@ namespace SY_MES.DEPLOY.Sub
             param.Add("IN_LINECD", GetINI("STATION_INFOR/LINECD"));
             param.Add("IN_STATIONCD", GetINI("STATION_INFOR/STATIONCD"));
             param.Add("IN_INSTALL_POS", GetINI("STATION_INFOR/INSTALL_POS"));
-            AsyncExecueteQuery(this,CN_ASYNC_LOAD_QUERY, param, PBaseFrm.Station_CTL);
+            AsyncExecueteQuery(this, CN_ASYNC_LOAD_QUERY, param, yDateTime1);
 
 
 
