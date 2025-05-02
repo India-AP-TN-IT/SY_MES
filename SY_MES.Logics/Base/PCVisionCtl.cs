@@ -13,6 +13,17 @@ namespace SY_MES.Logics.Base
 {
     public partial class PCVisionCtl : LocalUC
     {
+        public enum ConnTypeEnum
+        {
+            None,
+            PC,
+            PLC
+        }
+        private ConnTypeEnum m_ConnectionType = ConnTypeEnum.None;
+        public ConnTypeEnum ConnectionType
+        {
+            get { return m_ConnectionType; }
+        }
         public delegate void VisionPLCSignal(object sender, int pos, bool bVal, SY_MES.FX.PLC.Base.Common.PLC_DeviceArray[] currentBuffer);
         [Category(Base.Common.CN_CATEGORY_APP)]
         public event VisionPLCSignal OnVisionPLCSignal;
@@ -43,16 +54,19 @@ namespace SY_MES.Logics.Base
                 {
                     case "PC":
                         this.Visible = true;
+                        m_ConnectionType = ConnTypeEnum.PC;
                         break;
                     case "PLC":
                     case "PC+PLC":
                         m_PLC = new SimplePlcUI();
                         this.Visible =true;
                         m_PLC.Start(dicINI);
-                        m_PLC.OnPlcSeqSignal += OnVisionPLC;                       
+                        m_PLC.OnPlcSeqSignal += OnVisionPLC;
+                        m_ConnectionType = ConnTypeEnum.PLC;
                         break;
                     default:
                         this.Visible = false;
+                        m_ConnectionType = ConnTypeEnum.None;
                         break;
                 }
             }
@@ -160,7 +174,7 @@ namespace SY_MES.Logics.Base
 
         private void lblDate_DoubleClick(object sender, EventArgs e)
         {
-            if(m_PLC!=null)
+            if(m_PLC!=null && m_ConnectionType == ConnTypeEnum.PLC)
             {
                 m_PLC.DispPLCTraceDlg();
             }

@@ -1,6 +1,6 @@
 ﻿namespace SY_MES.Logics.MES.Sub
 {
-    partial class InjectionPrintBC
+    partial class SFGPrintBC
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InjectionPrintBC));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SFGPrintBC));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PrtHelper = new SY_MES.Logics.Base.LocalizedPrintHelper(this.components);
             this.Chk_All = new SY_MES.FX.Controls.YCheckBox();
             this.yButton4 = new SY_MES.FX.Controls.YButton();
@@ -76,8 +76,10 @@
             this.yLabel2 = new SY_MES.FX.Controls.YLabel();
             this.yDateTime1 = new SY_MES.FX.Controls.YDateTime();
             this.ChkMoldPair = new SY_MES.FX.Controls.YCheckBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.yDataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // PrtHelper
@@ -93,7 +95,7 @@
             this.Chk_All.BackColor = System.Drawing.Color.Silver;
             this.Chk_All.Desc = "All";
             this.Chk_All.Key = "";
-            this.Chk_All.Location = new System.Drawing.Point(284, 159);
+            this.Chk_All.Location = new System.Drawing.Point(284, 165);
             this.Chk_All.Name = "Chk_All";
             this.Chk_All.Size = new System.Drawing.Size(91, 29);
             this.Chk_All.TabIndex = 15;
@@ -110,7 +112,7 @@
             this.yButton4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.yButton4.ForeColor = System.Drawing.Color.Black;
             this.yButton4.Key = "SHIFT";
-            this.yButton4.Location = new System.Drawing.Point(246, 95);
+            this.yButton4.Location = new System.Drawing.Point(246, 101);
             this.yButton4.Name = "yButton4";
             this.yButton4.Size = new System.Drawing.Size(53, 26);
             this.yButton4.TabIndex = 14;
@@ -125,7 +127,7 @@
             this.yWorkerLabel1.EmpnoSizePercent = 20F;
             this.yWorkerLabel1.Key = "";
             this.yWorkerLabel1.KeyMode = SY_MES.FX.Controls.TouchKeyboard.KeyModeEnum.Number;
-            this.yWorkerLabel1.Location = new System.Drawing.Point(7, 126);
+            this.yWorkerLabel1.Location = new System.Drawing.Point(7, 132);
             this.yWorkerLabel1.MaxEmpLength = 6;
             this.yWorkerLabel1.Name = "yWorkerLabel1";
             this.yWorkerLabel1.Size = new System.Drawing.Size(614, 31);
@@ -143,7 +145,7 @@
             this.lblShift.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.lblShift.Key = "";
             this.lblShift.LabelDisStyle = SY_MES.FX.Controls.YLabel.LableStyleEnum.NomalLabel;
-            this.lblShift.Location = new System.Drawing.Point(102, 94);
+            this.lblShift.Location = new System.Drawing.Point(102, 100);
             this.lblShift.Name = "lblShift";
             this.lblShift.Size = new System.Drawing.Size(138, 27);
             this.lblShift.TabIndex = 13;
@@ -159,7 +161,7 @@
             this.yLabel6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.yLabel6.Key = "";
             this.yLabel6.LabelDisStyle = SY_MES.FX.Controls.YLabel.LableStyleEnum.NomalLabel;
-            this.yLabel6.Location = new System.Drawing.Point(9, 94);
+            this.yLabel6.Location = new System.Drawing.Point(9, 100);
             this.yLabel6.Name = "yLabel6";
             this.yLabel6.Size = new System.Drawing.Size(87, 27);
             this.yLabel6.TabIndex = 12;
@@ -174,7 +176,7 @@
             this.yButton3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.yButton3.ForeColor = System.Drawing.Color.Black;
             this.yButton3.Key = "INSTALL_POS";
-            this.yButton3.Location = new System.Drawing.Point(245, 63);
+            this.yButton3.Location = new System.Drawing.Point(245, 69);
             this.yButton3.Name = "yButton3";
             this.yButton3.Size = new System.Drawing.Size(53, 26);
             this.yButton3.TabIndex = 9;
@@ -191,7 +193,7 @@
             this.lblPOS.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.lblPOS.Key = "";
             this.lblPOS.LabelDisStyle = SY_MES.FX.Controls.YLabel.LableStyleEnum.NomalLabel;
-            this.lblPOS.Location = new System.Drawing.Point(101, 62);
+            this.lblPOS.Location = new System.Drawing.Point(101, 68);
             this.lblPOS.Name = "lblPOS";
             this.lblPOS.Size = new System.Drawing.Size(138, 27);
             this.lblPOS.TabIndex = 8;
@@ -207,7 +209,7 @@
             this.yLabel3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.yLabel3.Key = "";
             this.yLabel3.LabelDisStyle = SY_MES.FX.Controls.YLabel.LableStyleEnum.NomalLabel;
-            this.yLabel3.Location = new System.Drawing.Point(8, 62);
+            this.yLabel3.Location = new System.Drawing.Point(8, 68);
             this.yLabel3.Name = "yLabel3";
             this.yLabel3.Size = new System.Drawing.Size(87, 27);
             this.yLabel3.TabIndex = 7;
@@ -223,7 +225,7 @@
             this.yButton1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.yButton1.ForeColor = System.Drawing.Color.White;
             this.yButton1.Key = "";
-            this.yButton1.Location = new System.Drawing.Point(524, 62);
+            this.yButton1.Location = new System.Drawing.Point(517, 68);
             this.yButton1.Name = "yButton1";
             this.yButton1.Size = new System.Drawing.Size(119, 27);
             this.yButton1.TabIndex = 3;
@@ -238,8 +240,8 @@
             this.yButton2.Desc = "▼";
             this.yButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.yButton2.ForeColor = System.Drawing.Color.Black;
-            this.yButton2.Key = "ASSY_LINE";
-            this.yButton2.Location = new System.Drawing.Point(444, 34);
+            this.yButton2.Key = "SFG_LINE";
+            this.yButton2.Location = new System.Drawing.Point(444, 40);
             this.yButton2.Name = "yButton2";
             this.yButton2.Size = new System.Drawing.Size(53, 26);
             this.yButton2.TabIndex = 6;
@@ -256,7 +258,7 @@
             this.lbl_LINECD.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.lbl_LINECD.Key = "";
             this.lbl_LINECD.LabelDisStyle = SY_MES.FX.Controls.YLabel.LableStyleEnum.NomalLabel;
-            this.lbl_LINECD.Location = new System.Drawing.Point(101, 33);
+            this.lbl_LINECD.Location = new System.Drawing.Point(101, 39);
             this.lbl_LINECD.Name = "lbl_LINECD";
             this.lbl_LINECD.Size = new System.Drawing.Size(337, 27);
             this.lbl_LINECD.TabIndex = 5;
@@ -272,7 +274,7 @@
             this.yLabel1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.yLabel1.Key = "";
             this.yLabel1.LabelDisStyle = SY_MES.FX.Controls.YLabel.LableStyleEnum.NomalLabel;
-            this.yLabel1.Location = new System.Drawing.Point(8, 33);
+            this.yLabel1.Location = new System.Drawing.Point(8, 39);
             this.yLabel1.Name = "yLabel1";
             this.yLabel1.Size = new System.Drawing.Size(87, 27);
             this.yLabel1.TabIndex = 4;
@@ -288,16 +290,17 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.yDataGridView1.AutoBindName = true;
+            this.yDataGridView1.AutoGenerateColumns = false;
             this.yDataGridView1.BindMove = true;
             this.yDataGridView1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.yDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.yDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.yDataGridView1.ColumnHeadersHeight = 40;
             this.yDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.yDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -323,7 +326,7 @@
             this.yDataGridView1.HeaderHeight = 40;
             this.yDataGridView1.JustifiedWidthColNM = "MOLDCD";
             this.yDataGridView1.Key = "";
-            this.yDataGridView1.Location = new System.Drawing.Point(3, 193);
+            this.yDataGridView1.Location = new System.Drawing.Point(3, 203);
             this.yDataGridView1.MovePKColName = "PLAN_DATE,SHIFT,TIMECD,PARTNO";
             this.yDataGridView1.MultiSelect = false;
             this.yDataGridView1.Name = "yDataGridView1";
@@ -334,15 +337,15 @@
             this.yDataGridView1.RowTemplate.Height = 50;
             this.yDataGridView1.ScrollLock = false;
             this.yDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.yDataGridView1.Size = new System.Drawing.Size(644, 454);
+            this.yDataGridView1.Size = new System.Drawing.Size(644, 444);
             this.yDataGridView1.TabIndex = 1;
             this.yDataGridView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.yDataGridView1_MouseClick);
             // 
             // SHIFT
             // 
             this.SHIFT.DataPropertyName = "SHIFT";
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.SHIFT.DefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.SHIFT.DefaultCellStyle = dataGridViewCellStyle2;
             this.SHIFT.HeaderText = "S";
             this.SHIFT.MinimumWidth = 10;
             this.SHIFT.Name = "SHIFT";
@@ -354,8 +357,8 @@
             // SHIFT_DESC
             // 
             this.SHIFT_DESC.DataPropertyName = "SHIFT_DESC";
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.SHIFT_DESC.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.SHIFT_DESC.DefaultCellStyle = dataGridViewCellStyle3;
             this.SHIFT_DESC.HeaderText = "S";
             this.SHIFT_DESC.MinimumWidth = 10;
             this.SHIFT_DESC.Name = "SHIFT_DESC";
@@ -388,9 +391,9 @@
             // INSTALL_POS
             // 
             this.INSTALL_POS.DataPropertyName = "INSTALL_POS";
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.INSTALL_POS.DefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.INSTALL_POS.DefaultCellStyle = dataGridViewCellStyle4;
             this.INSTALL_POS.HeaderText = "POS";
             this.INSTALL_POS.MinimumWidth = 10;
             this.INSTALL_POS.Name = "INSTALL_POS";
@@ -420,10 +423,10 @@
             // PLAN_QTY
             // 
             this.PLAN_QTY.DataPropertyName = "PLAN_QTY";
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PLAN_QTY.DefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PLAN_QTY.DefaultCellStyle = dataGridViewCellStyle5;
             this.PLAN_QTY.HeaderText = "PLAN";
             this.PLAN_QTY.MinimumWidth = 10;
             this.PLAN_QTY.Name = "PLAN_QTY";
@@ -434,11 +437,11 @@
             // RESULT_QTY
             // 
             this.RESULT_QTY.DataPropertyName = "RESULT_QTY";
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.Blue;
-            this.RESULT_QTY.DefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Blue;
+            this.RESULT_QTY.DefaultCellStyle = dataGridViewCellStyle6;
             this.RESULT_QTY.HeaderText = "OK";
             this.RESULT_QTY.MinimumWidth = 10;
             this.RESULT_QTY.Name = "RESULT_QTY";
@@ -449,10 +452,10 @@
             // REMAIN_QTY
             // 
             this.REMAIN_QTY.DataPropertyName = "REMAIN_QTY";
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.Red;
-            this.REMAIN_QTY.DefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Red;
+            this.REMAIN_QTY.DefaultCellStyle = dataGridViewCellStyle7;
             this.REMAIN_QTY.HeaderText = "DIFF";
             this.REMAIN_QTY.MinimumWidth = 10;
             this.REMAIN_QTY.Name = "REMAIN_QTY";
@@ -463,11 +466,11 @@
             // REWORK_QTY
             // 
             this.REWORK_QTY.DataPropertyName = "REWORK_QTY";
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.Red;
-            this.REWORK_QTY.DefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Red;
+            this.REWORK_QTY.DefaultCellStyle = dataGridViewCellStyle8;
             this.REWORK_QTY.HeaderText = "NG";
             this.REWORK_QTY.MinimumWidth = 10;
             this.REWORK_QTY.Name = "REWORK_QTY";
@@ -634,7 +637,7 @@
             this.yDateTime1.DateFormat = "dd-MM-yyyy";
             this.yDateTime1.Desc = "23-04-2025";
             this.yDateTime1.Key = "";
-            this.yDateTime1.Location = new System.Drawing.Point(3, 3);
+            this.yDateTime1.Location = new System.Drawing.Point(4, 6);
             this.yDateTime1.Name = "yDateTime1";
             this.yDateTime1.Size = new System.Drawing.Size(494, 30);
             this.yDateTime1.TabIndex = 0;
@@ -647,7 +650,7 @@
             this.ChkMoldPair.BackColor = System.Drawing.Color.Silver;
             this.ChkMoldPair.Desc = "Mold Pair Selection";
             this.ChkMoldPair.Key = "";
-            this.ChkMoldPair.Location = new System.Drawing.Point(9, 159);
+            this.ChkMoldPair.Location = new System.Drawing.Point(9, 165);
             this.ChkMoldPair.Name = "ChkMoldPair";
             this.ChkMoldPair.Size = new System.Drawing.Size(205, 29);
             this.ChkMoldPair.TabIndex = 16;
@@ -656,33 +659,44 @@
             this.ChkMoldPair.UseVisualStyleBackColor = false;
             this.ChkMoldPair.CheckedChanged += new System.EventHandler(this.ChkMoldPair_CheckedChanged);
             // 
-            // InjectionPrintBC
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.lbl_LINECD);
+            this.panel2.Controls.Add(this.ChkMoldPair);
+            this.panel2.Controls.Add(this.yDateTime1);
+            this.panel2.Controls.Add(this.Chk_All);
+            this.panel2.Controls.Add(this.yLabel1);
+            this.panel2.Controls.Add(this.yButton4);
+            this.panel2.Controls.Add(this.yButton2);
+            this.panel2.Controls.Add(this.yWorkerLabel1);
+            this.panel2.Controls.Add(this.yButton1);
+            this.panel2.Controls.Add(this.lblShift);
+            this.panel2.Controls.Add(this.yLabel3);
+            this.panel2.Controls.Add(this.yLabel6);
+            this.panel2.Controls.Add(this.lblPOS);
+            this.panel2.Controls.Add(this.yButton3);
+            this.panel2.Location = new System.Drawing.Point(4, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(639, 197);
+            this.panel2.TabIndex = 17;
+            // 
+            // SFGPrintBC
             // 
             this.AutoLoadData = false;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoWorkerSetting = true;
-            this.Controls.Add(this.ChkMoldPair);
-            this.Controls.Add(this.Chk_All);
-            this.Controls.Add(this.yButton4);
-            this.Controls.Add(this.yWorkerLabel1);
-            this.Controls.Add(this.lblShift);
-            this.Controls.Add(this.yLabel6);
-            this.Controls.Add(this.yButton3);
-            this.Controls.Add(this.lblPOS);
-            this.Controls.Add(this.yLabel3);
-            this.Controls.Add(this.yButton1);
-            this.Controls.Add(this.yButton2);
-            this.Controls.Add(this.lbl_LINECD);
-            this.Controls.Add(this.yLabel1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.yDataGridView1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.yDateTime1);
-            this.Name = "InjectionPrintBC";
+            this.Name = "SFGPrintBC";
             this.Size = new System.Drawing.Size(650, 743);
             this.WorkerLabel = this.yWorkerLabel1;
             ((System.ComponentModel.ISupportInitialize)(this.yDataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -727,5 +741,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn LINECD;
         private System.Windows.Forms.DataGridViewTextBoxColumn WORK_ORDNO;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

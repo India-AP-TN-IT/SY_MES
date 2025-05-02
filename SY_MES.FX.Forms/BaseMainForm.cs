@@ -1069,10 +1069,14 @@ namespace SY_MES.FX.MainForm
             }
             return -1;
         }
-        public void AsyncExecueteQuery(object sender, string query, Dictionary<string, string> param = null)
+        public void AsyncExecueteQuery(object sender, string query, Dictionary<string, string> param = null, object runCtl = null)
         {
             try
             {
+                if (runCtl!=null && runCtl is Control)
+                {
+                    ((Control)runCtl).Enabled = false;
+                }
                 DBHelper.AsyncExecueteQuery(sender, query, param);
             }
             catch(Exception eLog)

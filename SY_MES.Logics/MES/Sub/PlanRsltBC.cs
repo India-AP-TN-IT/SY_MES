@@ -73,7 +73,7 @@ namespace SY_MES.Logics.MES.Sub
             param.Add("IN_SHIFT", lblShift.Key.ToString().Replace("C00",""));
 
             param.Add("IN_REMAIN_CHK", m_bDiff ==true ? "Y" : "N");
-            AsyncExecueteQuery(this, CN_ASYNC_LOAD_QUERY, param);
+            AsyncExecueteQuery(this, CN_ASYNC_LOAD_QUERY, param, panel1);
 
         }
         public override void ReadAsyncDBData(object sender, string query, Dictionary<string, string> param, DataTable dt)

@@ -35,7 +35,7 @@ namespace SY_MES.DEPLOY.Sub
             param.Add("IN_LINECD", PBaseFrm.GetINI("STATION_INFOR/LINECD"));
             param.Add("IN_PROCCD", PBaseFrm.GetINI("STATION_INFOR/STATIONCD"));
             param.Add("IN_POS", PBaseFrm.GetINI("STATION_INFOR/INSTALL_POS"));
-            AsyncExecueteQuery(this, CN_ASYNC_LOAD_QUERY, param);
+            AsyncExecueteQuery(this, CN_ASYNC_LOAD_QUERY, param, PBaseFrm.WorkStandard_CTL);
         }
 
         public override void ReadAsyncDBData(object sender, string query, Dictionary<string, string> param, DataTable dt)

@@ -236,11 +236,11 @@ namespace SY_MES.FX.MainForm
             }
             return -1;
         }
-        public void AsyncExecueteQuery(object sender, string query, Dictionary<string, string> param = null)
+        public void AsyncExecueteQuery(object sender, string query, Dictionary<string, string> param = null, object runCtl = null)
         {
             try
             {
-                DBHelper.AsyncExecueteQuery(sender, query, param);
+                DBHelper.AsyncExecueteQuery(sender, query, param, runCtl);
             }
             catch (Exception eLog)
             {

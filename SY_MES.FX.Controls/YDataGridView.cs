@@ -223,7 +223,7 @@ namespace SY_MES.FX.Controls
             {
                 if (m_bInitForSize)
                 {
-                    if (this.Columns.Contains(JustifiedWidthColNM))
+                    if (this.Columns.Contains(JustifiedWidthColNM) && this.Columns[JustifiedWidthColNM].Visible)
                     {
                         int diffSize = (Width - m_prvGridWidthForSize);
                         this.Columns[JustifiedWidthColNM].Width = this.Columns[JustifiedWidthColNM].Width + diffSize;

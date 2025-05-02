@@ -1,7 +1,3 @@
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.Common\bin\Debug\SY_MES.FX.Common.dll
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.Common\bin\Debug\SY_MES.FX.Common.pdb
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.Common\obj\Debug\SY_MES.FX.Common.dll
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.Common\obj\Debug\SY_MES.FX.Common.pdb
 E:\srcs\GIT\SY_MES\SY_MES.FX.Common\bin\Debug\SY_MES.FX.Common.dll
 E:\srcs\GIT\SY_MES\SY_MES.FX.Common\bin\Debug\SY_MES.FX.Common.pdb
 E:\srcs\GIT\SY_MES\SY_MES.FX.Common\obj\Debug\SY_MES.FX.Common.csproj.AssemblyReference.cache
@@ -20,4 +16,8 @@ D:\SRCS\GIT\SY_MES\SY_MES.FX.Common\obj\Debug\SY_MES.FX.Common.csproj.AssemblyRe
 D:\SRCS\GIT\SY_MES\SY_MES.FX.Common\obj\Debug\SY_MES.FX.Common.csproj.CoreCompileInputs.cache
 D:\SRCS\GIT\SY_MES\SY_MES.FX.Common\obj\Debug\SY_MES.FX.Common.dll
 D:\SRCS\GIT\SY_MES\SY_MES.FX.Common\obj\Debug\SY_MES.FX.Common.pdb
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Common\bin\Debug\SY_MES.FX.Common.dll
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Common\bin\Debug\SY_MES.FX.Common.pdb
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Common\obj\Debug\SY_MES.FX.Common.csprojResolveAssemblyReference.cache
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Common\obj\Debug\SY_MES.FX.Common.dll
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Common\obj\Debug\SY_MES.FX.Common.pdb

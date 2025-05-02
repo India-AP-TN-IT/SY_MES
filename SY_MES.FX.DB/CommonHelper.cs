@@ -36,6 +36,7 @@ namespace SY_MES.FX.DB
             QueryParam = 2,
             DataSet=3,
             StartDate=4,
+            RunCtl = 5
 
         }
         private IDBBase m_DB;
@@ -210,10 +211,13 @@ namespace SY_MES.FX.DB
             
             return bw;
         }
-        public void AsyncExecueteQuery(object sender, string query, Dictionary<string, string> param = null)
+        public void AsyncExecueteQuery(object sender, string query, Dictionary<string, string> param = null, object runCtl=null)
         {
             InitBackWorker(query);
-            
+            if(runCtl!=null && runCtl is System.Windows.Forms.Control)
+            {
+                ((System.Windows.Forms.Control)runCtl).Enabled = false;
+            }
             if (m_dicBackWorker.ContainsKey(query) && m_dicBackWorker[query].IsBusy == false)
             {
                 Dictionary<AsyncParamKeyEnum, object> rst = new Dictionary<AsyncParamKeyEnum, object>();
@@ -221,6 +225,7 @@ namespace SY_MES.FX.DB
                 rst.Add(AsyncParamKeyEnum.QueryString, query);
                 rst.Add(AsyncParamKeyEnum.Sender, sender);
                 rst.Add(AsyncParamKeyEnum.StartDate, DateTime.Now);
+                rst.Add(AsyncParamKeyEnum.RunCtl, runCtl);
                 m_dicBackWorker[query].RunWorkerAsync(rst);
             }
         }
@@ -357,6 +362,15 @@ namespace SY_MES.FX.DB
                     OnBackgroundError(sender, query, param, new DataTable(), eLog);
                 }
                 
+            }
+            finally
+            {
+                object runCtl = GetValue(rst, AsyncParamKeyEnum.RunCtl);
+                if(runCtl!=null && runCtl is System.Windows.Forms.Control)
+                {
+                    ((System.Windows.Forms.Control)runCtl).Enabled = true;
+                }
+
             }
 
         }

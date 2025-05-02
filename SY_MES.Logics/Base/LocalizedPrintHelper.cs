@@ -25,6 +25,43 @@ namespace SY_MES.Logics.Base
         {
             return data.Replace(FX.Common.ConstVars.EOT, "_04").Replace(FX.Common.ConstVars.GS, "_1D").Replace(FX.Common.ConstVars.RS, "_1E");
         }
+        
+        public string MakeGetLotHeader(string strWorkDate)
+        {
+            try
+            {
+                string strLotnoHeader = "";
+
+                //YEAR: 1 Digit 2000(A),...,2011(L), 2012(M), 2013(N), ..
+                strLotnoHeader = strLotnoHeader + Convert.ToChar(Convert.ToInt16(strWorkDate.Substring(0, 4)) - 2000 + 65);
+
+                //Month: Jan(1), Feb(2), ..., SEP(9), OCT(A), NOV(B), DEC(C)
+                if (Convert.ToInt16(strWorkDate.Substring(5, 2)) < 10)
+                {
+                    strLotnoHeader = strLotnoHeader + Convert.ToInt16(strWorkDate.Substring(5, 2)).ToString();
+                }
+                else
+                {
+                    strLotnoHeader = strLotnoHeader + Convert.ToChar(Convert.ToInt16(strWorkDate.Substring(5, 2)) + 55);
+                }
+
+                //DAY: 1(1), 2(2),..., 9(9), 10(A), 11(B), 12(C),...,30(U), 31(V)
+                if (Convert.ToInt16(strWorkDate.Substring(8, 2)) < 10)
+                {
+                    strLotnoHeader = strLotnoHeader + Convert.ToInt16(strWorkDate.Substring(8, 2)).ToString();
+                }
+                else
+                {
+                    strLotnoHeader = strLotnoHeader + Convert.ToChar(Convert.ToInt16(strWorkDate.Substring(8, 2)) + 55);
+                }
+
+                return strLotnoHeader;
+            }
+            catch
+            {
+                return "";
+            }
+        }
         public virtual void PrintLabel(Dictionary<string, string> param, out string errMsg)
         {   //TODO : Need to make print format for each plant.
             errMsg = "";

@@ -176,11 +176,11 @@
     <Compile Include="MES\Sub\VisionInspectionBC.Designer.cs">
       <DependentUpon>VisionInspectionBC.cs</DependentUpon>
     </Compile>
-    <Compile Include="MES\Sub\InjectionPrintBC.cs">
+    <Compile Include="MES\Sub\SFGPrintBC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MES\Sub\InjectionPrintBC.Designer.cs">
-      <DependentUpon>InjectionPrintBC.cs</DependentUpon>
+    <Compile Include="MES\Sub\SFGPrintBC.Designer.cs">
+      <DependentUpon>SFGPrintBC.cs</DependentUpon>
     </Compile>
     <Compile Include="MES\Sub\WOPrintBC.cs">
       <SubType>UserControl</SubType>
@@ -279,8 +279,8 @@
     <EmbeddedResource Include="MES\Sub\VisionInspectionBC.resx">
       <DependentUpon>VisionInspectionBC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MES\Sub\InjectionPrintBC.resx">
-      <DependentUpon>InjectionPrintBC.cs</DependentUpon>
+    <EmbeddedResource Include="MES\Sub\SFGPrintBC.resx">
+      <DependentUpon>SFGPrintBC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MES\Sub\WOPrintBC.resx">
       <DependentUpon>WOPrintBC.cs</DependentUpon>

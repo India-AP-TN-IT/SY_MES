@@ -13,6 +13,7 @@ namespace SY_MES.FX.Controls
 {
     public partial class YDateTime : UserControl, FX.Controls.Base.IYControls
     {
+        private DateTime m_SelDateTime = DateTime.Now;
         private string m_Key = "";
         public delegate void DateChg(object sender, DateTime date);
         [Category(Common.CN_CATEGORY_APP)]
@@ -40,7 +41,8 @@ namespace SY_MES.FX.Controls
                 m_DateFormat = value;
                 if (Lbl_Date != null)
                 {
-                    Lbl_Date.Text = SelDateTime.ToString(DateFormat);
+                    Lbl_Date.Text = m_SelDateTime.ToString(DateFormat);
+                    
                 }
             }
         }
@@ -49,15 +51,8 @@ namespace SY_MES.FX.Controls
         {
             get
             {
-                try
-                {
-                    return DateTime.ParseExact(Lbl_Date.Text, DateFormat, null);
-                }
-                catch (Exception eLog)
-                {
-                    System.Diagnostics.Debug.WriteLine("[" + System.Reflection.MethodBase.GetCurrentMethod().Name + "]" + eLog.Message);
-                    return DateTime.Now;
-                }
+                m_SelDateTime = DateTime.ParseExact(Lbl_Date.Text, DateFormat, null);
+                return m_SelDateTime;
 
             }
         }

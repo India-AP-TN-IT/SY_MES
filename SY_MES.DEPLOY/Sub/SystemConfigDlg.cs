@@ -68,7 +68,7 @@ namespace SY_MES.DEPLOY.Sub
             param.Add("IN_BIZCD", PBaseFrm.GetXMLConfig("BIZCD"));
             param.Add("IN_IPADDR", PBaseFrm.GetCurrentIP());
             param.Add("IN_SCREEN", PBaseFrm.RunBC);
-            AsyncExecueteQuery(this, CN_ASYNC_LOAD_QUERY, param);
+            AsyncExecueteQuery(this, CN_ASYNC_LOAD_QUERY, param, PBaseFrm.Config_CTL);
             
             
         }

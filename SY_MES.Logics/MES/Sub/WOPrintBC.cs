@@ -32,18 +32,6 @@ namespace SY_MES.Logics.MES.Sub
         }
 
         
-        private DataTable GetPrt_PlanQTY()
-        {
-            Dictionary<string, string> param = new Dictionary<string, string>();
-            param.Add("IN_CORCD", BaseINF.CORCD);
-            param.Add("IN_BIZCD", BaseINF.BIZCD);
-            param.Add("IN_LINECD", yDataGridView1.GetValue("LINECD"));
-            param.Add("IN_TIMECD", yDataGridView1.GetValue("TIMECD"));
-            param.Add("IN_PLAN_DATE", yDataGridView1.GetValue("PLAN_DATE"));
-            param.Add("IN_PARTNO", yDataGridView1.GetValue("PARTNO"));
-            DataTable dt = ExecuteQuery("PKG_ME_TAG_PRINT.GET_PRINTED_QTY", param);
-            return dt;
-        }
         public void PrintLabel(Dictionary<string, string> param, out string errMsg)
         {
 
@@ -162,11 +150,11 @@ namespace SY_MES.Logics.MES.Sub
             param.Add("IN_MOD_PAT", "");
             if(Chk_All.Checked ==false)
             {
-                AsyncExecueteQuery(this, CN_ASYNC_LOAD_QUERY, param);
+                AsyncExecueteQuery(this, CN_ASYNC_LOAD_QUERY, param, panel2);
             }
             else
             {
-                AsyncExecueteQuery(this, CN_ASYNC_LOAD_QUERY_ALL, param);
+                AsyncExecueteQuery(this, CN_ASYNC_LOAD_QUERY_ALL, param, panel2);
             }
             
             
@@ -214,9 +202,9 @@ namespace SY_MES.Logics.MES.Sub
                 switch(((FX.Controls.YButton)sender).Key)
                 {
                     case "ASSY_LINE":
-                        ShowCodeSelectDlg(Base.CodeSelectBC.CodeListEnum.ASSY_LINE, (IYControls)lbl_LINECD);
-                        
+                        ShowCodeSelectDlg(Base.CodeSelectBC.CodeListEnum.ASSY_LINE, (IYControls)lbl_LINECD);                        
                         break;
+                    
                     case "INSTALL_POS":
                         ShowCodeSelectDlg(Base.CodeSelectBC.CodeListEnum.INSTALL_POS, (IYControls)lblPOS);
                         
@@ -311,10 +299,10 @@ namespace SY_MES.Logics.MES.Sub
                 else
                 {
 
-                    return GetClientMakeLot(corcd, bizcd, MakeGetLotHeader(workDate) + clientID, ref errMsg);
+                    return GetClientMakeLot(corcd, bizcd, PrtHelper.MakeGetLotHeader(workDate) + clientID, ref errMsg);
                 }
             }
-            return GetClientMakeLot(corcd, bizcd, MakeGetLotHeader(workDate) + clientID, ref errMsg);
+            return GetClientMakeLot(corcd, bizcd, PrtHelper.MakeGetLotHeader(workDate) + clientID, ref errMsg);
         }
 
         private string GetClientMakeLot(string corcd, string bizcd, string strLotHeader, ref string strErrMsg)
@@ -354,42 +342,6 @@ namespace SY_MES.Logics.MES.Sub
             catch (Exception ex)
             {
                 strErrMsg = ex.Message;
-                return "";
-            }
-        }
-        protected string MakeGetLotHeader(string strWorkDate)
-        {
-            try
-            {
-                string strLotnoHeader = "";
-
-                //YEAR: 1 Digit 2000(A),...,2011(L), 2012(M), 2013(N), ..
-                strLotnoHeader = strLotnoHeader + Convert.ToChar(Convert.ToInt16(strWorkDate.Substring(0, 4)) - 2000 + 65);
-
-                //Month: Jan(1), Feb(2), ..., SEP(9), OCT(A), NOV(B), DEC(C)
-                if (Convert.ToInt16(strWorkDate.Substring(5, 2)) < 10)
-                {
-                    strLotnoHeader = strLotnoHeader + Convert.ToInt16(strWorkDate.Substring(5, 2)).ToString();
-                }
-                else
-                {
-                    strLotnoHeader = strLotnoHeader + Convert.ToChar(Convert.ToInt16(strWorkDate.Substring(5, 2)) + 55);
-                }
-
-                //DAY: 1(1), 2(2),..., 9(9), 10(A), 11(B), 12(C),...,30(U), 31(V)
-                if (Convert.ToInt16(strWorkDate.Substring(8, 2)) < 10)
-                {
-                    strLotnoHeader = strLotnoHeader + Convert.ToInt16(strWorkDate.Substring(8, 2)).ToString();
-                }
-                else
-                {
-                    strLotnoHeader = strLotnoHeader + Convert.ToChar(Convert.ToInt16(strWorkDate.Substring(8, 2)) + 55);
-                }
-
-                return strLotnoHeader;
-            }
-            catch
-            {
                 return "";
             }
         }

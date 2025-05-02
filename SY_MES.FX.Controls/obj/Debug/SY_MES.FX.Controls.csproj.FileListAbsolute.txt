@@ -1,12 +1,3 @@
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\bin\Debug\SY_MES.FX.Controls.dll
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\bin\Debug\SY_MES.FX.Controls.pdb
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.TouchKeyboard.resources
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.YDateTime.resources
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.csproj.GenerateResource.Cache
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.dll
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.pdb
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.YWorkerLabel.resources
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.YPdfView.resources
 E:\srcs\GIT\SY_MES\SY_MES.FX.Controls\bin\Debug\SY_MES.FX.Controls.dll
 E:\srcs\GIT\SY_MES\SY_MES.FX.Controls\bin\Debug\SY_MES.FX.Controls.pdb
 E:\srcs\GIT\SY_MES\SY_MES.FX.Controls\bin\Debug\Patagames.Pdf.dll
@@ -33,7 +24,6 @@ D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.csproj.Cor
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.F.62B0C39D.Up2Date
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.dll
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.pdb
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\bin\Debug\YPdfViewer.dll
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Controls\bin\Debug\YPdfViewer.dll
 D:\SRCS\GIT\SY_MES\SY_MES.FX.Controls\bin\Debug\SY_MES.FX.Controls.dll
 D:\SRCS\GIT\SY_MES\SY_MES.FX.Controls\bin\Debug\SY_MES.FX.Controls.pdb
@@ -48,4 +38,14 @@ D:\SRCS\GIT\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.csproj.CoreCo
 D:\SRCS\GIT\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.F.62B0C39D.Up2Date
 D:\SRCS\GIT\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.dll
 D:\SRCS\GIT\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.pdb
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\bin\Debug\SY_MES.FX.Controls.dll
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\bin\Debug\SY_MES.FX.Controls.pdb
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\bin\Debug\YPdfViewer.dll
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.csprojResolveAssemblyReference.cache
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.TouchKeyboard.resources
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.YDateTime.resources
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.YPdfView.resources
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.YWorkerLabel.resources
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.csproj.GenerateResource.Cache
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.dll
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.pdb

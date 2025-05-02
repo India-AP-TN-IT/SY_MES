@@ -30,7 +30,7 @@
         {
             this.yTableLayout1 = new SY_MES.FX.Controls.YTableLayout();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.injectionPrintBC1 = new SY_MES.Logics.MES.Sub.InjectionPrintBC();
+            this.injectionPrintBC1 = new SY_MES.Logics.MES.Sub.SFGPrintBC();
             this.yTableLayout1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,6 +88,6 @@
 
         private FX.Controls.YTableLayout yTableLayout1;
         private System.Windows.Forms.Panel panel2;
-        private Sub.InjectionPrintBC injectionPrintBC1;
+        private Sub.SFGPrintBC injectionPrintBC1;
     }
 }

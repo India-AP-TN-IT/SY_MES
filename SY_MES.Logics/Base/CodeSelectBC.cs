@@ -43,6 +43,7 @@ namespace SY_MES.Logics.Base
             None,
             INSTALL_POS,
             ASSY_LINE,
+            SFG_LINE,
             ASSY_SHIFT,
             REWORK_DEF_TYPE,
             REWORK_METHOD,
@@ -128,6 +129,14 @@ namespace SY_MES.Logics.Base
                     break;
                 case CodeListEnum.ASSY_LINE:
                     rslt.query = "PKG_ME_COMBO_HELP.GET_ASSY_LINE";
+                    param = new Dictionary<string, string>();
+                    param.Add("IN_CORCD", baseINF.CORCD);
+                    param.Add("IN_BIZCD", baseINF.BIZCD);
+                    param.Add("IN_LINECD", baseINF.LINECD);
+                    rslt.param = param;
+                    break;
+                case CodeListEnum.SFG_LINE:
+                    rslt.query = "PKG_ME_COMBO_HELP.GET_SUB_LINE";
                     param = new Dictionary<string, string>();
                     param.Add("IN_CORCD", baseINF.CORCD);
                     param.Add("IN_BIZCD", baseINF.BIZCD);
