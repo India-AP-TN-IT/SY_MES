@@ -160,3 +160,7 @@ D:\Srcs\PUNE\SY_MES\SY_MES.Logics\obj\Debug\SY_MES.Logics.MES.TagPrintSpecCheck.
 D:\Srcs\PUNE\SY_MES\SY_MES.Logics\obj\Debug\SY_MES.Logics.csproj.GenerateResource.Cache
 D:\Srcs\PUNE\SY_MES\SY_MES.Logics\obj\Debug\SY_MES.Logics.dll
 D:\Srcs\PUNE\SY_MES\SY_MES.Logics\obj\Debug\SY_MES.Logics.pdb
+D:\SRCS\GIT_IN\SY_MES\SY_MES.Logics\obj\Debug\SY_MES.Logics.Base.PCVisionCtl.resources
+D:\SRCS\GIT_IN\SY_MES\SY_MES.Logics\obj\Debug\SY_MES.Logics.MES.InjectionPrint.resources
+D:\SRCS\GIT_IN\SY_MES\SY_MES.Logics\obj\Debug\SY_MES.Logics.MES.Sub.VisionInspectionBC.resources
+D:\SRCS\GIT_IN\SY_MES\SY_MES.Logics\obj\Debug\SY_MES.Logics.MES.Sub.SFGPrintBC.resources

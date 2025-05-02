@@ -52,7 +52,7 @@
             this.panel2.Controls.Add(this.Pan_InspectionFact);
             this.panel2.Location = new System.Drawing.Point(5, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(442, 226);
+            this.panel2.Size = new System.Drawing.Size(407, 226);
             this.panel2.TabIndex = 13;
             // 
             // yLabel1
@@ -79,7 +79,7 @@
             this.Pan_InspectionFact.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Pan_InspectionFact.Location = new System.Drawing.Point(2, 42);
             this.Pan_InspectionFact.Name = "Pan_InspectionFact";
-            this.Pan_InspectionFact.Size = new System.Drawing.Size(436, 181);
+            this.Pan_InspectionFact.Size = new System.Drawing.Size(401, 181);
             this.Pan_InspectionFact.TabIndex = 1;
             // 
             // yTableLayout1
@@ -98,7 +98,7 @@
             this.yTableLayout1.RowCount = 2;
             this.yTableLayout1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55F));
             this.yTableLayout1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45F));
-            this.yTableLayout1.Size = new System.Drawing.Size(442, 235);
+            this.yTableLayout1.Size = new System.Drawing.Size(407, 251);
             this.yTableLayout1.TabIndex = 12;
             // 
             // panel1
@@ -107,9 +107,9 @@
             this.panel1.Controls.Add(this.yButton1);
             this.panel1.Controls.Add(this.yButton2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 132);
+            this.panel1.Location = new System.Drawing.Point(3, 141);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(436, 100);
+            this.panel1.Size = new System.Drawing.Size(401, 107);
             this.panel1.TabIndex = 9;
             // 
             // yButton1
@@ -127,6 +127,7 @@
             this.yButton1.TabIndex = 3;
             this.yButton1.Text = "OK";
             this.yButton1.UseVisualStyleBackColor = false;
+            this.yButton1.Click += new System.EventHandler(this.CmdRun);
             // 
             // yButton2
             // 
@@ -138,12 +139,13 @@
             this.yButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.yButton2.ForeColor = System.Drawing.Color.White;
             this.yButton2.Key = "NG";
-            this.yButton2.Location = new System.Drawing.Point(337, 45);
+            this.yButton2.Location = new System.Drawing.Point(302, 52);
             this.yButton2.Name = "yButton2";
             this.yButton2.Size = new System.Drawing.Size(92, 48);
             this.yButton2.TabIndex = 4;
             this.yButton2.Text = "NG";
             this.yButton2.UseVisualStyleBackColor = false;
+            this.yButton2.Click += new System.EventHandler(this.CmdRun);
             // 
             // panel3
             // 
@@ -152,7 +154,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(436, 123);
+            this.panel3.Size = new System.Drawing.Size(401, 132);
             this.panel3.TabIndex = 11;
             // 
             // yLabel2
@@ -187,7 +189,7 @@
             this.Lbl_RSLT.OffForeColor = System.Drawing.Color.White;
             this.Lbl_RSLT.OnBGColor = System.Drawing.Color.Lime;
             this.Lbl_RSLT.OnForeColor = System.Drawing.Color.Black;
-            this.Lbl_RSLT.Size = new System.Drawing.Size(430, 80);
+            this.Lbl_RSLT.Size = new System.Drawing.Size(395, 89);
             this.Lbl_RSLT.TabIndex = 6;
             this.Lbl_RSLT.Text = "Lbl_RSLT";
             this.Lbl_RSLT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -200,7 +202,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.yTableLayout1);
             this.Name = "InspectionBC";
-            this.Size = new System.Drawing.Size(453, 472);
+            this.Size = new System.Drawing.Size(418, 488);
             this.panel2.ResumeLayout(false);
             this.yTableLayout1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

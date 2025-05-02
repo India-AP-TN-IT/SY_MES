@@ -51,15 +51,19 @@ namespace SY_MES.Logics.MES.Sub
 
                 if (m_InspectFactorsVisible == false)
                 {
-                    panel2.Visible = false;
-                    yTableLayout1.Location = panel2.Location;
                     
+                    yTableLayout1.Dock = DockStyle.Fill;
+                    yTableLayout1.BringToFront();
+                    panel2.Visible = false;
+
                 }
                 else
                 {
                     panel2.Visible = true;
                     yTableLayout1.Location = new Point(yTableLayout1.Location.X, panel2.Location.Y + panel2.Size.Height+2);
+                    yTableLayout1.Dock = DockStyle.None;
 
+                    yTableLayout1.BringToFront();
                 }
 
                 

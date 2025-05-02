@@ -30,9 +30,9 @@
         {
             this.yTableLayout1 = new SY_MES.FX.Controls.YTableLayout();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.injectionPrintBC1 = new SY_MES.Logics.MES.Sub.SFGPrintBC();
             this.yTableLayout2 = new SY_MES.FX.Controls.YTableLayout();
             this.inspectionBC1 = new SY_MES.Logics.MES.Sub.InspectionBC();
+            this.injectionPrintBC1 = new SY_MES.Logics.MES.Sub.SFGPrintBC();
             this.yTableLayout1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.yTableLayout2.SuspendLayout();
@@ -64,21 +64,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(405, 725);
             this.panel2.TabIndex = 1;
-            // 
-            // injectionPrintBC1
-            // 
-            this.injectionPrintBC1.AutoLoadData = false;
-            this.injectionPrintBC1.AutoWorkerSetting = true;
-            this.injectionPrintBC1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.injectionPrintBC1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.injectionPrintBC1.Location = new System.Drawing.Point(4, 6);
-            this.injectionPrintBC1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.injectionPrintBC1.MoldPairSelection = true;
-            this.injectionPrintBC1.Name = "injectionPrintBC1";
-            this.injectionPrintBC1.PrvStationRslt = false;
-            this.injectionPrintBC1.SFGMode = SY_MES.Logics.MES.Sub.SFGPrintBC.SFGModeEnum.Injecion;
-            this.injectionPrintBC1.Size = new System.Drawing.Size(599, 713);
-            this.injectionPrintBC1.TabIndex = 2;
             // 
             // yTableLayout2
             // 
@@ -115,6 +100,21 @@
             this.inspectionBC1.Size = new System.Drawing.Size(397, 311);
             this.inspectionBC1.TabIndex = 0;
             this.inspectionBC1.WorkerLabel = null;
+            // 
+            // injectionPrintBC1
+            // 
+            this.injectionPrintBC1.AutoLoadData = false;
+            this.injectionPrintBC1.AutoWorkerSetting = true;
+            this.injectionPrintBC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.injectionPrintBC1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.injectionPrintBC1.Location = new System.Drawing.Point(4, 6);
+            this.injectionPrintBC1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.injectionPrintBC1.MoldPairSelection = true;
+            this.injectionPrintBC1.Name = "injectionPrintBC1";
+            this.injectionPrintBC1.PrvStationRslt = false;
+            this.injectionPrintBC1.SFGMode = SY_MES.Logics.MES.Sub.SFGPrintBC.SFGModeEnum.Injecion;
+            this.injectionPrintBC1.Size = new System.Drawing.Size(599, 713);
+            this.injectionPrintBC1.TabIndex = 2;
             // 
             // InjectionPrint
             // 
