@@ -67,7 +67,7 @@
             this.JOB_TYPE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.INSTALL_POS = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PARTNO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MOLDCD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MOLDNO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PLAN_QTY = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RESULT_QTY = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.REMAIN_QTY = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -77,6 +77,13 @@
             this.LINECD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.WORK_ORDNO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PAIR_CNT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PAIR_NO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MIN_VALUE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MAX_VALUE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MCPOS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PARTNO_KEY = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ALCCD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.yDataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -292,6 +299,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.yDataGridView1.AutoBindName = true;
+            this.yDataGridView1.AutoMultiSelection = false;
             this.yDataGridView1.BindMove = true;
             this.yDataGridView1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -311,7 +319,7 @@
             this.JOB_TYPE,
             this.INSTALL_POS,
             this.PARTNO,
-            this.MOLDCD,
+            this.MOLDNO,
             this.PLAN_QTY,
             this.RESULT_QTY,
             this.REMAIN_QTY,
@@ -320,16 +328,24 @@
             this.PLAN_DATE,
             this.LINECD,
             this.WORK_ORDNO,
-            this.Column1});
+            this.Column1,
+            this.PAIR_CNT,
+            this.PAIR_NO,
+            this.MIN_VALUE,
+            this.MAX_VALUE,
+            this.MCPOS,
+            this.PARTNO_KEY,
+            this.ALCCD});
             this.yDataGridView1.Desc = "";
             this.yDataGridView1.FixedSort = true;
             this.yDataGridView1.HeaderAlignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.yDataGridView1.HeaderHeight = 40;
-            this.yDataGridView1.JustifiedWidthColNM = "PARTNO,MOLDCD";
+            this.yDataGridView1.JustifiedWidthColNM = "PARTNO,MOLDNO";
             this.yDataGridView1.Key = "";
             this.yDataGridView1.Location = new System.Drawing.Point(3, 203);
-            this.yDataGridView1.MovePKColName = "PLAN_DATE,SHIFT,TIMECD,PARTNO";
+            this.yDataGridView1.MovePKColName = "PLAN_DATE,SHIFT,TIMECD,PARTNO_KEY";
             this.yDataGridView1.MultiSelect = false;
+            this.yDataGridView1.MultiSelectionColor = System.Drawing.Color.Yellow;
             this.yDataGridView1.Name = "yDataGridView1";
             this.yDataGridView1.ReadOnly = true;
             this.yDataGridView1.RowHeadersVisible = false;
@@ -561,14 +577,14 @@
             this.PARTNO.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.PARTNO.Width = 140;
             // 
-            // MOLDCD
+            // MOLDNO
             // 
-            this.MOLDCD.DataPropertyName = "MOLDCD";
-            this.MOLDCD.HeaderText = "MOLD";
-            this.MOLDCD.Name = "MOLDCD";
-            this.MOLDCD.ReadOnly = true;
-            this.MOLDCD.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.MOLDCD.Width = 140;
+            this.MOLDNO.DataPropertyName = "MOLDNO";
+            this.MOLDNO.HeaderText = "MOLD";
+            this.MOLDNO.Name = "MOLDNO";
+            this.MOLDNO.ReadOnly = true;
+            this.MOLDNO.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.MOLDNO.Width = 140;
             // 
             // PLAN_QTY
             // 
@@ -683,6 +699,68 @@
             this.Column1.Visible = false;
             this.Column1.Width = 200;
             // 
+            // PAIR_CNT
+            // 
+            this.PAIR_CNT.DataPropertyName = "PAIR_CNT";
+            this.PAIR_CNT.HeaderText = "PAIR_CNT";
+            this.PAIR_CNT.Name = "PAIR_CNT";
+            this.PAIR_CNT.ReadOnly = true;
+            this.PAIR_CNT.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.PAIR_CNT.Visible = false;
+            // 
+            // PAIR_NO
+            // 
+            this.PAIR_NO.DataPropertyName = "PAIR_NO";
+            this.PAIR_NO.HeaderText = "PAIR_NO";
+            this.PAIR_NO.Name = "PAIR_NO";
+            this.PAIR_NO.ReadOnly = true;
+            this.PAIR_NO.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.PAIR_NO.Visible = false;
+            // 
+            // MIN_VALUE
+            // 
+            this.MIN_VALUE.DataPropertyName = "MIN_VALUE";
+            this.MIN_VALUE.HeaderText = "MIN_VALUE";
+            this.MIN_VALUE.Name = "MIN_VALUE";
+            this.MIN_VALUE.ReadOnly = true;
+            this.MIN_VALUE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.MIN_VALUE.Visible = false;
+            // 
+            // MAX_VALUE
+            // 
+            this.MAX_VALUE.DataPropertyName = "MAX_VALUE";
+            this.MAX_VALUE.HeaderText = "MAX_VALUE";
+            this.MAX_VALUE.Name = "MAX_VALUE";
+            this.MAX_VALUE.ReadOnly = true;
+            this.MAX_VALUE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.MAX_VALUE.Visible = false;
+            // 
+            // MCPOS
+            // 
+            this.MCPOS.DataPropertyName = "MCPOS";
+            this.MCPOS.HeaderText = "MCPOS";
+            this.MCPOS.Name = "MCPOS";
+            this.MCPOS.ReadOnly = true;
+            this.MCPOS.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.MCPOS.Visible = false;
+            // 
+            // PARTNO_KEY
+            // 
+            this.PARTNO_KEY.DataPropertyName = "PARTNO_KEY";
+            this.PARTNO_KEY.HeaderText = "PARTNO_KEY";
+            this.PARTNO_KEY.Name = "PARTNO_KEY";
+            this.PARTNO_KEY.ReadOnly = true;
+            this.PARTNO_KEY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.PARTNO_KEY.Visible = false;
+            // 
+            // ALCCD
+            // 
+            this.ALCCD.DataPropertyName = "ALCCD";
+            this.ALCCD.HeaderText = "ALCCD";
+            this.ALCCD.Name = "ALCCD";
+            this.ALCCD.ReadOnly = true;
+            this.ALCCD.Visible = false;
+            // 
             // SFGPrintBC
             // 
             this.AutoLoadData = false;
@@ -733,7 +811,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn JOB_TYPE;
         private System.Windows.Forms.DataGridViewTextBoxColumn INSTALL_POS;
         private System.Windows.Forms.DataGridViewTextBoxColumn PARTNO;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MOLDCD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MOLDNO;
         private System.Windows.Forms.DataGridViewTextBoxColumn PLAN_QTY;
         private System.Windows.Forms.DataGridViewTextBoxColumn RESULT_QTY;
         private System.Windows.Forms.DataGridViewTextBoxColumn REMAIN_QTY;
@@ -743,5 +821,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn LINECD;
         private System.Windows.Forms.DataGridViewTextBoxColumn WORK_ORDNO;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PAIR_CNT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PAIR_NO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MIN_VALUE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MAX_VALUE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MCPOS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PARTNO_KEY;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ALCCD;
     }
 }

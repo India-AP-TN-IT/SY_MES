@@ -6,14 +6,6 @@ E:\srcs\GIT\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.csproj.Generate
 E:\srcs\GIT\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.csproj.CoreCompileInputs.cache
 E:\srcs\GIT\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.dll
 E:\srcs\GIT\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.pdb
-D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\bin\Debug\SY_MES.FX.Devices.dll
-D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\bin\Debug\SY_MES.FX.Devices.pdb
-D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.csproj.AssemblyReference.cache
-D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.Scanner.SerialScanner.resources
-D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.csproj.GenerateResource.cache
-D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.csproj.CoreCompileInputs.cache
-D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.dll
-D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.pdb
 D:\SRCS\GIT\SY_MES\SY_MES.FX.Devices\bin\Debug\SY_MES.FX.Devices.dll
 D:\SRCS\GIT\SY_MES\SY_MES.FX.Devices\bin\Debug\SY_MES.FX.Devices.pdb
 D:\SRCS\GIT\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.csproj.AssemblyReference.cache
@@ -28,3 +20,11 @@ D:\Srcs\PUNE\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.Scanner.Serial
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.csproj.GenerateResource.Cache
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.dll
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.pdb
+D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\bin\Debug\SY_MES.FX.Devices.dll
+D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\bin\Debug\SY_MES.FX.Devices.pdb
+D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.csproj.AssemblyReference.cache
+D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.Scanner.SerialScanner.resources
+D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.csproj.GenerateResource.cache
+D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.csproj.CoreCompileInputs.cache
+D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.dll
+D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.pdb

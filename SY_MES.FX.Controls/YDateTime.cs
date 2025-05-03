@@ -128,6 +128,10 @@ namespace SY_MES.FX.Controls
         {
             return SelDateTime.ToString(DateFormat);
         }
+        public string GetDateText(string format ="yyyy-MM-dd")
+        {
+            return SelDateTime.ToString(format);
+        }
 
         public void ClearValue()
         {

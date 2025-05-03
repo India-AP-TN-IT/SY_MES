@@ -43,25 +43,25 @@ namespace SY_MES.Logics.MES.Sub
             if(m_SFGMode == SFGModeEnum.Injecion)
             {
                 ChkMoldPair.Visible = true;
-                if (yDataGridView1.Columns.Contains("MOLDCD"))
+                if (yDataGridView1.Columns.Contains("MOLDNO"))
                 {
-                    yDataGridView1.Columns["MOLDCD"].Visible = true;
+                    yDataGridView1.Columns["MOLDNO"].Visible = true;
                 }
             }
             else if(m_SFGMode == SFGModeEnum.Paint)
             {
                 ChkMoldPair.Visible = true;
-                if (yDataGridView1.Columns.Contains("MOLDCD"))
+                if (yDataGridView1.Columns.Contains("MOLDNO"))
                 {
-                    yDataGridView1.Columns["MOLDCD"].Visible = true;
+                    yDataGridView1.Columns["MOLDNO"].Visible = true;
                 }
             }
             else if(m_SFGMode == SFGModeEnum.SUB_ASSY)
             {
                 ChkMoldPair.Visible = false;
-                if (yDataGridView1.Columns.Contains("MOLDCD"))
+                if (yDataGridView1.Columns.Contains("MOLDNO"))
                 {
-                    yDataGridView1.Columns["MOLDCD"].Visible = false;
+                    yDataGridView1.Columns["MOLDNO"].Visible = false;
                 }
             }
         }
@@ -80,7 +80,7 @@ namespace SY_MES.Logics.MES.Sub
         }
         public string GetWorkDate()
         {
-            return yDateTime1.GetValue().ToString();
+            return yDateTime1.GetDateText();
         }
 
         
@@ -105,19 +105,29 @@ namespace SY_MES.Logics.MES.Sub
         {
             InitializeComponent();
         }
-        private Dictionary<string, string> GetPrtParam()
+        private Dictionary<string, string> GetPrtParam(DataRow dr)
         {
             string workDate = PBaseFrm.GetWorkDate();
             string clientID = GetINI("BARCODE_PRINTER/CLIENT_ID");
             string lotno =GetNewLOT(BaseINF.CORCD, BaseINF.BIZCD, workDate, clientID);
             Dictionary<string, string> prtParam = new Dictionary<string, string>();
-
+            
             
             prtParam.Add("LABEL_TYPE", GetINI("BARCODE_PRINTER/PRINT_FORM_TYPE"));
             prtParam.Add("CLIENT_ID", clientID);
+            
             prtParam.Add("LOTNO", lotno);
             prtParam.Add("WORK_DATE", workDate);
             prtParam.Add("SHIFT", PBaseFrm.GetShift());
+
+            prtParam.Add("PARTNO", dr["PARTNO"].ToString());
+            prtParam.Add("LINECD", dr["LINECD"].ToString());
+            prtParam.Add("JOB_TYPE", dr["JOB_TYPE"].ToString());
+            prtParam.Add("INSTALL_POS", dr["INSTALL_POS"].ToString());
+            prtParam.Add("ALCCD", dr["ALCCD"].ToString());
+            prtParam.Add("TIMECD", dr["TIMECD"].ToString());
+            prtParam.Add("WORK_ORDNO", dr["WORK_ORDNO"].ToString());
+            prtParam.Add("STR_LOC", dr["STR_LOC"].ToString());
             return prtParam;
         }
         private Dictionary<string, string> GetDeivceParam()
@@ -199,7 +209,7 @@ namespace SY_MES.Logics.MES.Sub
             param.Add("IN_BIZCD", BaseINF.BIZCD);
             param.Add("IN_LINECD", linecd);
             param.Add("IN_INSTALL_POS", pos);
-            param.Add("IN_PLAN_DATE", yDateTime1.GetValue().ToString());
+            param.Add("IN_PLAN_DATE", yDateTime1.GetDateText());
             param.Add("IN_TIME_GU", lblShift.Key.ToString());
             param.Add("IN_MOD_PAT", "");
             if(Chk_All.Checked ==false)
@@ -283,11 +293,14 @@ namespace SY_MES.Logics.MES.Sub
             string error = "";
             if (PrintAble())
             {
-                Dictionary<string, string> prtParam = GetPrtParam();
-                bool bSave = SaveMES2010(prtParam);
-                if (bSave)
+                foreach (DataRow dr in yDataGridView1.GetDataRows())
                 {
-                    PrintLabel(prtParam, out error);
+                    Dictionary<string, string> prtParam = GetPrtParam(dr);
+                    bool bSave = SaveMES2010(prtParam);
+                    if (bSave)
+                    {
+                        PrintLabel(prtParam, out error);
+                    }
                 }
                 LoadData();
             }
@@ -298,7 +311,7 @@ namespace SY_MES.Logics.MES.Sub
             bool bRet = false;
             try
             {
-                if(yDataGridView1.SelectedRowIdx<0)
+                if (yDataGridView1.SelectedRowIdx < 0)
                 {
                     PBaseFrm.StatusBarMsg(FX.MainForm.Base.Common.MsgTypeEnum.Error, "Select Work Order!!", MethodBase.GetCurrentMethod().Name, true);
                     return false;
@@ -307,15 +320,15 @@ namespace SY_MES.Logics.MES.Sub
                 param.Add("IN_CORCD", BaseINF.CORCD);
                 param.Add("IN_BIZCD", BaseINF.BIZCD);
                 param.Add("IN_LOTNO", PrtHelper.GetParam(prtParam, "LOTNO"));
-                param.Add("IN_LINECD", yDataGridView1.GetValue("LINECD"));
-                param.Add("IN_JOB_TYPE",  yDataGridView1.GetValue("JOB_TYPE"));
-                param.Add("IN_INSTALL_POS", yDataGridView1.GetValue("INSTALL_POS"));
-                param.Add("IN_ALCCD", yDataGridView1.GetValue("ALCCD"));
-                param.Add("IN_PARTNO", yDataGridView1.GetValue("PARTNO"));
-                param.Add("IN_PLAN_DATE", yDateTime1.GetValue().ToString());
-                param.Add("IN_PLAN_TIMECD", yDataGridView1.GetValue("TIMECD"));
-                param.Add("IN_WORK_ORDNO", yDataGridView1.GetValue("WORK_ORDNO"));
-                param.Add("IN_STR_LOC", yDataGridView1.GetValue("STR_LOC"));
+                param.Add("IN_LINECD", PrtHelper.GetParam(prtParam, "LINECD"));
+                param.Add("IN_JOB_TYPE", PrtHelper.GetParam(prtParam, "JOB_TYPE"));
+                param.Add("IN_INSTALL_POS", PrtHelper.GetParam(prtParam, "INSTALL_POS"));
+                param.Add("IN_ALCCD", PrtHelper.GetParam(prtParam, "ALCCD"));
+                param.Add("IN_PARTNO", PrtHelper.GetParam(prtParam, "PARTNO"));
+                param.Add("IN_PLAN_DATE", yDateTime1.GetDateText());
+                param.Add("IN_PLAN_TIMECD", PrtHelper.GetParam(prtParam, "TIMECD"));
+                param.Add("IN_WORK_ORDNO", PrtHelper.GetParam(prtParam, "WORK_ORDNO"));
+                param.Add("IN_STR_LOC", PrtHelper.GetParam(prtParam, "STR_LOC"));
                 param.Add("IN_PLANT_DIV", BaseINF.PLANTCD);
                 param.Add("IN_INSPECTOR", yWorkerLabel1.Key);
                 param.Add("IN_EMPNO", "");
@@ -324,7 +337,7 @@ namespace SY_MES.Logics.MES.Sub
                 PBaseFrm.StatusBarMsg(FX.MainForm.Base.Common.MsgTypeEnum.Alarm, "Printed - Lot No:" + PrtHelper.GetParam(prtParam, "LOTNO"), MethodBase.GetCurrentMethod().Name, false);
                 return true;
             }
-            catch(Exception eLog)
+            catch (Exception eLog)
             {
                 PBaseFrm.StatusBarMsg(FX.MainForm.Base.Common.MsgTypeEnum.Error, eLog.Message, MethodBase.GetCurrentMethod().Name, true);
             }
@@ -417,7 +430,7 @@ namespace SY_MES.Logics.MES.Sub
             lblPrintedBarcode.Text = "";
             txtPlan.Text = "";
 
-            if (yDataGridView1.IsSelected && yDataGridView1.SelectedRowIdx >= 0)
+            if (yDataGridView1.IsSelected  && yDataGridView1.SelectedRowIdx >= 0)
             {
                 int printed = Convert.ToInt32(yDataGridView1.GetValue("PRINT_QTY"));
                 int plan = Convert.ToInt32(yDataGridView1.GetValue("PLAN_QTY"));
@@ -465,10 +478,12 @@ namespace SY_MES.Logics.MES.Sub
             if(ChkMoldPair.Checked)
             {
                 ChkMoldPair.BackColor = Color.Lime;
+                yDataGridView1.AutoMultiSelection = true;
             }
             else
             {
                 ChkMoldPair.BackColor = Color.Silver;
+                yDataGridView1.AutoMultiSelection = false;
             }
         }
     }

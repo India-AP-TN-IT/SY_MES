@@ -28,7 +28,7 @@ namespace SY_MES.Logics.MES.Sub
         }
         public string GetWorkDate()
         {
-            return yDateTime1.GetValue().ToString();
+            return yDateTime1.GetDateText();
         }
 
         
@@ -53,19 +53,29 @@ namespace SY_MES.Logics.MES.Sub
         {
             InitializeComponent();
         }
-        private Dictionary<string, string> GetPrtParam()
+        private Dictionary<string, string> GetPrtParam(DataRow dr)
         {
             string workDate = PBaseFrm.GetWorkDate();
             string clientID = GetINI("BARCODE_PRINTER/CLIENT_ID");
-            string lotno =GetNewLOT(BaseINF.CORCD, BaseINF.BIZCD, workDate, clientID);
+            string lotno = GetNewLOT(BaseINF.CORCD, BaseINF.BIZCD, workDate, clientID);
             Dictionary<string, string> prtParam = new Dictionary<string, string>();
 
-            
+
             prtParam.Add("LABEL_TYPE", GetINI("BARCODE_PRINTER/PRINT_FORM_TYPE"));
             prtParam.Add("CLIENT_ID", clientID);
+
             prtParam.Add("LOTNO", lotno);
             prtParam.Add("WORK_DATE", workDate);
             prtParam.Add("SHIFT", PBaseFrm.GetShift());
+
+            prtParam.Add("PARTNO", dr["PARTNO"].ToString());
+            prtParam.Add("LINECD", dr["LINECD"].ToString());
+            prtParam.Add("JOB_TYPE", dr["JOB_TYPE"].ToString());
+            prtParam.Add("INSTALL_POS", dr["INSTALL_POS"].ToString());
+            prtParam.Add("ALCCD", "");
+            prtParam.Add("TIMECD", dr["TIMECD"].ToString());
+            prtParam.Add("WORK_ORDNO", dr["WORK_ORDNO"].ToString());
+            prtParam.Add("STR_LOC", dr["STR_LOC"].ToString());
             return prtParam;
         }
         private Dictionary<string, string> GetDeivceParam()
@@ -230,7 +240,7 @@ namespace SY_MES.Logics.MES.Sub
             string error = "";
             if (PrintAble())
             {
-                Dictionary<string, string> prtParam = GetPrtParam();
+                Dictionary<string, string> prtParam = GetPrtParam(yDataGridView1.GetDataRow());
                 bool bSave = SaveMES2010(prtParam);
                 if (bSave)
                 {
@@ -259,7 +269,7 @@ namespace SY_MES.Logics.MES.Sub
                 param.Add("IN_INSTALL_POS", yDataGridView1.GetValue("INSTALL_POS"));
                 param.Add("IN_ALCCD", yDataGridView1.GetValue("ALCCD"));
                 param.Add("IN_PARTNO", yDataGridView1.GetValue("PARTNO"));
-                param.Add("IN_PLAN_DATE", yDateTime1.GetValue().ToString());
+                param.Add("IN_PLAN_DATE", yDateTime1.GetDateText());
                 param.Add("IN_PLAN_TIMECD", yDataGridView1.GetValue("TIMECD"));
                 param.Add("IN_WORK_ORDNO", yDataGridView1.GetValue("WORK_ORDNO"));
                 param.Add("IN_STR_LOC", yDataGridView1.GetValue("STR_LOC"));

@@ -11,12 +11,39 @@ using System.Collections;
 using System.Xml.Linq;
 using SY_MES.FX.Controls.Base;
 using System.Runtime.CompilerServices;
+using System.Threading;
 
 namespace SY_MES.FX.Controls
 {
     [ToolboxBitmap(typeof(DataGridView))]
     public partial class YDataGridView: DataGridView, Base.IYGrid
     {
+        private bool m_AutoMultiSelection = false;
+        private Color m_MultiSelectionColor = Color.Yellow;
+        [Category(Common.CN_CATEGORY_APP)]
+        public Color MultiSelectionColor
+        {
+            get { return m_MultiSelectionColor; }
+            set { m_MultiSelectionColor = value; }
+        }
+        [Category(Common.CN_CATEGORY_APP)]
+        public bool AutoMultiSelection
+        {
+            get { return m_AutoMultiSelection; }
+            set 
+            { 
+                m_AutoMultiSelection = value;
+                if(m_AutoMultiSelection)
+                {
+                    SubColor(m_LastSelectedKey);
+                }
+                else
+                {
+                    ClearSubColor();
+                }
+                
+            }
+        }
         private string m_JustifiedWidthColNM = "";
         private bool m_IsSelected = false;
         private DataGridViewContentAlignment m_HeaderAlignment = DataGridViewContentAlignment.MiddleCenter;
@@ -286,10 +313,56 @@ namespace SY_MES.FX.Controls
             {
                 m_LastSelectedKey = GetSelectedKeyVal(SelectedRowIdx);
                 m_IsSelected = true;
+                
+                SubColor(m_LastSelectedKey);
             }
             if (!CanSelectGrid)
             {
                 ClearSelection();
+            }
+        }
+        private void ClearSubColor()
+        {
+            for (int row = 0; row < this.Rows.Count; row++)
+            {
+
+                this.Rows[row].DefaultCellStyle.BackColor = Color.Empty;
+            }
+        }
+        private void SubColor(string keyVal)
+        {
+            if (m_AutoMultiSelection)
+            {
+                List<string> listPK = GetPKColNames();
+                if (listPK.Count > 0)
+                {
+                    for (int row = 0; row < this.Rows.Count; row++)
+                    {
+
+                        string compVal = "";
+
+                        foreach (string colName in listPK)
+                        {
+                            string afterColName = GetColName(colName);
+                            if (Rows[row].Cells[afterColName].Value != null)
+                            {
+                                compVal += Rows[row].Cells[afterColName].Value.ToString();
+                            }
+                            else
+                            {
+                                compVal += "";
+                            }
+                        }
+                        if (compVal == keyVal)
+                        {
+                            this.Rows[row].DefaultCellStyle.BackColor = m_MultiSelectionColor;
+                        }
+                        else
+                        {
+                            this.Rows[row].DefaultCellStyle.BackColor = Color.Empty;
+                        }
+                    }
+                }
             }
         }
 
@@ -427,6 +500,7 @@ namespace SY_MES.FX.Controls
             }
             return "";
         }
+        
         public string GetValue(int row, string bindName)
         {
             try
@@ -460,6 +534,10 @@ namespace SY_MES.FX.Controls
             }
             AlignHeader();
         }
+        public DataRow GetDataRow()
+        {
+            return GetDataRow(SelectedRowIdx);
+        }
         public DataRow GetDataRow(int row)
         {
 
@@ -477,6 +555,47 @@ namespace SY_MES.FX.Controls
                 System.Diagnostics.Debug.WriteLine("[" + System.Reflection.MethodBase.GetCurrentMethod().Name + "]" + eLog.Message);
                 return null;
             }
+        }
+        public DataRow[] GetDataRows()
+        {
+            List<DataRow> rslt = new List<DataRow>();
+            if (m_IsSelected)
+            {
+                if (m_AutoMultiSelection)
+                {
+                    List<string> listPK = GetPKColNames();
+                    if (listPK.Count > 0)
+                    {
+                        for (int row = 0; row < this.Rows.Count; row++)
+                        {
+
+                            string compVal = "";
+
+                            foreach (string colName in listPK)
+                            {
+                                string afterColName = GetColName(colName);
+                                if (Rows[row].Cells[afterColName].Value != null)
+                                {
+                                    compVal += Rows[row].Cells[afterColName].Value.ToString();
+                                }
+                                else
+                                {
+                                    compVal += "";
+                                }
+                            }
+                            if (compVal == m_LastSelectedKey)
+                            {
+                                rslt.Add(GetDataRow(row));
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    rslt.Add(GetDataRow(SelectedRowIdx));
+                }
+            }
+            return rslt.ToArray();
         }
 
         public string GetValue(int row, int col)
@@ -686,6 +805,7 @@ namespace SY_MES.FX.Controls
             else
             {
                 MoveGridRow(m_LastSelectedKey);
+                SubColor(m_LastSelectedKey);
             }
 
             m_bScrollMove = false;
