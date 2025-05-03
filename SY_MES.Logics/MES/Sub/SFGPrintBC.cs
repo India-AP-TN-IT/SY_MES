@@ -479,11 +479,14 @@ namespace SY_MES.Logics.MES.Sub
             {
                 ChkMoldPair.BackColor = Color.Lime;
                 yDataGridView1.AutoMultiSelection = true;
+                yDataGridView1.MovePKColName = "PLAN_DATE,SHIFT,TIMECD,PARTNO_KEY";
+              
             }
             else
             {
                 ChkMoldPair.BackColor = Color.Silver;
                 yDataGridView1.AutoMultiSelection = false;
+                yDataGridView1.MovePKColName = "PLAN_DATE,SHIFT,TIMECD,PARTNO";
             }
         }
     }
