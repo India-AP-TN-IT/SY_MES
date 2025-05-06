@@ -78,6 +78,7 @@ namespace SY_MES.Logics.MES.Sub
                 if(qty >0)
                 {
                     Pan_QUE.Visible = true;
+                    StatusMsgForQuestion();
                 }
                 else
                 {
@@ -90,6 +91,10 @@ namespace SY_MES.Logics.MES.Sub
             }
             LoadData();
             
+        }
+        public void StatusMsgForQuestion()
+        {
+            StatusBarMsg(FX.MainForm.Base.Common.MsgTypeEnum.Warnning, "Please choose 'Clear' or 'Continue' for trolley", System.Reflection.MethodBase.GetCurrentMethod().Name, true);
         }
         private void SaveHead(string trolleyNo)
         {
@@ -108,6 +113,10 @@ namespace SY_MES.Logics.MES.Sub
             param.Add("IN_TRYNO", trolleyNO);
             DataTable dt = ExecuteQuery("PKG_ME_DLG.GET_TROLLEY_HEAD", param);
             return dt;
+        }
+        public bool IsQuestion
+        {
+            get { return Pan_QUE.Visible; }
         }
         public override void LoadData()
         {
@@ -160,6 +169,7 @@ namespace SY_MES.Logics.MES.Sub
                 if(((YButton)sender).Key == "CLEAR")
                 {
                     SaveHead(m_TrolleyNO);
+                    
                 }
                 Pan_QUE.Visible = false;
                 LoadData();

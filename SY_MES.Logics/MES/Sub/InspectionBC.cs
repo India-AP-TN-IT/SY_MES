@@ -15,6 +15,7 @@ namespace SY_MES.Logics.MES.Sub
     [ToolboxItem(true)]
     public partial class InspectionBC :  Base.LocalizedContainer
     {
+        private bool m_AutoStock = false;
         private string m_ExValidError ="";
         public string ExValidError
         {
@@ -25,6 +26,10 @@ namespace SY_MES.Logics.MES.Sub
         [Category(Base.Common.CN_CATEGORY_APP)]
         public event ProcRSLT OnProcRSLT;
         private bool m_RsltBtnVisible = true;
+        public bool AutoStock
+        {
+            get { return m_AutoStock; }
+        }
         [Category(Base.Common.CN_CATEGORY_APP)]
         public bool RsltBtnVisible
         {
@@ -94,11 +99,16 @@ namespace SY_MES.Logics.MES.Sub
             if (DesignMode == false)
             {
                 InitInspectionFactors();
+
+                bool autoStock = FX.Common.Funcs.GetBoolStr(GetINI("INSPECTION/AUTO_STOCK"));
+                m_AutoStock = autoStock;
+                panel1.Enabled = !autoStock;
             }
         }
         private void InitInspectionFactors()
         {
             string iniForInspection = GetINI("INSPECTION/INSPECT_LIST").Replace(" ","");
+            
             string[] facotrs = iniForInspection.Split(',');
             Pan_InspectionFact.Controls.Clear();
             m_Factors = new List<string>();

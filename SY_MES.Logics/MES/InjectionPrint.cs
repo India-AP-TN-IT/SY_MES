@@ -23,9 +23,36 @@ namespace SY_MES.Logics.MES
             base.ReadDataFromScanner(sender, data);
             if(Comm.IsOurBarcode(data) && Comm.AvailableLine(data, injectionPrintBC1.GetLinecd()))
             {
-                WorkState(FX.MainForm.Base.Common.WorkStateEnum.Running);
-                productInforBC1.LoadData();
-                inspectionBC1.LoadData();
+                if(inspectionBC1.AutoStock)
+                {
+                    if(string.IsNullOrEmpty(trolleyStockBC1.TrolleyNO))
+                    {
+                        StatusBarMsg(FX.MainForm.Base.Common.MsgTypeEnum.Error, "Trolley No is mandatory", System.Reflection.MethodBase.GetCurrentMethod().Name, true);
+                        return;
+                    }
+                    if(trolleyStockBC1.IsQuestion)
+                    {
+                        trolleyStockBC1.StatusMsgForQuestion();
+                        return;
+                    }
+                    WorkState(FX.MainForm.Base.Common.WorkStateEnum.Running);
+                    productInforBC1.LoadData();
+                    inspectionBC1.LoadData();
+
+                    inspectionBC1.SetData(true, AddInspectionValid);
+
+                    string lotno = Base.Common.GetProductInfor("LOTNO");
+                    trolleyStockBC1.SetStock(lotno, TrolleyStockBC.IV_StatusEnum.Stock);
+                    trolleyStockBC1.LoadData();
+                }
+                else
+                {
+                    WorkState(FX.MainForm.Base.Common.WorkStateEnum.Running);
+                    productInforBC1.LoadData();
+                    inspectionBC1.LoadData();
+                }
+                
+                
             }
             else if(Comm.IsTrolleyBarcode(data))
             {   //Trolley Barcode Process
@@ -34,7 +61,7 @@ namespace SY_MES.Logics.MES
 
 
             }
-            else if (data.Contains(Base.Common.CN_BARCODE_PASS_CHECK))
+            else if (data.Contains(Base.Common.CN_BARCODE_PASS_CHECK) && inspectionBC1.AutoStock ==false)
             {   //OK
                 
                 bool inspectRSLT = inspectionBC1.SetData(true, AddInspectionValid);
@@ -44,7 +71,7 @@ namespace SY_MES.Logics.MES
                     trolleyStockBC1.SetStock(lotno, TrolleyStockBC.IV_StatusEnum.Stock);
                 }
             }
-            else if (data.Contains(Base.Common.CN_BARCODE_NG_CHECK))
+            else if (data.Contains(Base.Common.CN_BARCODE_NG_CHECK) && inspectionBC1.AutoStock == false)
             {   //NG
                 inspectionBC1.SetData(false);
             }
