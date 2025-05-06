@@ -15,7 +15,15 @@ namespace SY_MES.Logics.MES.Sub
     [ToolboxItem(true)]
     public partial class InspectionBC :  Base.LocalizedContainer
     {
-        
+        private string m_ExValidError ="";
+        public string ExValidError
+        {
+            get { return m_ExValidError; }
+            set { m_ExValidError = value; }
+        }
+        public delegate void ProcRSLT(object sender, bool rslt);
+        [Category(Base.Common.CN_CATEGORY_APP)]
+        public event ProcRSLT OnProcRSLT;
         private bool m_RsltBtnVisible = true;
         [Category(Base.Common.CN_CATEGORY_APP)]
         public bool RsltBtnVisible
@@ -175,14 +183,24 @@ namespace SY_MES.Logics.MES.Sub
 
             return bRslt;
         }
-        public void SetData(bool bOK)
+        
+        public bool SetData(bool bOK, Func<bool> addValid = null)
         {
             Lbl_RSLT.Visible = false;
             string lotno = Common.GetProductInfor("LOTNO");
-            if(string.IsNullOrEmpty(lotno))
+            
+            if (string.IsNullOrEmpty(lotno))
             {
                 StatusBarMsg(FX.MainForm.Base.Common.MsgTypeEnum.Error, "Empty Lot is not allowed!!", System.Reflection.MethodBase.GetCurrentMethod().Name, true);
-                return;
+                return false;
+            }
+            if(addValid!=null)
+            {
+                
+                if(addValid.Invoke() == false)
+                {
+                    return false;
+                }
             }
             if (ValidInsRslt(bOK) == true)
             {
@@ -213,7 +231,9 @@ namespace SY_MES.Logics.MES.Sub
                     WorkState(FX.MainForm.Base.Common.WorkStateEnum.NG_Complete);
 
                 }
+                return true;
             }
+            return false;
         }
         private bool Exists(string[] vals, string key)
         {
@@ -235,6 +255,10 @@ namespace SY_MES.Logics.MES.Sub
         }
         public bool GetInspectioFactorRslt(string except="")
         {
+            if(panel2.Visible==false)
+            {
+                return true;
+            }
             string[] excepts = except.Split(',');
             foreach (string factor in m_Factors)
             {
@@ -303,13 +327,31 @@ namespace SY_MES.Logics.MES.Sub
         {
             if(sender is YButton)
             {
-                if(((YButton)sender).Key == "OK")
+                
+
+                if (((YButton)sender).Key == "OK")
                 {
-                    SetData(true);
+                    if (OnProcRSLT != null)
+                    {
+                        OnProcRSLT(this, true);
+                    }
+                    else
+                    {
+                        SetData(true);
+                    }
+                    
                 }
                 else if (((YButton)sender).Key == "NG")
                 {
-                    SetData(false);
+                    if (OnProcRSLT != null)
+                    {
+                        OnProcRSLT(this, false);
+                    }
+                    else
+                    {
+                        SetData(false);
+                    }
+                    
                 }
             }
         }

@@ -34,12 +34,12 @@ namespace SY_MES.Logics.MES
                 }
                 
             }
-            else if (data.Contains(Common.CN_BARCODE_PASS_CHECK))
+            else if (data.Contains(Base.Common.CN_BARCODE_PASS_CHECK))
             {   //OK
                 
                 inspectionBC1.SetData(true);
             }
-            else if (data.Contains(Common.CN_BARCODE_NG_CHECK))
+            else if (data.Contains(Base.Common.CN_BARCODE_NG_CHECK))
             {   //NG
                 inspectionBC1.SetData(false);
             }

@@ -152,6 +152,14 @@ namespace SY_MES.Logics.Base
             }
             return false;
         }
+        public bool IsTrolleyBarcode(string barcode)
+        {
+            if(barcode.StartsWith("+ASN+@"))
+            {
+                return true;
+            }
+            return false;
+        }
         /// <summary>
         /// Extraction of barcode data into Lotno and Partno
         /// </summary>

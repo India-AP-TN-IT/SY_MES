@@ -155,6 +155,7 @@ D:\SRCS\GIT_IN\SY_MES\SY_MES.Logics\obj\Debug\SY_MES.Logics.MES.Sub.SpecCheckBC.
 D:\SRCS\GIT_IN\SY_MES\SY_MES.Logics\obj\Debug\SY_MES.Logics.MES.Sub.LegendUC.resources
 D:\SRCS\GIT_IN\SY_MES\SY_MES.Logics\obj\Debug\SY_MES.Logics.MES.Sub.SpecCheckHistBC.resources
 D:\SRCS\GIT_IN\SY_MES\SY_MES.Logics\obj\Debug\SY_MES.Logics.MES.Sub.SpecSheetCtl.resources
+D:\SRCS\GIT_IN\SY_MES\SY_MES.Logics\obj\Debug\SY_MES.Logics.MES.Sub.TrolleyStockBC.resources
 D:\SRCS\GIT_IN\SY_MES\SY_MES.Logics\obj\Debug\SY_MES.Logics.MES.Sub.VisionInspectionBC.resources
 D:\SRCS\GIT_IN\SY_MES\SY_MES.Logics\obj\Debug\SY_MES.Logics.MES.Sub.SFGPrintBC.resources
 D:\SRCS\GIT_IN\SY_MES\SY_MES.Logics\obj\Debug\SY_MES.Logics.MES.Sub.WOPrintBC.resources

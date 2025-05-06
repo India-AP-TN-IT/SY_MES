@@ -170,6 +170,12 @@
     <Compile Include="MES\Sub\SpecSheetCtl.Designer.cs">
       <DependentUpon>SpecSheetCtl.cs</DependentUpon>
     </Compile>
+    <Compile Include="MES\Sub\TrolleyStockBC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MES\Sub\TrolleyStockBC.Designer.cs">
+      <DependentUpon>TrolleyStockBC.cs</DependentUpon>
+    </Compile>
     <Compile Include="MES\Sub\VisionInspectionBC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -275,6 +281,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MES\Sub\SpecSheetCtl.resx">
       <DependentUpon>SpecSheetCtl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MES\Sub\TrolleyStockBC.resx">
+      <DependentUpon>TrolleyStockBC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MES\Sub\VisionInspectionBC.resx">
       <DependentUpon>VisionInspectionBC.cs</DependentUpon>
