@@ -176,6 +176,12 @@
     <Compile Include="MES\Sub\TrolleyStockBC.Designer.cs">
       <DependentUpon>TrolleyStockBC.cs</DependentUpon>
     </Compile>
+    <Compile Include="MES\Sub\TrolleyStockListBC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MES\Sub\TrolleyStockListBC.Designer.cs">
+      <DependentUpon>TrolleyStockListBC.cs</DependentUpon>
+    </Compile>
     <Compile Include="MES\Sub\VisionInspectionBC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -284,6 +290,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MES\Sub\TrolleyStockBC.resx">
       <DependentUpon>TrolleyStockBC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MES\Sub\TrolleyStockListBC.resx">
+      <DependentUpon>TrolleyStockListBC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MES\Sub\VisionInspectionBC.resx">
       <DependentUpon>VisionInspectionBC.cs</DependentUpon>

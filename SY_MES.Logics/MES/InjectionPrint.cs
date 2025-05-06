@@ -30,7 +30,7 @@ namespace SY_MES.Logics.MES
             else if(Comm.IsTrolleyBarcode(data))
             {   //Trolley Barcode Process
                 
-                trolleyStockBC1.SetTrolleyNo(data, TrolleyStockBC.IV_StatusEnum.Stock);
+                trolleyStockBC1.SetTrolleyNo(data);
 
 
             }

@@ -33,12 +33,18 @@
             this.yLabel1 = new SY_MES.FX.Controls.YLabel();
             this.yBitLabel1 = new SY_MES.FX.Controls.YBitLabel();
             this.yLabel6 = new SY_MES.FX.Controls.YLabel();
+            this.Pan_QUE = new System.Windows.Forms.Panel();
+            this.yButton1 = new SY_MES.FX.Controls.YButton();
+            this.yButton2 = new SY_MES.FX.Controls.YButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.Pan_QUE.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.Pan_QUE);
             this.panel1.Controls.Add(this.yBitLabel2);
             this.panel1.Controls.Add(this.yLabel1);
             this.panel1.Controls.Add(this.yBitLabel1);
@@ -66,6 +72,7 @@
             this.yBitLabel2.TabIndex = 16;
             this.yBitLabel2.Text = "999";
             this.yBitLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.yBitLabel2.DoubleClick += new System.EventHandler(this.yBitLabel2_DoubleClick);
             // 
             // yLabel1
             // 
@@ -118,6 +125,62 @@
             this.yLabel6.Text = "TROLLEY NO";
             this.yLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // Pan_QUE
+            // 
+            this.Pan_QUE.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Pan_QUE.Controls.Add(this.label1);
+            this.Pan_QUE.Controls.Add(this.yButton2);
+            this.Pan_QUE.Controls.Add(this.yButton1);
+            this.Pan_QUE.Location = new System.Drawing.Point(172, 75);
+            this.Pan_QUE.Name = "Pan_QUE";
+            this.Pan_QUE.Size = new System.Drawing.Size(258, 127);
+            this.Pan_QUE.TabIndex = 17;
+            // 
+            // yButton1
+            // 
+            this.yButton1.BackColor = System.Drawing.Color.Blue;
+            this.yButton1.ButtonStyle = SY_MES.FX.Controls.YButton.ButtonStyleEnum.Blue;
+            this.yButton1.Desc = "Clear";
+            this.yButton1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.yButton1.ForeColor = System.Drawing.Color.White;
+            this.yButton1.Key = "CLEAR";
+            this.yButton1.Location = new System.Drawing.Point(3, 44);
+            this.yButton1.Name = "yButton1";
+            this.yButton1.Size = new System.Drawing.Size(94, 47);
+            this.yButton1.TabIndex = 0;
+            this.yButton1.Text = "Clear";
+            this.yButton1.UseVisualStyleBackColor = false;
+            this.yButton1.Click += new System.EventHandler(this.CmdRun);
+            // 
+            // yButton2
+            // 
+            this.yButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.yButton2.BackColor = System.Drawing.Color.Yellow;
+            this.yButton2.ButtonStyle = SY_MES.FX.Controls.YButton.ButtonStyleEnum.Yellow;
+            this.yButton2.Desc = "Continue";
+            this.yButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.yButton2.ForeColor = System.Drawing.Color.Black;
+            this.yButton2.Key = "CON";
+            this.yButton2.Location = new System.Drawing.Point(161, 44);
+            this.yButton2.Name = "yButton2";
+            this.yButton2.Size = new System.Drawing.Size(94, 47);
+            this.yButton2.TabIndex = 1;
+            this.yButton2.Text = "Continue";
+            this.yButton2.UseVisualStyleBackColor = false;
+            this.yButton2.Click += new System.EventHandler(this.CmdRun);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(3, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(180, 23);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Do you want to Clear?";
+            // 
             // TrolleyStockBC
             // 
             this.AutoLoadData = false;
@@ -126,6 +189,8 @@
             this.Name = "TrolleyStockBC";
             this.Size = new System.Drawing.Size(435, 208);
             this.panel1.ResumeLayout(false);
+            this.Pan_QUE.ResumeLayout(false);
+            this.Pan_QUE.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -137,5 +202,9 @@
         private FX.Controls.YBitLabel yBitLabel1;
         private FX.Controls.YBitLabel yBitLabel2;
         private FX.Controls.YLabel yLabel1;
+        private System.Windows.Forms.Panel Pan_QUE;
+        private FX.Controls.YButton yButton1;
+        private System.Windows.Forms.Label label1;
+        private FX.Controls.YButton yButton2;
     }
 }

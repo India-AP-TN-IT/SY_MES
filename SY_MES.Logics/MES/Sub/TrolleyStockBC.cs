@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SY_MES.FX.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,12 +8,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace SY_MES.Logics.MES.Sub
 {
     [ToolboxItem(true)]
     public partial class TrolleyStockBC : Base.LocalizedContainer
     {
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+            Pan_QUE.Visible = false;
+        }
         public enum IV_StatusEnum
         {
             Stock,
@@ -50,7 +57,7 @@ namespace SY_MES.Logics.MES.Sub
             }
             return "I1";
         }
-        public void SetTrolleyNo(string trolleyNo, IV_StatusEnum status)
+        public void SetTrolleyNo(string trolleyNo)
         {
 
             yBitLabel1.Text = trolleyNo;
@@ -62,25 +69,50 @@ namespace SY_MES.Logics.MES.Sub
             else
             {
                 yBitLabel1.SetValue(true);
-                Dictionary<string, string> param = new Dictionary<string, string>();
-                param.Add("IN_CORCD", BaseINF.CORCD);
-                param.Add("IN_BIZCD", BaseINF.BIZCD);
-                param.Add("IN_TRYNO", trolleyNo);
-                param.Add("IN_LINECD", BaseINF.LINECD);
-                param.Add("IN_INV_STATUS", Get_INVStatus(status));
-                ExecuteNonQuery("PKG_ME_DLG.SET_TROLLEY_HEAD", param);
+                
+            }
+            DataTable dt = GetHeadData(trolleyNo);
+            if(dt.Rows.Count>0)
+            {
+                int qty = FX.Common.Funcs.GetO2I(dt.Rows[0]["CNT_QTY"]);
+                if(qty >0)
+                {
+                    Pan_QUE.Visible = true;
+                }
+                else
+                {
+                    Pan_QUE.Visible = false;
+                }
+            }
+            else
+            {
+                SaveHead(trolleyNo);
             }
             LoadData();
             
         }
-        public override void LoadData()
+        private void SaveHead(string trolleyNo)
         {
-            base.LoadData();
             Dictionary<string, string> param = new Dictionary<string, string>();
             param.Add("IN_CORCD", BaseINF.CORCD);
             param.Add("IN_BIZCD", BaseINF.BIZCD);
-            param.Add("IN_TRYNO", m_TrolleyNO);
+            param.Add("IN_TRYNO", trolleyNo);
+            param.Add("IN_LINECD", BaseINF.LINECD);
+            ExecuteNonQuery("PKG_ME_DLG.SET_TROLLEY_HEAD", param);
+        }
+        public DataTable GetHeadData(string trolleyNO)
+        {
+            Dictionary<string, string> param = new Dictionary<string, string>();
+            param.Add("IN_CORCD", BaseINF.CORCD);
+            param.Add("IN_BIZCD", BaseINF.BIZCD);
+            param.Add("IN_TRYNO", trolleyNO);
             DataTable dt = ExecuteQuery("PKG_ME_DLG.GET_TROLLEY_HEAD", param);
+            return dt;
+        }
+        public override void LoadData()
+        {
+            base.LoadData();
+            DataTable dt = GetHeadData(m_TrolleyNO);
             if (dt.Rows.Count > 0)
             {
                 yBitLabel2.Text = dt.Rows[0]["CNT_QTY"].ToString();
@@ -109,6 +141,29 @@ namespace SY_MES.Logics.MES.Sub
 
             LoadData();
         }
-        
+
+        private void yBitLabel2_DoubleClick(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(m_TrolleyNO) == false)
+            {
+                FX.MainForm.BaseDialog dlg = new FX.MainForm.BaseDialog("Trolley List", new Sub.TrolleyStockListBC(m_TrolleyNO, yBitLabel2.Text), this.PBaseFrm, FormWindowState.Normal);
+
+                dlg.Show();
+                dlg.BringToFront();
+            }
+        }
+
+        private void CmdRun(object sender, EventArgs e)
+        {
+            if(sender is YButton)
+            {
+                if(((YButton)sender).Key == "CLEAR")
+                {
+                    SaveHead(m_TrolleyNO);
+                }
+                Pan_QUE.Visible = false;
+                LoadData();
+            }
+        }
     }
 }
