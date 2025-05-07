@@ -208,6 +208,7 @@ namespace SY_MES.FX.PLC
                 if (iLoop1 == -1 && iLoop2 == -1)
                 {
                     OnPlcSeqSignal(this, -1, bValue, currentBuffer);
+                    
                 }
                 else
                 {

@@ -239,7 +239,10 @@ namespace SY_MES.Logics.Base
             dicRet.Add("@PLCBASEADDR", GetINI(sectionID + "/PLCBASEADDR"));
             dicRet.Add("@BLOCK_TYPE", GetINI(sectionID + "/BLOCK_TYPE"));
             dicRet.Add("@MEMORY_TAG", GetINI(sectionID + "/MEMORY_TAG"));
-            dicRet.Add("@BLOCK_SIZE", GetINI(sectionID + "/BLOCK_SIZE"));            
+            dicRet.Add("@BLOCK_SIZE", GetINI(sectionID + "/BLOCK_SIZE"));
+            dicRet.Add("@MODULE_NO", GetINI(sectionID + "/MODULE_NO"));
+            dicRet.Add("@PC_STATION_NO", GetINI(sectionID + "/PC_STATION_NO"));
+            dicRet.Add("@NETWORK_NO", GetINI(sectionID + "/NETWORK_NO"));            
             return dicRet;
         }
         public void ShowCodeSelectDlg(SY_MES.Logics.Base.CodeSelectBC.CodeListEnum cdList, IYControls ctl)

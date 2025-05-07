@@ -48,3 +48,4 @@ D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.csproj.Cor
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.F.62B0C39D.Up2Date
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.dll
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.pdb
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.csprojResolveAssemblyReference.cache

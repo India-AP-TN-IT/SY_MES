@@ -20,3 +20,4 @@ D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Common\obj\Debug\SY_MES.FX.Common.csproj.Assembl
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Common\obj\Debug\SY_MES.FX.Common.csproj.CoreCompileInputs.cache
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Common\obj\Debug\SY_MES.FX.Common.dll
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Common\obj\Debug\SY_MES.FX.Common.pdb
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Common\obj\Debug\SY_MES.FX.Common.csprojResolveAssemblyReference.cache

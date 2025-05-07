@@ -28,3 +28,4 @@ D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.csproj.Gener
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.csproj.CoreCompileInputs.cache
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.dll
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.pdb
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.csprojResolveAssemblyReference.cache

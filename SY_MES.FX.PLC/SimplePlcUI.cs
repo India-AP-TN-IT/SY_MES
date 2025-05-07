@@ -58,6 +58,14 @@ namespace SY_MES.FX.PLC
 
         private void OnPLCSignal(object sender, int pos, bool bVal, Base.Common.PLC_DeviceArray[] currentBuffer)
         {
+            if(pos==-1)
+            {
+                State(StateEnum.Disconnect);
+            }
+            else
+            {
+                State(StateEnum.Running);
+            }
             if(OnPlcSeqSignal!=null)
             {
                 OnPlcSeqSignal(sender, pos, bVal, currentBuffer);

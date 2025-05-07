@@ -27,3 +27,4 @@ D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.DB\obj\Debug\SY_MES.FX.DB.csproj.CoreCompileInpu
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.DB\obj\Debug\SY_MES.F.9166BD89.Up2Date
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.DB\obj\Debug\SY_MES.FX.DB.dll
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.DB\obj\Debug\SY_MES.FX.DB.pdb
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.DB\obj\Debug\SY_MES.FX.DB.csprojResolveAssemblyReference.cache

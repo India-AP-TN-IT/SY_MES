@@ -84,6 +84,7 @@ namespace SY_MES.Logics.MES
             SY_MES.FX.PLC.PLCHelper.PlcTypeEnum plcType = GetPLCType();
             m_PLCHelper = new FX.PLC.PLCHelper(this, plcParam, plcType);
             m_PLCHelper.Start();
+            
             m_PLCHelper.OnPlcSeqSignal += PLC_Signal;
 
 
