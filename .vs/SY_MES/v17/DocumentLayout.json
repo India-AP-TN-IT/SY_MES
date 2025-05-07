@@ -3,52 +3,12 @@
   "WorkspaceRootPath": "D:\\SRCS\\GIT\\SY_MES\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|D:\\SRCS\\GIT\\SY_MES\\sy_mes.logics\\mes\\injectionprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\mes\\injectionprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6133CD0-5189-48B3-AB32-B99E44A809B3}|SY_MES.DEPLOY\\SY_MES.DEPLOY.csproj|d:\\srcs\\git\\sy_mes\\sy_mes.deploy\\config.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A6133CD0-5189-48B3-AB32-B99E44A809B3}|SY_MES.DEPLOY\\SY_MES.DEPLOY.csproj|solutionrelative:sy_mes.deploy\\config.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\srcs\\git\\sy_mes\\sy_mes.logics\\mes\\sub\\trolleystockbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\mes\\sub\\trolleystockbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\srcs\\git\\sy_mes\\sy_mes.logics\\mes\\sub\\trolleystockbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\mes\\sub\\trolleystockbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|D:\\SRCS\\GIT\\SY_MES\\sy_mes.logics\\mes\\injectionprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\srcs\\git\\sy_mes\\sy_mes.logics\\mes\\injectionprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\mes\\injectionprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\srcs\\git\\sy_mes\\sy_mes.logics\\mes\\sub\\inspectionbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\mes\\sub\\inspectionbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|D:\\SRCS\\GIT\\SY_MES\\sy_mes.logics\\mes\\sub\\inspectionbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\mes\\sub\\inspectionbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\srcs\\git\\sy_mes\\sy_mes.logics\\mes\\finalinspection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\mes\\finalinspection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\srcs\\git\\sy_mes\\sy_mes.logics\\mes\\sub\\trolleystocklistbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\mes\\sub\\trolleystocklistbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\srcs\\git\\sy_mes\\sy_mes.logics\\mes\\sub\\trolleystocklistbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\mes\\sub\\trolleystocklistbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\srcs\\git\\sy_mes\\sy_mes.logics\\mes\\sub\\fthistbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\mes\\sub\\fthistbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\srcs\\git\\sy_mes\\sy_mes.logics\\mes\\sub\\fthistbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\mes\\sub\\fthistbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\srcs\\git\\sy_mes\\sy_mes.logics\\mes\\sub\\ft_bc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\mes\\sub\\ft_bc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,151 +30,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TrolleyStockListBC.cs",
-              "DocumentMoniker": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\Sub\\TrolleyStockListBC.cs",
-              "RelativeDocumentMoniker": "SY_MES.Logics\\MES\\Sub\\TrolleyStockListBC.cs",
-              "ToolTip": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\Sub\\TrolleyStockListBC.cs",
-              "RelativeToolTip": "SY_MES.Logics\\MES\\Sub\\TrolleyStockListBC.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAcwDwAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T04:44:21.067Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "InjectionPrint.cs",
-              "DocumentMoniker": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\InjectionPrint.cs",
-              "RelativeDocumentMoniker": "SY_MES.Logics\\MES\\InjectionPrint.cs",
-              "ToolTip": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\InjectionPrint.cs*",
-              "RelativeToolTip": "SY_MES.Logics\\MES\\InjectionPrint.cs*",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAxwCMAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T08:05:07.969Z",
+              "Title": "Config.xml",
+              "DocumentMoniker": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.DEPLOY\\Config.xml",
+              "RelativeDocumentMoniker": "SY_MES.DEPLOY\\Config.xml",
+              "ToolTip": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.DEPLOY\\Config.xml*",
+              "RelativeToolTip": "SY_MES.DEPLOY\\Config.xml*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-05-07T09:51:15.554Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "InjectionPrint.cs [Design]",
-              "DocumentMoniker": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\InjectionPrint.cs",
-              "RelativeDocumentMoniker": "SY_MES.Logics\\MES\\InjectionPrint.cs",
-              "ToolTip": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\InjectionPrint.cs [Design]*",
-              "RelativeToolTip": "SY_MES.Logics\\MES\\InjectionPrint.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T08:04:59.289Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FinalInspection.cs [Design]",
-              "DocumentMoniker": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\FinalInspection.cs",
-              "RelativeDocumentMoniker": "SY_MES.Logics\\MES\\FinalInspection.cs",
-              "ToolTip": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\FinalInspection.cs [Design]",
-              "RelativeToolTip": "SY_MES.Logics\\MES\\FinalInspection.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T04:16:49.02Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "InspectionBC.cs [Design]",
-              "DocumentMoniker": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\Sub\\InspectionBC.cs",
-              "RelativeDocumentMoniker": "SY_MES.Logics\\MES\\Sub\\InspectionBC.cs",
-              "ToolTip": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\Sub\\InspectionBC.cs [Design]",
-              "RelativeToolTip": "SY_MES.Logics\\MES\\Sub\\InspectionBC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T08:06:50.975Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TrolleyStockBC.cs",
-              "DocumentMoniker": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\Sub\\TrolleyStockBC.cs",
-              "RelativeDocumentMoniker": "SY_MES.Logics\\MES\\Sub\\TrolleyStockBC.cs",
-              "ToolTip": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\Sub\\TrolleyStockBC.cs*",
-              "RelativeToolTip": "SY_MES.Logics\\MES\\Sub\\TrolleyStockBC.cs*",
-              "ViewState": "AQIAAFwAAAAAAAAAAAAgwHQAAAAeAAAA",
+              "Title": "InjectionPrint.cs [Design]",
+              "DocumentMoniker": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\InjectionPrint.cs",
+              "RelativeDocumentMoniker": "SY_MES.Logics\\MES\\InjectionPrint.cs",
+              "ToolTip": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\InjectionPrint.cs [Design]",
+              "RelativeToolTip": "SY_MES.Logics\\MES\\InjectionPrint.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T05:44:24.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TrolleyStockBC.cs [Design]",
-              "DocumentMoniker": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\Sub\\TrolleyStockBC.cs",
-              "RelativeDocumentMoniker": "SY_MES.Logics\\MES\\Sub\\TrolleyStockBC.cs",
-              "ToolTip": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\Sub\\TrolleyStockBC.cs [Design]*",
-              "RelativeToolTip": "SY_MES.Logics\\MES\\Sub\\TrolleyStockBC.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T04:16:54.821Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "InspectionBC.cs",
-              "DocumentMoniker": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\Sub\\InspectionBC.cs",
-              "RelativeDocumentMoniker": "SY_MES.Logics\\MES\\Sub\\InspectionBC.cs",
-              "ToolTip": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\Sub\\InspectionBC.cs",
-              "RelativeToolTip": "SY_MES.Logics\\MES\\Sub\\InspectionBC.cs",
-              "ViewState": "AQIAALwAAAAAAAAAAAAAAMQAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T08:06:53.482Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FTHistBC.cs",
-              "DocumentMoniker": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\Sub\\FTHistBC.cs",
-              "RelativeDocumentMoniker": "SY_MES.Logics\\MES\\Sub\\FTHistBC.cs",
-              "ToolTip": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\Sub\\FTHistBC.cs",
-              "RelativeToolTip": "SY_MES.Logics\\MES\\Sub\\FTHistBC.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAcwDkAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T04:44:13.413Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TrolleyStockListBC.cs [Design]",
-              "DocumentMoniker": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\Sub\\TrolleyStockListBC.cs",
-              "RelativeDocumentMoniker": "SY_MES.Logics\\MES\\Sub\\TrolleyStockListBC.cs",
-              "ToolTip": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\Sub\\TrolleyStockListBC.cs [Design]",
-              "RelativeToolTip": "SY_MES.Logics\\MES\\Sub\\TrolleyStockListBC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T04:44:07.279Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FTHistBC.cs [Design]",
-              "DocumentMoniker": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\Sub\\FTHistBC.cs",
-              "RelativeDocumentMoniker": "SY_MES.Logics\\MES\\Sub\\FTHistBC.cs",
-              "ToolTip": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\Sub\\FTHistBC.cs [Design]",
-              "RelativeToolTip": "SY_MES.Logics\\MES\\Sub\\FTHistBC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T04:44:12.214Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FT_BC.cs [Design]",
-              "DocumentMoniker": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\Sub\\FT_BC.cs",
-              "RelativeDocumentMoniker": "SY_MES.Logics\\MES\\Sub\\FT_BC.cs",
-              "ToolTip": "D:\\SRCS\\GIT\\SY_MES\\SY_MES.Logics\\MES\\Sub\\FT_BC.cs [Design]",
-              "RelativeToolTip": "SY_MES.Logics\\MES\\Sub\\FT_BC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T04:47:54.604Z",
+              "WhenOpened": "2025-05-06T13:18:19.85Z",
               "EditorCaption": " [Design]"
             }
           ]
