@@ -22,6 +22,7 @@ namespace SY_MES.DEPLOY
         private BaseDialog m_dlg;
         private List<FX.Devices.Scanner.SerialScanner> m_lstScanner = new List<FX.Devices.Scanner.SerialScanner>();
         private FX.Devices.UDio m_UDio;
+        private bool m_UseUDIO = false;
         protected FX.Devices.UDio UDio
         {
             get { return m_UDio; }
@@ -147,6 +148,13 @@ namespace SY_MES.DEPLOY
                 if(m_dlg.BC!=null && m_dlg.BC is SystemConfigDlg)
                 {
                     ((SystemConfigDlg)m_dlg.BC).LoadLogData();
+                }
+            }
+            if(beep)
+            {
+                if (m_UseUDIO)
+                {
+                    m_UDio.DioOut(FX.Common.Funcs.GetO2I(GetINI("LOCAL_IO/PLC_ALRAM_ADDR")), 3);
                 }
             }
         }
@@ -423,21 +431,20 @@ namespace SY_MES.DEPLOY
         }
         private void SetUDio(string iniPath)
         {
-            bool bUSE = FX.Common.Funcs.GetBoolStr(GetINI(iniPath));
-            if(bUSE)
+            m_UseUDIO = FX.Common.Funcs.GetBoolStr(GetINI(iniPath));
+            if (m_UseUDIO)
             {
                 if(m_UDio==null)
                 {
-                    m_UDio = new FX.Devices.UDio();
-
-                   
+                    m_UDio = new FX.Devices.UDio();                   
                 }
                 Dictionary<string, object> param  = new Dictionary<string,object>();
                 param.Add("PBASE", this);
                 param.Add("PID", GetINI("LOCAL_IO/UDIO_PID"));
-                param.Add("BID", GetINI("LOCAL_IO/UDIO_BID"));
-                
+                param.Add("BID", GetINI("LOCAL_IO/UDIO_BID"));                
                 m_UDio.OpenDevice(param);
+
+               
             }
             
         }

@@ -28,3 +28,4 @@ D:\Srcs\PUNE\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.Scanner.Serial
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.csproj.GenerateResource.Cache
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.dll
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.pdb
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.csprojResolveAssemblyReference.cache

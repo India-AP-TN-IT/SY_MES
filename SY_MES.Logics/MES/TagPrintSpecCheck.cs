@@ -27,6 +27,7 @@ namespace SY_MES.Logics.MES
             base.OnLoad(e);
 
             WorkState(FX.MainForm.Base.Common.WorkStateEnum.Wait);
+            
         }
         public override void ReadDataFromScanner(object sender, string data)
         {

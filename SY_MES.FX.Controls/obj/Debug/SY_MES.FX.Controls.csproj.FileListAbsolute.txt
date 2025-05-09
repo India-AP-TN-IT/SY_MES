@@ -48,3 +48,4 @@ D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.YWorkerLabel
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.csproj.GenerateResource.Cache
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.dll
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.pdb
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Controls\obj\Debug\SY_MES.FX.Controls.csprojResolveAssemblyReference.cache

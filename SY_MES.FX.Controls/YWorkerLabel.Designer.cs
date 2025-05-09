@@ -79,7 +79,7 @@
             this.Txt_EMP.Location = new System.Drawing.Point(187, 3);
             this.Txt_EMP.MaxLength = 6;
             this.Txt_EMP.Name = "Txt_EMP";
-            this.Txt_EMP.Size = new System.Drawing.Size(178, 44);
+            this.Txt_EMP.Size = new System.Drawing.Size(178, 26);
             this.Txt_EMP.TabIndex = 25;
             this.Txt_EMP.TouchKeyBoardMethod = SY_MES.FX.Controls.YTextBox.ClickEnum.DoubleClick;
             this.Txt_EMP.TouchKeyPos = SY_MES.FX.Controls.YTextBox.TouchKeyPosEnum.Down;

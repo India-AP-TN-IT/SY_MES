@@ -27,3 +27,4 @@ D:\Srcs\PUNE\SY_MES\SY_MES.FX.DB\bin\Debug\SY_MES.FX.DB.pdb
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.DB\bin\Debug\Oracle.ManagedDataAccess.dll
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.DB\obj\Debug\SY_MES.FX.DB.dll
 D:\Srcs\PUNE\SY_MES\SY_MES.FX.DB\obj\Debug\SY_MES.FX.DB.pdb
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.DB\obj\Debug\SY_MES.FX.DB.csprojResolveAssemblyReference.cache
