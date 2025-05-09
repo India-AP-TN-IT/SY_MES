@@ -8,6 +8,7 @@ namespace SY_MES.FX.Devices.Base
 {
     public class Common
     {
+        public const string CN_CATEGORY_APP = "_SY_MES.Appearance";
         //ASCII Code
         public const string NUL = "\x00";
         public const string SOH = "\x01";
@@ -43,5 +44,6 @@ namespace SY_MES.FX.Devices.Base
         public const string RS = "\x1E";
         public const string US = "\x1F";
         public const string DEL = "\x7F";
+        public static string UDIO_CLIB_PATH = @".\CLIB\uio.dll";
     }
 }

@@ -14,12 +14,6 @@ D:\SRCS\GIT\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.csproj.Generate
 D:\SRCS\GIT\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.csproj.CoreCompileInputs.cache
 D:\SRCS\GIT\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.dll
 D:\SRCS\GIT\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.pdb
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.Devices\bin\Debug\SY_MES.FX.Devices.dll
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.Devices\bin\Debug\SY_MES.FX.Devices.pdb
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.Scanner.SerialScanner.resources
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.csproj.GenerateResource.Cache
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.dll
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.pdb
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\bin\Debug\SY_MES.FX.Devices.dll
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\bin\Debug\SY_MES.FX.Devices.pdb
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.csproj.AssemblyReference.cache
@@ -28,4 +22,9 @@ D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.csproj.Gener
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.csproj.CoreCompileInputs.cache
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.dll
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.pdb
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.csprojResolveAssemblyReference.cache
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Devices\bin\Debug\SY_MES.FX.Devices.dll
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Devices\bin\Debug\SY_MES.FX.Devices.pdb
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.Scanner.SerialScanner.resources
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.csproj.GenerateResource.Cache
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.dll
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.Devices\obj\Debug\SY_MES.FX.Devices.pdb

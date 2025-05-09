@@ -13,13 +13,6 @@ D:\SRCS\GIT\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.csproj.GenerateResource
 D:\SRCS\GIT\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.csproj.CoreCompileInputs.cache
 D:\SRCS\GIT\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.dll
 D:\SRCS\GIT\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.pdb
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.PLC\bin\Debug\SY_MES.FX.PLC.dll
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.PLC\bin\Debug\SY_MES.FX.PLC.pdb
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.PLC_MonitorFrm.resources
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.SimplePlcUI.resources
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.csproj.GenerateResource.Cache
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.dll
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.pdb
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.PLC\bin\Debug\SY_MES.FX.PLC.dll
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.PLC\bin\Debug\SY_MES.FX.PLC.pdb
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.csproj.AssemblyReference.cache
@@ -29,4 +22,10 @@ D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.csproj.GenerateResou
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.csproj.CoreCompileInputs.cache
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.dll
 D:\SRCS\GIT_IN\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.pdb
-D:\Srcs\PUNE\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.csprojResolveAssemblyReference.cache
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.PLC\bin\Debug\SY_MES.FX.PLC.dll
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.PLC\bin\Debug\SY_MES.FX.PLC.pdb
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.PLC_MonitorFrm.resources
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.SimplePlcUI.resources
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.csproj.GenerateResource.Cache
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.dll
+D:\Srcs\PUNE\SY_MES\SY_MES.FX.PLC\obj\Debug\SY_MES.FX.PLC.pdb

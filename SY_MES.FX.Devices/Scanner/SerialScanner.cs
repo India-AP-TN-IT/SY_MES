@@ -12,6 +12,7 @@ namespace SY_MES.FX.Devices.Scanner
     public partial class SerialScanner : SerialPort, Base.IDevice
     {
         private string m_DeviceName = "";
+
         public string DeviceName
         {
             get { return m_DeviceName; }

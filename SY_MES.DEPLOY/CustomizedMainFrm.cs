@@ -21,7 +21,11 @@ namespace SY_MES.DEPLOY
     {
         private BaseDialog m_dlg;
         private List<FX.Devices.Scanner.SerialScanner> m_lstScanner = new List<FX.Devices.Scanner.SerialScanner>();
-        
+        private FX.Devices.UDio m_UDio;
+        protected FX.Devices.UDio UDio
+        {
+            get { return m_UDio; }
+        }
 
         public CustomizedMainFrm()
         {
@@ -36,6 +40,7 @@ namespace SY_MES.DEPLOY
         private void LoadNativeLibs()
         {            
             FX.Common.Funcs.LoadNativeLibrary(@".\CLIB\pdfium.dll");    //WorkStand PDF Rendering Lib            
+            FX.Devices.Base.Common.UDIO_CLIB_PATH = @".\CLIB\uio64.dll";
         }
         protected override void OnLoad(EventArgs e)
         {
@@ -416,6 +421,26 @@ namespace SY_MES.DEPLOY
             }));
             
         }
+        private void SetUDio(string iniPath)
+        {
+            bool bUSE = FX.Common.Funcs.GetBoolStr(GetINI(iniPath));
+            if(bUSE)
+            {
+                if(m_UDio==null)
+                {
+                    m_UDio = new FX.Devices.UDio();
+
+                   
+                }
+                Dictionary<string, object> param  = new Dictionary<string,object>();
+                param.Add("PBASE", this);
+                param.Add("PID", GetINI("LOCAL_IO/UDIO_PID"));
+                param.Add("BID", GetINI("LOCAL_IO/UDIO_BID"));
+                
+                m_UDio.OpenDevice(param);
+            }
+            
+        }
         protected override void InitDevices()
         {
             base.InitDevices();
@@ -423,6 +448,7 @@ namespace SY_MES.DEPLOY
             {
 
                 SetScanners("BARCODE_SCANNER/PORT");
+                SetUDio("LOCAL_IO/UDIO_YN");
             }
             catch(Exception eLog)
             {
