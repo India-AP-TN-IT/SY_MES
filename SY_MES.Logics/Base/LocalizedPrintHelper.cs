@@ -75,14 +75,15 @@ namespace SY_MES.Logics.Base
                 switch(labelType)
                 {
                     default:
-                        Body("^BXN,3,200");
-                        Body("^FO30,30^FH^FD" + GetZPLAsciiCVT(GetParam(param, "MATRIX_CODE")) + "^FS");
-                        Body("^FO130,50^A0NB,22,15^FB250,0,0,L^FD" + DateTime.Parse(GetParam(param, "WORK_DATE")).ToString("dd-MM-yyyy") + " " + DateTime.Now.ToString("HH:mm") + "  S:" + GetParam(param, "SHIFT") + "^FS");
+                        Body("^FO80,50"); //Barcode Location(Matrix 2D)
+                        Body("^BXN,7,200"); //Barcode Setting 
+                        Body("^FH^FD" + GetZPLAsciiCVT(GetParam(param, "LOTNO")) + "^FS"); 
+                        Body("^FO200,90^A0NB,22,15^FB250,0,0,L^FD" + DateTime.Parse(GetParam(param, "WORK_DATE")).ToString("dd-MM-yyyy") + " " + DateTime.Now.ToString("HH:mm") + "  S:" + GetParam(param, "SHIFT") + "^FS");
                         
-                        Body("^FO130,80^A0NB,35,30^FB220,0,0,L^FD" + GetParam(param, "LOTNO") + "^FS");
-                        Body("^FO30,120^A0NB,45,35^FB300,0,0,L^FD" + GetParam(param, "PARTNO") + "^FS");
+                        Body("^FO200,120^A0NB,35,30^FB220,0,0,L^FD" + GetParam(param, "LOTNO") + "^FS");
+                        Body("^FO100,160^A0NB,45,35^FB300,0,0,L^FD" + GetParam(param, "PARTNO") + "^FS");
 
-                        Body("^FO290,80^A0NB,70,30^FB320,0,0,L^FD" + GetParam(param, "INSTALL_POS") + "^FS");
+                        Body("^FO360,120^A0NB,70,30^FB320,0,0,L^FD" + GetParam(param, "INSTALL_POS") + "^FS");
                         break;
                 }
                 //>>
