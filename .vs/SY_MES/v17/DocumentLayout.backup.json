@@ -3,36 +3,91 @@
   "WorkspaceRootPath": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. india\\pune\\sy_mes\\sy_mes.logics\\base\\localizedprinthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. india\\pune\\sy_mes\\sy_mes.logics\\mes\\finalinspection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\mes\\finalinspection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\sy_mes.logics\\mes\\finalinspection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\mes\\finalinspection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9AD1929-D4CF-4253-8DAD-1B8DF38A36FD}|SY_MES.FX.Forms\\SY_MES.FX.MainForm.csproj|D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\sy_mes.fx.forms\\basemainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9AD1929-D4CF-4253-8DAD-1B8DF38A36FD}|SY_MES.FX.Forms\\SY_MES.FX.MainForm.csproj|solutionrelative:sy_mes.fx.forms\\basemainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9AD1929-D4CF-4253-8DAD-1B8DF38A36FD}|SY_MES.FX.Forms\\SY_MES.FX.MainForm.csproj|D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\sy_mes.fx.forms\\basemainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B9AD1929-D4CF-4253-8DAD-1B8DF38A36FD}|SY_MES.FX.Forms\\SY_MES.FX.MainForm.csproj|solutionrelative:sy_mes.fx.forms\\basemainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9AD1929-D4CF-4253-8DAD-1B8DF38A36FD}|SY_MES.FX.Forms\\SY_MES.FX.MainForm.csproj|D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\sy_mes.fx.forms\\basedialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B9AD1929-D4CF-4253-8DAD-1B8DF38A36FD}|SY_MES.FX.Forms\\SY_MES.FX.MainForm.csproj|solutionrelative:sy_mes.fx.forms\\basedialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E02D0B-9CAA-4015-B258-A99F2FE7F81A}|SY_MES.FX.Devices\\SY_MES.FX.Devices.csproj|D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\sy_mes.fx.devices\\printer\\zebrausb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3E02D0B-9CAA-4015-B258-A99F2FE7F81A}|SY_MES.FX.Devices\\SY_MES.FX.Devices.csproj|solutionrelative:sy_mes.fx.devices\\printer\\zebrausb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC727E9A-119F-4952-A617-FA9DF2714C2A}|SY_MES.FX.Common\\SY_MES.FX.Common.csproj|D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\sy_mes.fx.common\\funcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC727E9A-119F-4952-A617-FA9DF2714C2A}|SY_MES.FX.Common\\SY_MES.FX.Common.csproj|solutionrelative:sy_mes.fx.common\\funcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC727E9A-119F-4952-A617-FA9DF2714C2A}|SY_MES.FX.Common\\SY_MES.FX.Common.csproj|D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\sy_mes.fx.common\\constvars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC727E9A-119F-4952-A617-FA9DF2714C2A}|SY_MES.FX.Common\\SY_MES.FX.Common.csproj|solutionrelative:sy_mes.fx.common\\constvars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|SY_MES.FX.Common||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6133CD0-5189-48B3-AB32-B99E44A809B3}|SY_MES.DEPLOY\\SY_MES.DEPLOY.csproj|D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\sy_mes.deploy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6133CD0-5189-48B3-AB32-B99E44A809B3}|SY_MES.DEPLOY\\SY_MES.DEPLOY.csproj|solutionrelative:sy_mes.deploy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6133CD0-5189-48B3-AB32-B99E44A809B3}|SY_MES.DEPLOY\\SY_MES.DEPLOY.csproj|D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\sy_mes.deploy\\customizedmainfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6133CD0-5189-48B3-AB32-B99E44A809B3}|SY_MES.DEPLOY\\SY_MES.DEPLOY.csproj|solutionrelative:sy_mes.deploy\\customizedmainfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6133CD0-5189-48B3-AB32-B99E44A809B3}|SY_MES.DEPLOY\\SY_MES.DEPLOY.csproj|D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\sy_mes.deploy\\customizedmainfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A6133CD0-5189-48B3-AB32-B99E44A809B3}|SY_MES.DEPLOY\\SY_MES.DEPLOY.csproj|solutionrelative:sy_mes.deploy\\customizedmainfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6133CD0-5189-48B3-AB32-B99E44A809B3}|SY_MES.DEPLOY\\SY_MES.DEPLOY.csproj|D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\sy_mes.deploy\\config_private.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A6133CD0-5189-48B3-AB32-B99E44A809B3}|SY_MES.DEPLOY\\SY_MES.DEPLOY.csproj|solutionrelative:sy_mes.deploy\\config_private.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6133CD0-5189-48B3-AB32-B99E44A809B3}|SY_MES.DEPLOY\\SY_MES.DEPLOY.csproj|D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\sy_mes.deploy\\config.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A6133CD0-5189-48B3-AB32-B99E44A809B3}|SY_MES.DEPLOY\\SY_MES.DEPLOY.csproj|solutionrelative:sy_mes.deploy\\config.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6133CD0-5189-48B3-AB32-B99E44A809B3}|SY_MES.DEPLOY\\SY_MES.DEPLOY.csproj|D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\sy_mes.deploy\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A6133CD0-5189-48B3-AB32-B99E44A809B3}|SY_MES.DEPLOY\\SY_MES.DEPLOY.csproj|solutionrelative:sy_mes.deploy\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\sy_mes.logics\\base\\localizedprinthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\base\\localizedprinthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. india\\pune\\sy_mes\\sy_mes.logics\\mes\\sub\\speccheckbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\sy_mes.logics\\mes\\sub\\speccheckbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\mes\\sub\\speccheckbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. india\\pune\\sy_mes\\sy_mes.logics\\mes\\sub\\speccheckbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\sy_mes.logics\\mes\\sub\\speccheckbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\mes\\sub\\speccheckbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. india\\pune\\sy_mes\\sy_mes.logics\\mes\\speccheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\sy_mes.logics\\mes\\speccheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\mes\\speccheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. india\\pune\\sy_mes\\sy_mes.logics\\mes\\sub\\woprintbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\sy_mes.logics\\mes\\sub\\woprintbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\mes\\sub\\woprintbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. india\\pune\\sy_mes\\sy_mes.logics\\mes\\sub\\woprintbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\sy_mes.logics\\mes\\sub\\woprintbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\mes\\sub\\woprintbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|d:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. india\\pune\\sy_mes\\sy_mes.logics\\mes\\tagprintspeccheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\sy_mes.logics\\mes\\tagprintspeccheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E1AFBAC8-0509-46EF-AC4F-6E1138D0BF31}|SY_MES.Logics\\SY_MES.Logics.csproj|solutionrelative:sy_mes.logics\\mes\\tagprintspeccheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6133CD0-5189-48B3-AB32-B99E44A809B3}|SY_MES.DEPLOY\\SY_MES.DEPLOY.csproj|d:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. india\\pune\\sy_mes\\sy_mes.deploy\\config.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A6133CD0-5189-48B3-AB32-B99E44A809B3}|SY_MES.DEPLOY\\SY_MES.DEPLOY.csproj|solutionrelative:sy_mes.deploy\\config.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +97,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,7 +105,171 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FinalInspection.cs",
+              "DocumentMoniker": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.Logics\\MES\\FinalInspection.cs",
+              "RelativeDocumentMoniker": "SY_MES.Logics\\MES\\FinalInspection.cs",
+              "ToolTip": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.Logics\\MES\\FinalInspection.cs",
+              "RelativeToolTip": "SY_MES.Logics\\MES\\FinalInspection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T07:53:53.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "FinalInspection.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.Logics\\MES\\FinalInspection.cs",
+              "RelativeDocumentMoniker": "SY_MES.Logics\\MES\\FinalInspection.cs",
+              "ToolTip": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.Logics\\MES\\FinalInspection.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "SY_MES.Logics\\MES\\FinalInspection.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T07:53:04.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaseMainForm.cs",
+              "DocumentMoniker": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.FX.Forms\\BaseMainForm.cs",
+              "RelativeDocumentMoniker": "SY_MES.FX.Forms\\BaseMainForm.cs",
+              "ToolTip": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.FX.Forms\\BaseMainForm.cs",
+              "RelativeToolTip": "SY_MES.FX.Forms\\BaseMainForm.cs",
+              "ViewState": "AgIAACQDAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T07:43:16.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BaseMainForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.FX.Forms\\BaseMainForm.cs",
+              "RelativeDocumentMoniker": "SY_MES.FX.Forms\\BaseMainForm.cs",
+              "ToolTip": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.FX.Forms\\BaseMainForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "SY_MES.FX.Forms\\BaseMainForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T07:43:14.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BaseDialog.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.FX.Forms\\BaseDialog.cs",
+              "RelativeDocumentMoniker": "SY_MES.FX.Forms\\BaseDialog.cs",
+              "ToolTip": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.FX.Forms\\BaseDialog.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "SY_MES.FX.Forms\\BaseDialog.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T07:43:13.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ZebraUSB.cs",
+              "DocumentMoniker": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.FX.Devices\\Printer\\ZebraUSB.cs",
+              "RelativeDocumentMoniker": "SY_MES.FX.Devices\\Printer\\ZebraUSB.cs",
+              "ToolTip": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.FX.Devices\\Printer\\ZebraUSB.cs",
+              "RelativeToolTip": "SY_MES.FX.Devices\\Printer\\ZebraUSB.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T07:40:12.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Funcs.cs",
+              "DocumentMoniker": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.FX.Common\\Funcs.cs",
+              "RelativeDocumentMoniker": "SY_MES.FX.Common\\Funcs.cs",
+              "ToolTip": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.FX.Common\\Funcs.cs",
+              "RelativeToolTip": "SY_MES.FX.Common\\Funcs.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T07:23:39.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ConstVars.cs",
+              "DocumentMoniker": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.FX.Common\\ConstVars.cs",
+              "RelativeDocumentMoniker": "SY_MES.FX.Common\\ConstVars.cs",
+              "ToolTip": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.FX.Common\\ConstVars.cs",
+              "RelativeToolTip": "SY_MES.FX.Common\\ConstVars.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T07:23:12.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SY_MES.FX.Common",
+              "DocumentMoniker": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.FX.Common\\SY_MES.FX.Common.csproj",
+              "RelativeDocumentMoniker": "SY_MES.FX.Common\\SY_MES.FX.Common.csproj",
+              "ToolTip": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.FX.Common\\SY_MES.FX.Common.csproj",
+              "RelativeToolTip": "SY_MES.FX.Common\\SY_MES.FX.Common.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-13T07:23:07.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.DEPLOY\\Program.cs",
+              "RelativeDocumentMoniker": "SY_MES.DEPLOY\\Program.cs",
+              "ToolTip": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.DEPLOY\\Program.cs",
+              "RelativeToolTip": "SY_MES.DEPLOY\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T07:13:35.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CustomizedMainFrm.cs",
+              "DocumentMoniker": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.DEPLOY\\CustomizedMainFrm.cs",
+              "RelativeDocumentMoniker": "SY_MES.DEPLOY\\CustomizedMainFrm.cs",
+              "ToolTip": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.DEPLOY\\CustomizedMainFrm.cs",
+              "RelativeToolTip": "SY_MES.DEPLOY\\CustomizedMainFrm.cs",
+              "ViewState": "AgIAAKMBAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T07:02:43.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CustomizedMainFrm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.DEPLOY\\CustomizedMainFrm.cs",
+              "RelativeDocumentMoniker": "SY_MES.DEPLOY\\CustomizedMainFrm.cs",
+              "ToolTip": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.DEPLOY\\CustomizedMainFrm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "SY_MES.DEPLOY\\CustomizedMainFrm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T07:02:41.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Config_Private.xml",
+              "DocumentMoniker": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.DEPLOY\\Config_Private.xml",
+              "RelativeDocumentMoniker": "SY_MES.DEPLOY\\Config_Private.xml",
+              "ToolTip": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.DEPLOY\\Config_Private.xml",
+              "RelativeToolTip": "SY_MES.DEPLOY\\Config_Private.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-05-13T07:02:18.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.DEPLOY\\App.config",
+              "RelativeDocumentMoniker": "SY_MES.DEPLOY\\App.config",
+              "ToolTip": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.DEPLOY\\App.config",
+              "RelativeToolTip": "SY_MES.DEPLOY\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-05-13T07:01:18.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "SpecCheckBC.cs",
               "DocumentMoniker": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.Logics\\MES\\Sub\\SpecCheckBC.cs",
               "RelativeDocumentMoniker": "SY_MES.Logics\\MES\\Sub\\SpecCheckBC.cs",
@@ -58,86 +277,79 @@
               "RelativeToolTip": "SY_MES.Logics\\MES\\Sub\\SpecCheckBC.cs",
               "ViewState": "AgIAAFEAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T06:25:32.888Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T06:25:32.888Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 17,
               "Title": "SpecCheckBC.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.Logics\\MES\\Sub\\SpecCheckBC.cs",
               "RelativeDocumentMoniker": "SY_MES.Logics\\MES\\Sub\\SpecCheckBC.cs",
               "ToolTip": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.Logics\\MES\\Sub\\SpecCheckBC.cs [\uB514\uC790\uC778]",
               "RelativeToolTip": "SY_MES.Logics\\MES\\Sub\\SpecCheckBC.cs [\uB514\uC790\uC778]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T06:25:30.705Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
+              "WhenOpened": "2025-05-12T06:25:30.705Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 18,
               "Title": "SpecCheck.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.Logics\\MES\\SpecCheck.cs",
               "RelativeDocumentMoniker": "SY_MES.Logics\\MES\\SpecCheck.cs",
               "ToolTip": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.Logics\\MES\\SpecCheck.cs [\uB514\uC790\uC778]",
               "RelativeToolTip": "SY_MES.Logics\\MES\\SpecCheck.cs [\uB514\uC790\uC778]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T06:25:04.574Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
+              "WhenOpened": "2025-05-12T06:25:04.574Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 15,
               "Title": "LocalizedPrintHelper.cs",
               "DocumentMoniker": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.Logics\\Base\\LocalizedPrintHelper.cs",
               "RelativeDocumentMoniker": "SY_MES.Logics\\Base\\LocalizedPrintHelper.cs",
-              "ToolTip": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.Logics\\Base\\LocalizedPrintHelper.cs*",
-              "RelativeToolTip": "SY_MES.Logics\\Base\\LocalizedPrintHelper.cs*",
-              "ViewState": "AgIAACMAAAAAAAAAAADgv04AAAAkAAAAAAAAAA==",
+              "ToolTip": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.Logics\\Base\\LocalizedPrintHelper.cs",
+              "RelativeToolTip": "SY_MES.Logics\\Base\\LocalizedPrintHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T02:01:22.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T02:01:22.366Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 21,
               "Title": "TagPrintSpecCheck.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.Logics\\MES\\TagPrintSpecCheck.cs",
               "RelativeDocumentMoniker": "SY_MES.Logics\\MES\\TagPrintSpecCheck.cs",
               "ToolTip": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.Logics\\MES\\TagPrintSpecCheck.cs [\uB514\uC790\uC778]",
               "RelativeToolTip": "SY_MES.Logics\\MES\\TagPrintSpecCheck.cs [\uB514\uC790\uC778]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T02:00:54.257Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
+              "WhenOpened": "2025-05-12T02:00:54.257Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 19,
               "Title": "WOPrintBC.cs",
               "DocumentMoniker": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.Logics\\MES\\Sub\\WOPrintBC.cs",
               "RelativeDocumentMoniker": "SY_MES.Logics\\MES\\Sub\\WOPrintBC.cs",
               "ToolTip": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.Logics\\MES\\Sub\\WOPrintBC.cs",
               "RelativeToolTip": "SY_MES.Logics\\MES\\Sub\\WOPrintBC.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAvwEIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAvwEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T01:59:08.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T01:59:08.402Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 20,
               "Title": "WOPrintBC.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.Logics\\MES\\Sub\\WOPrintBC.cs",
               "RelativeDocumentMoniker": "SY_MES.Logics\\MES\\Sub\\WOPrintBC.cs",
               "ToolTip": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.Logics\\MES\\Sub\\WOPrintBC.cs [\uB514\uC790\uC778]",
               "RelativeToolTip": "SY_MES.Logics\\MES\\Sub\\WOPrintBC.cs [\uB514\uC790\uC778]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T01:59:06.945Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
+              "WhenOpened": "2025-05-12T01:59:06.945Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "Config.xml",
               "DocumentMoniker": "D:\\1. \uAC1C\uBC1C\uC18C\uC2A4\\2. \uD574\uC678\uBC95\uC778\\03. India\\Pune\\SY_MES\\SY_MES.DEPLOY\\Config.xml",
               "RelativeDocumentMoniker": "SY_MES.DEPLOY\\Config.xml",
@@ -145,8 +357,7 @@
               "RelativeToolTip": "SY_MES.DEPLOY\\Config.xml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-05-07T09:51:15.554Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T09:51:15.554Z"
             }
           ]
         }
